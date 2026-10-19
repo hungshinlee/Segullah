@@ -120,6 +120,32 @@ footer {
 }
 footer p { margin: 0.25rem 0; }
 
+/* ---------- 內容頁（例：一次團契的討論題） ---------- */
+
+.crumb { margin: 2.5rem 0 0; font-size: 1rem; }
+.crumb a {
+  color: var(--muted);
+  text-decoration: underline;
+  text-decoration-color: var(--line);
+  text-underline-offset: 0.25em;
+}
+.crumb a:hover { color: var(--lapis); }
+.crumb + .page-title { margin-top: 0.25rem; }
+.prose h2 { margin: 2.75rem 0 1rem; }
+.prose p { margin: 0 0 1.25rem; }
+.prose ol { margin: 0 0 1.5rem; padding-left: 1.75rem; }
+.prose li { margin: 0 0 1rem; padding-left: 0.25rem; }
+.prose li::marker { color: var(--gold); font-weight: 700; }
+.prose strong { color: var(--lapis); }
+.credit {
+  margin: 3rem 0 0;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.9375rem;
+}
+.credit + footer { margin-top: 1.5rem; }
+
 /* ---------- 列表頁 ---------- */
 
 /* 左上角的站名，回首頁 */
