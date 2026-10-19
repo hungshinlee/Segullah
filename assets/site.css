@@ -119,6 +119,13 @@ footer {
   line-height: 1.7;
 }
 footer p { margin: 0.25rem 0; }
+footer a {
+  color: var(--muted);
+  text-decoration: underline;
+  text-decoration-color: var(--line);
+  text-underline-offset: 0.25em;
+}
+footer a:hover { color: var(--lapis); }
 
 /* ---------- 內容頁（例：一次團契的討論題） ---------- */
 
