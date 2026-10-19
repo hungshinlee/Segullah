@@ -9,125 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;800&family=LXGW+WenKai+TC:wght@400;700&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --paper: #F6F7FA;
-    --ink: #1A2033;
-    --muted: #5B6378;
-    --lapis: #2B3F86;
-    --gold: #A67C2E;
-    --line: #D9DDE8;
-    --hebrew: "Frank Ruhl Libre", "Times New Roman", serif;
-    --zh: "LXGW WenKai TC", "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-      --paper: #141A33;
-      --ink: #E8EAF2;
-      --muted: #A3A9BD;
-      --lapis: #A9B9F2;
-      --gold: #D6B36A;
-      --line: #2E365A;
-    }
-  }
-  :root[data-theme="dark"] {
-    --paper: #141A33;
-    --ink: #E8EAF2;
-    --muted: #A3A9BD;
-    --lapis: #A9B9F2;
-    --gold: #D6B36A;
-    --line: #2E365A;
-  }
-
-  * { box-sizing: border-box; }
-  html { -webkit-text-size-adjust: 100%; }
-  body {
-    margin: 0;
-    background: var(--paper);
-    color: var(--ink);
-    font-family: var(--zh);
-    font-size: 1.125rem;
-    line-height: 1.8;
-  }
-  .page {
-    max-width: 40rem;
-    margin: 0 auto;
-    padding: clamp(2.5rem, 8vw, 5rem) 16px 3rem;
-  }
-
-  /* 標頭：希伯來文靠右（從右往左讀），其餘中文靠左 */
-  .masthead { margin-bottom: 3rem; }
-  .word {
-    display: block;
-    font-family: var(--hebrew);
-    font-weight: 800;
-    font-size: clamp(5.5rem, 26vw, 11rem);
-    line-height: 1.05;
-    color: var(--lapis);
-    text-align: right;
-    margin: 0;
-    padding-bottom: 0.18em; /* 母音點在字母下方，留空間給它們，不壓到金線 */
-  }
-  .name {
-    font-family: var(--hebrew);
-    font-weight: 500;
-    font-size: 1.75rem;
-    line-height: 1.2;
-    margin: 0.75rem 0 0;
-    padding-top: 0.75rem;
-    border-top: 2px solid var(--gold);
-  }
-  .gloss {
-    color: var(--muted);
-    font-size: 1rem;
-    margin: 0.5rem 0 0;
-  }
-  .intro { margin: 0 0 3.5rem; }
-
-  section + section { margin-top: 3rem; }
-  h2 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    line-height: 1.4;
-    color: var(--lapis);
-    margin: 0 0 1rem;
-  }
-  .entries { list-style: none; margin: 0; padding: 0; }
-  .entry { padding: 1rem 0; border-top: 1px solid var(--line); }
-  .entry:last-child { border-bottom: 1px solid var(--line); }
-  .entry a {
-    color: var(--ink);
-    font-size: 1.25rem;
-    font-weight: 700;
-    text-decoration: underline;
-    text-decoration-color: var(--gold);
-    text-decoration-thickness: 2px;
-    text-underline-offset: 0.3em;
-  }
-  .entry a:hover { color: var(--lapis); }
-  .entry-meta { color: var(--muted); font-size: 1rem; margin: 0.25rem 0 0; }
-  .empty {
-    color: var(--muted);
-    margin: 0;
-    padding: 1rem 0;
-    border-top: 1px solid var(--line);
-    border-bottom: 1px solid var(--line);
-  }
-
-  footer {
-    margin-top: 4.5rem;
-    color: var(--muted);
-    font-size: 0.9375rem;
-    line-height: 1.7;
-  }
-  footer p { margin: 0.25rem 0; }
-
-  a:focus-visible {
-    outline: 3px solid var(--gold);
-    outline-offset: 3px;
-    border-radius: 2px;
-  }
-</style>
+<link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
 <main class="page">
@@ -142,16 +24,10 @@
 
   <section aria-labelledby="h-sunday-school">
     <h2 id="h-sunday-school">主日學</h2>
-    <p class="empty">第一份教材整理好之後會放在這裡。</p>
-    <!--
-      有內容之後，把上面那行換成清單。每一課一個資料夾：sunday-school/YYYY-MM-DD/
-      <ul class="entries">
-        <li class="entry">
-          <a href="sunday-school/2026-10-25/">課名</a>
-          <p class="entry-meta"><time datetime="2026-10-25">2026 年 10 月 25 日</time>，哥林多後書 6:1–10</p>
-        </li>
-      </ul>
-    -->
+    <ul class="entries">
+      <li class="entry"><a href="sunday-school/junior-high/">板新青少主日學 · 國中部</a></li>
+      <li class="entry"><a href="sunday-school/senior-high/">板新青少主日學 · 高中部</a></li>
+    </ul>
   </section>
 
   <section aria-labelledby="h-other">

@@ -43,6 +43,24 @@ def walk(root):
         yield p, rel
 
 
+LINK_RE = re.compile(r"""(?:href|src)\s*=\s*["']([^"'#?]+)""")
+
+
+def broken_links(path, text):
+    """站內連結指到不存在的檔案。HTML 註解裡的範本不算。"""
+    text = re.sub(r"<!--.*?-->", "", text, flags=re.S)
+    for m in LINK_RE.finditer(text):
+        target = m.group(1).strip()
+        if not target or re.match(r"^[a-z][a-z0-9+.-]*:", target, re.I) or target.startswith("//"):
+            continue  # http:、https:、mailto:、data: 等外部連結不檢查
+        dest = (ROOT / target.lstrip("/")) if target.startswith("/") else (path.parent / target)
+        if target.endswith("/") or dest.is_dir():
+            dest = dest / "index.html"
+        if not dest.exists():
+            line = text.count("\n", 0, m.start()) + 1
+            yield line, target
+
+
 def main():
     problems, media = [], []
     for path, rel in walk(ROOT):
@@ -60,6 +78,9 @@ def main():
             for m in re.finditer(pattern, text):
                 line = text.count("\n", 0, m.start()) + 1
                 problems.append((rel, f"第 {line} 行：{reason}（{m.group(0)[:40]}）"))
+        if ext in {".html", ".htm"}:
+            for line, target in broken_links(path, text):
+                problems.append((rel, f"約第 {line} 行：連結指到不存在的檔案（{target}）"))
 
     if media:
         print("請人眼確認以下檔案沒有學生的臉、名字、作品，PDF 裡沒有講者備註：")
@@ -68,12 +89,12 @@ def main():
         print()
 
     if problems:
-        print("發現不該公開的內容，請先處理再 commit：")
+        print("發現問題，請先處理再 commit：")
         for rel, reason in problems:
             print(f"  {rel}  {reason}")
         return 1
 
-    print("OK：沒有發現不該公開的內容。")
+    print("OK：沒有發現不該公開的內容，站內連結也都正常。")
     return 0
 
 

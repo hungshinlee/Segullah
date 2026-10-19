@@ -7,13 +7,19 @@
 ## 結構
 
 ```
-index.html                 首頁
-sunday-school/YYYY-MM-DD/  每一課一個資料夾（網址只用英數字，中文路徑會變成一長串 %E5…）
-scripts/check.py           發布前檢查
-.github/workflows/         push 到 main 後自動發布
+index.html                              首頁
+assets/site.css                         全站共用樣式
+sunday-school/junior-high/index.html    板新青少主日學 · 國中部：每一課一列（日期、主題、經文、資料）
+sunday-school/junior-high/YYYY-MM-DD/   國中部每一課一個資料夾（投影片、學習單）
+sunday-school/senior-high/              高中部，結構同上
+scripts/check.py                        發布前檢查
+.github/workflows/                      push 到 main 後自動發布
 ```
 
-純 HTML，不需要建置。
+純 HTML，不需要建置。資料夾與檔名只用英數字，中文路徑在網址裡會變成一長串 %E5…。
+
+新增一課：把檔案放進該課的資料夾，再到列表頁照 HTML 註解裡的範本加一列（新的放最上面）。
+`check.py` 會檢查站內連結有沒有指到不存在的檔案。
 
 ## 發布
 

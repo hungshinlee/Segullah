@@ -1,0 +1,196 @@
+/* Segullah 全站樣式。首頁與各列表頁共用。 */
+
+:root {
+  --paper: #F6F7FA;
+  --ink: #1A2033;
+  --muted: #5B6378;
+  --lapis: #2B3F86;
+  --gold: #A67C2E;
+  --line: #D9DDE8;
+  --hebrew: "Frank Ruhl Libre", "Times New Roman", serif;
+  --zh: "LXGW WenKai TC", "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #141A33;
+    --ink: #E8EAF2;
+    --muted: #A3A9BD;
+    --lapis: #A9B9F2;
+    --gold: #D6B36A;
+    --line: #2E365A;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #141A33;
+  --ink: #E8EAF2;
+  --muted: #A3A9BD;
+  --lapis: #A9B9F2;
+  --gold: #D6B36A;
+  --line: #2E365A;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--zh);
+  font-size: 1.125rem;
+  line-height: 1.8;
+}
+.page {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: clamp(2.5rem, 8vw, 5rem) 16px 3rem;
+}
+a:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* ---------- 首頁 ---------- */
+
+/* 希伯來文靠右（從右往左讀），其餘中文靠左 */
+.masthead { margin-bottom: 3rem; }
+.word {
+  display: block;
+  font-family: var(--hebrew);
+  font-weight: 800;
+  font-size: clamp(5.5rem, 26vw, 11rem);
+  line-height: 1.05;
+  color: var(--lapis);
+  text-align: right;
+  margin: 0;
+  padding-bottom: 0.18em; /* 母音點在字母下方，留空間給它們，不壓到金線 */
+}
+.name {
+  font-family: var(--hebrew);
+  font-weight: 500;
+  font-size: 1.75rem;
+  line-height: 1.2;
+  margin: 0.75rem 0 0;
+  padding-top: 0.75rem;
+  border-top: 2px solid var(--gold);
+}
+.gloss {
+  color: var(--muted);
+  font-size: 1rem;
+  margin: 0.5rem 0 0;
+}
+.intro { margin: 0 0 3.5rem; }
+
+section + section { margin-top: 3rem; }
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--lapis);
+  margin: 0 0 1rem;
+}
+.entries { list-style: none; margin: 0; padding: 0; }
+.entry { padding: 1rem 0; border-top: 1px solid var(--line); }
+.entry:last-child { border-bottom: 1px solid var(--line); }
+.entry a,
+.lessons a {
+  color: var(--ink);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: var(--gold);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.3em;
+}
+.entry a { font-size: 1.25rem; }
+.entry a:hover,
+.lessons a:hover { color: var(--lapis); }
+.empty {
+  color: var(--muted);
+  margin: 0;
+  padding: 1rem 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+footer {
+  margin-top: 4.5rem;
+  color: var(--muted);
+  font-size: 0.9375rem;
+  line-height: 1.7;
+}
+footer p { margin: 0.25rem 0; }
+
+/* ---------- 列表頁 ---------- */
+
+/* 左上角的站名，回首頁 */
+.site-name {
+  font-family: var(--hebrew);
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 2px solid var(--gold);
+  padding-bottom: 0.1em;
+}
+.site-name:hover { color: var(--lapis); }
+.page-title {
+  font-size: clamp(1.625rem, 6vw, 2.25rem);
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--lapis);
+  margin: 2.5rem 0 0.5rem;
+}
+.lede { color: var(--muted); margin: 0 0 2.5rem; }
+
+.lessons { width: 100%; border-collapse: collapse; }
+.lessons th {
+  text-align: left;
+  font-weight: 700;
+  font-size: 0.9375rem;
+  color: var(--muted);
+  padding: 0.5rem 1rem 0.5rem 0;
+  border-bottom: 2px solid var(--line);
+}
+.lessons td {
+  padding: 1rem 1rem 1rem 0;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+.lessons th:last-child,
+.lessons td:last-child { padding-right: 0; }
+.lessons .date {
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  color: var(--muted);
+}
+.lessons .topic { font-weight: 700; }
+/* 經文與連結不在字中間斷行；主題欄吸收剩下的寬度 */
+.lessons .passage,
+.lessons .links { white-space: nowrap; }
+.lessons .links a + a { margin-left: 0.75rem; }
+.lessons .empty-row td { color: var(--muted); }
+
+/* 手機：每一課疊成一塊，不左右捲動 */
+@media (max-width: 600px) {
+  .lessons thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+  .lessons,
+  .lessons tbody,
+  .lessons tr,
+  .lessons td { display: block; }
+  .lessons tr {
+    padding: 1rem 0;
+    border-top: 1px solid var(--line);
+  }
+  .lessons tr:last-child { border-bottom: 1px solid var(--line); }
+  .lessons td { border: 0; padding: 0; white-space: normal; }
+  .lessons .date { font-size: 1rem; }
+  .lessons .passage { color: var(--muted); font-size: 1rem; }
+  .lessons .links { margin-top: 0.25rem; }
+}
