@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Segullah</title>
+<meta name="description" content="教會服事中可以公開分享的內容：主日學教材、學習單，以及其他服事用得上的資料。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%232B3F86'/%3E%3Ctext x='32' y='46' font-size='40' text-anchor='middle' fill='%23F6F7FA' font-family='serif'%3E%D7%A1%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;800&family=LXGW+WenKai+TC:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #F6F7FA;
+    --ink: #1A2033;
+    --muted: #5B6378;
+    --lapis: #2B3F86;
+    --gold: #A67C2E;
+    --line: #D9DDE8;
+    --hebrew: "Frank Ruhl Libre", "Times New Roman", serif;
+    --zh: "LXGW WenKai TC", "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #141A33;
+      --ink: #E8EAF2;
+      --muted: #A3A9BD;
+      --lapis: #A9B9F2;
+      --gold: #D6B36A;
+      --line: #2E365A;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #141A33;
+    --ink: #E8EAF2;
+    --muted: #A3A9BD;
+    --lapis: #A9B9F2;
+    --gold: #D6B36A;
+    --line: #2E365A;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--zh);
+    font-size: 1.125rem;
+    line-height: 1.8;
+  }
+  .page {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: clamp(2.5rem, 8vw, 5rem) 16px 3rem;
+  }
+
+  /* 標頭：希伯來文靠右（從右往左讀），其餘中文靠左 */
+  .masthead { margin-bottom: 3rem; }
+  .word {
+    display: block;
+    font-family: var(--hebrew);
+    font-weight: 800;
+    font-size: clamp(5.5rem, 26vw, 11rem);
+    line-height: 1.05;
+    color: var(--lapis);
+    text-align: right;
+    margin: 0;
+    padding-bottom: 0.18em; /* 母音點在字母下方，留空間給它們，不壓到金線 */
+  }
+  .name {
+    font-family: var(--hebrew);
+    font-weight: 500;
+    font-size: 1.75rem;
+    line-height: 1.2;
+    margin: 0.75rem 0 0;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--gold);
+  }
+  .gloss {
+    color: var(--muted);
+    font-size: 1rem;
+    margin: 0.5rem 0 0;
+  }
+  .intro { margin: 0 0 3.5rem; }
+
+  section + section { margin-top: 3rem; }
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.4;
+    color: var(--lapis);
+    margin: 0 0 1rem;
+  }
+  .entries { list-style: none; margin: 0; padding: 0; }
+  .entry { padding: 1rem 0; border-top: 1px solid var(--line); }
+  .entry:last-child { border-bottom: 1px solid var(--line); }
+  .entry a {
+    color: var(--ink);
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: var(--gold);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.3em;
+  }
+  .entry a:hover { color: var(--lapis); }
+  .entry-meta { color: var(--muted); font-size: 1rem; margin: 0.25rem 0 0; }
+  .empty {
+    color: var(--muted);
+    margin: 0;
+    padding: 1rem 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+
+  footer {
+    margin-top: 4.5rem;
+    color: var(--muted);
+    font-size: 0.9375rem;
+    line-height: 1.7;
+  }
+  footer p { margin: 0.25rem 0; }
+
+  a:focus-visible {
+    outline: 3px solid var(--gold);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+</style>
+</head>
+<body>
+<main class="page">
+
+  <header class="masthead">
+    <h1 class="word" lang="he" dir="rtl">סְגֻלָּה</h1>
+    <p class="name" lang="en">Segullah</p>
+    <p class="gloss">希伯來文，意思是「珍貴的產業」。出埃及記 19:5、申命記 7:6、瑪拉基書 3:17 用這個字稱呼屬神的子民。</p>
+  </header>
+
+  <p class="intro">這裡放我在教會服事中整理、可以公開分享的東西：主日學的教材與學習單，以及其他服事用得上的資料。</p>
+
+  <section aria-labelledby="h-sunday-school">
+    <h2 id="h-sunday-school">主日學</h2>
+    <p class="empty">第一份教材整理好之後會放在這裡。</p>
+    <!--
+      有內容之後，把上面那行換成清單。每一課一個資料夾：sunday-school/YYYY-MM-DD/
+      <ul class="entries">
+        <li class="entry">
+          <a href="sunday-school/2026-10-25/">課名</a>
+          <p class="entry-meta"><time datetime="2026-10-25">2026 年 10 月 25 日</time>，哥林多後書 6:1–10</p>
+        </li>
+      </ul>
+    -->
+  </section>
+
+  <section aria-labelledby="h-other">
+    <h2 id="h-other">其他服事</h2>
+    <p class="empty">還沒有內容。</p>
+  </section>
+
+  <footer>
+    <p>本站是個人整理，不代表教會的官方立場。</p>
+    <p>本站不放學生的照片與個人資料。</p>
+  </footer>
+
+</main>
+</body>
+</html>
