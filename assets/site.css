@@ -80,6 +80,14 @@ a:focus-visible {
   margin: 0.5rem 0 0;
 }
 .intro { margin: 0 0 3.5rem; }
+.intro a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--gold);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.3em;
+}
+.intro a:hover { color: var(--lapis); }
 
 section + section { margin-top: 3rem; }
 h2 {
