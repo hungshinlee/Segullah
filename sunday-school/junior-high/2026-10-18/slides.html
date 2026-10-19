@@ -441,7 +441,7 @@ mark{background:linear-gradient(transparent 50%,var(--hi) 50%,var(--hi) 92%,tran
 
 /* ---------- phones & portrait: stacked pages ---------- */
 @media (max-width:760px),(orientation:portrait) and (max-width:1100px){
-  :root{--fs-mega:40px;--fs-h:26px;--fs-verse:18px;--fs-lead:20px;--fs-body:16.5px;--fs-small:15px;--fs-tiny:13px;--bw:3px;--shadow:4px 4px 0 var(--ink)}
+  :root{--fs-mega:40px;--fs-h:26px;--fs-verse:18px;--fs-lead:20px;--fs-body:16.5px;--fs-small:16px;--fs-tiny:14.5px;--bw:3px;--shadow:4px 4px 0 var(--ink)}
   body{overflow-x:hidden;overflow-y:auto}
   .viewport{position:static;padding-block:16px 32px}
   .deck{height:auto;display:flex;flex-direction:column;gap:26px;--k:.62}
@@ -467,8 +467,9 @@ mark{background:linear-gradient(transparent 50%,var(--hi) 50%,var(--hi) 92%,tran
   .evo{grid-template-columns:1fr auto 1fr}
   .evo-i svg{width:76px}
   .gk{font-size:28px}
-  .ledger td.d{display:none}
+  .ledger td.d,.ledger th:first-child{display:none}
   .ledger td,.ledger th{padding-inline:10px}
+  .vq{font-size:var(--fs-small)}
   .stamp{font-size:26px;right:16px}
   .cert-in{padding:16px 14px}
   .cert h3{font-size:24px}
