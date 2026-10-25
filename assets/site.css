@@ -235,3 +235,131 @@ footer a:hover { color: var(--lapis); }
   .lessons .passage { color: var(--muted); font-size: 1rem; }
   .lessons .links { margin-top: 0.25rem; }
 }
+
+/* ---------- 說明頁（例：投影片使用說明） ---------- */
+
+.lede a,
+.prose a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--gold);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.3em;
+}
+.lede a:hover,
+.prose a:hover { color: var(--lapis); }
+.prose ul { margin: 0 0 1.5rem; padding-left: 1.5rem; }
+.prose ul li { margin: 0 0 0.75rem; padding-left: 0.25rem; }
+.prose ul li::marker { color: var(--gold); }
+kbd {
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.85em;
+  padding: 0.05em 0.45em;
+  border: 1px solid var(--line);
+  border-bottom-width: 3px;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+.note {
+  margin: 0 0 1.5rem;
+  padding: 0.75rem 1rem;
+  border-left: 4px solid var(--gold);
+  color: var(--muted);
+}
+
+/* 鍵盤表 */
+.keys { width: 100%; border-collapse: collapse; margin: 0 0 1.25rem; }
+.keys th {
+  text-align: left;
+  font-weight: 700;
+  font-size: 0.9375rem;
+  color: var(--muted);
+  padding: 0.5rem 1rem 0.5rem 0;
+  border-bottom: 2px solid var(--line);
+}
+.keys td {
+  padding: 0.75rem 1rem 0.75rem 0;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+.keys td:first-child { white-space: nowrap; }
+
+/* 兩個螢幕的擺法（示意） */
+.setup {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  margin: 0 0 1.75rem;
+}
+.bezel {
+  aspect-ratio: 16 / 10;
+  border: 2px solid var(--ink);
+  border-radius: 8px;
+  padding: 6px;
+}
+.screen-cap { margin: 0.5rem 0 0; text-align: center; font-size: 1rem; color: var(--muted); }
+.screen-cap b { color: var(--ink); }
+.mock-slide {
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background: #FFFDF6;
+  color: #17171F;
+  font-weight: 700;
+  font-size: 1rem;
+}
+.mock-pv {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  grid-template-rows: auto 1fr 0.8fr;
+  gap: 4px;
+  padding: 4px;
+  background: #17171F;
+  color: #FFFDF6;
+  font-size: 0.75rem;
+  line-height: 1.3;
+}
+.mock-bar { grid-column: 1 / -1; display: flex; justify-content: space-between; padding: 0 2px; }
+.mock-cur,
+.mock-nt,
+.mock-nx {
+  display: grid;
+  place-items: center;
+  background: #FFFDF6;
+  color: #17171F;
+  text-align: center;
+}
+.mock-cur { grid-column: 1; grid-row: 2; }
+.mock-nt { grid-column: 2; grid-row: 2 / 4; border-left: 3px solid #FFE047; }
+.mock-nx { grid-column: 1; grid-row: 3; width: 55%; opacity: 0.85; }
+@media (max-width: 600px) {
+  .setup { grid-template-columns: 1fr; }
+}
+
+/* 講稿標籤（顏色和投影片裡的一樣） */
+.legend {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.75rem 1rem;
+  margin: 0 0 1.5rem;
+}
+.legend dt { margin: 0; }
+.legend dd { margin: 0; }
+.nk,
+.skip-tag {
+  display: inline-block;
+  padding: 0 0.45em;
+  font-size: 0.85em;
+  font-weight: 700;
+  line-height: 1.6;
+  white-space: nowrap;
+}
+.nk { border: 2px solid #17171F; color: #17171F; }
+.nk-say { background: #D3E9FF; }
+.nk-ask { background: #FFDCD8; }
+.nk-stop { background: #FFE047; }
+.nk-go { background: #D8F0E3; }
+.nk-prep { background: #ECEBF0; }
+.nk-warn { background: #E5383B; color: #FFFFFF; }
+.skip-tag { margin: 0 0.25em; background: #E5383B; color: #FFFFFF; }
