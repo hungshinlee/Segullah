@@ -24,7 +24,6 @@ BLOCK_NAMES = {"facts_and_decisions.md", "decision_log.md", "outline.md", "notes
 # (正規表示式, 原因)：出現就擋
 BLOCK_PATTERNS = [
     (r"【(推估|待核對|待查證|待補|自述|教會|查證)】", "備課用的來源標記"),
-    (r"<aside[^>]*class=\"[^\"]*\bnotes\b", "簡報的講者備註"),
     (r"facts_and_decisions|decision_log|outline\.md", "內部檔名"),
     (r"/Users/|/home/[a-z]|~/[A-Za-z]", "本機路徑"),
     (r"claude\.ai/artifact", "私人 Artifact 連結"),
@@ -83,7 +82,7 @@ def main():
                 problems.append((rel, f"約第 {line} 行：連結指到不存在的檔案（{target}）"))
 
     if media:
-        print("請人眼確認以下檔案沒有學生的臉、名字、作品，PDF 裡沒有講者備註：")
+        print("請人眼確認以下檔案沒有學生的臉、名字、作品：")
         for rel in media:
             print(f"  {rel}")
         print()

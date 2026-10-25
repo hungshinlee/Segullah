@@ -430,6 +430,12 @@ mark{background:linear-gradient(transparent 50%,var(--hi) 50%,var(--hi) 92%,tran
 .notes-panel{position:fixed;left:50%;bottom:calc(74px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);width:min(880px,calc(100% - 32px));max-height:34vh;overflow:auto;background:var(--paper);color:var(--ink);border:3px solid var(--ink);box-shadow:var(--shadow);padding:14px 20px;font-size:16px;line-height:1.7;z-index:21}
 .notes-panel b{display:block;font-weight:900;margin-bottom:4px}
 .notes-panel .skip{display:inline-block;background:var(--red);color:var(--white);font-weight:900;font-size:13px;padding:0 8px;margin-right:8px;letter-spacing:.06em}
+.notes-panel p+p{margin-top:6px}
+.notes-panel .ntm{font-weight:700;color:var(--mute)}
+.notes-panel .ntl{padding-left:1.2em}
+.notes-panel .ntp{color:var(--mute)}
+.nk{display:inline-block;margin-right:8px;padding:0 6px;border:2px solid var(--ink);font-size:.72em;font-weight:900;line-height:1.5;letter-spacing:.06em;vertical-align:.12em;white-space:nowrap;color:var(--ink)}
+.nk-say{background:var(--sky)}.nk-ask{background:var(--rose)}.nk-stop{background:var(--hi)}.nk-go,.nk-fin{background:#D8F0E3}.nk-prep{background:var(--fog)}.nk-warn{background:var(--red);color:var(--white)}
 .notes .skip{display:none}
 .defs{position:absolute;width:0;height:0;overflow:hidden}
 .svgt{font-family:var(--f-head);font-weight:900}
@@ -549,10 +555,19 @@ mark{background:linear-gradient(transparent 50%,var(--hi) 50%,var(--hi) 92%,tran
       </div>
     </div>
   </div>
+  <aside class="notes">
+    <p class="ntm">約 1 分鐘｜這頁要做到：讓大家好奇「大使」跟自己有什麼關係。</p>
+    <p><span class="nk nk-say">說</span>「今天的信息是一本漫畫，封面上寫著：本集主角——你。」</p>
+    <p><span class="nk nk-ask">問</span>「你覺得『大使』平常在做什麼？」讓兩三個人隨口回答就好：代表國家、出國談事情、住在大使館……都算對。</p>
+    <p><span class="nk nk-say">說</span>「今天我們會發現，上帝把『大使』這個身分交給了你。不過在那之前，先講一個用嬰兒換來的和平。」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>本課一句話：和好是上帝主動的；祂在十字架上替我們付清，又派我們去當和好的使者（哥林多後書 5:18–21）。最後一頁的「三件事」就是整堂課的骨架。</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>每頁開頭的時間是估計，加起來大約 40 分鐘；標「時間不夠可略過」的頁全部略過，大約可以省 5 分鐘。</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>上課前：投影機設成延伸桌面，按 P 開講者視窗；先安排好一位同工，會後陪想聊聊的同學。</p>
+  </aside>
 </section>
 
 <!-- 2 · toc -->
-<section class="slide" data-title="今天的劇情">
+<section class="slide" data-title="今天的劇情" data-skip="1">
   <div class="page">
     <header class="hd"><span class="ep">目錄</span><h2>今天的劇情</h2><span class="ref">點一格直接翻過去</span></header>
     <div class="toc grow">
@@ -564,10 +579,15 @@ mark{background:linear-gradient(transparent 50%,var(--hi) 50%,var(--hi) 92%,tran
       <button class="toc-i" data-go="23"><span class="toc-top"><span class="no zh">終</span><svg viewBox="0 0 80 80" aria-hidden="true"><use href="#icoCal"/></svg></span><span class="tt">你的任務</span><span class="ds">生活挑戰</span><span class="tg">挑戰</span></button>
     </div>
   </div>
+  <aside class="notes">
+    <p class="ntm"><span class="skip">時間不夠可略過</span>約 30 秒｜這頁要做到：讓大家知道今天會走過哪幾話。</p>
+    <p><span class="nk nk-say">說</span>「今天有五話。先聽兩個故事：一個真實故事，一個你可能遇過的情境。接著是三段經文，每一段配一個比喻。最後是這一週的任務。」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>點任何一格，可以直接跳到那一話。趕時間就直接翻下一頁。</p>
+  </aside>
 </section>
 
 <!-- recap -->
-<section class="slide recap" data-title="前文回顧：哥林多後書 5:14–17">
+<section class="slide recap" data-title="前文回顧：哥林多後書 5:14–17" data-skip="1">
   <div class="page">
     <header class="hd"><span class="ep">前情提要</span><h2>前文回顧</h2><span class="ref">5:14–17</span></header>
     <div class="koma grow">
@@ -598,6 +618,17 @@ mark{background:linear-gradient(transparent 50%,var(--hi) 50%,var(--hi) 92%,tran
     </div>
     <p class="foot-line">新造的人是怎麼來的？今天經文的第一句就回答了：「一切都是出於神」（5:18）→</p>
   </div>
+  <aside class="notes">
+    <p class="ntm"><span class="skip">時間不夠可略過</span>約 1 分鐘｜這頁要做到：用前面四節（5:14–17）接到今天的第一句「一切都是出於神」。</p>
+    <p><span class="nk nk-say">說</span>「先花一分鐘，看看前面四節在說什麼。」一格一句就好：</p>
+    <p class="ntl">・5:14：「基督的愛，像一股力量推著我們往前走。」</p>
+    <p class="ntl">・5:15：「人生的方向翻轉了：不再只為自己活。」</p>
+    <p class="ntl">・5:16：「我們不再用標籤看人：怪咖、邊緣人、書呆子，都不是一個人的全部。」</p>
+    <p class="ntl">・5:17：「在基督裡，我們是新造的人。」</p>
+    <p><span class="nk nk-ask">問</span>「這個『新』是怎麼來的？是我們自己努力變新的嗎？」</p>
+    <p><span class="nk nk-go">轉場</span>「今天經文的第一句就回答了：『一切都是出於神。』」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>「激勵」原文 συνέχει（synechei），有緊緊抓住、催逼的意思。5:16 的「外貌」，和合本小字註明原文是「肉體」（κατὰ σάρκα），意思是用世人的眼光和標準看人。</p>
+  </aside>
 </section>
 
 <!-- 3 · scripture -->
@@ -612,6 +643,14 @@ mark{background:linear-gradient(transparent 50%,var(--hi) 50%,var(--hi) 92%,tran
     </div>
     <p class="credit">經文引自《新標點和合本》（神版）。© 1988, 1989, 1996 聯合聖經公會。</p>
   </div>
+  <aside class="notes">
+    <p class="ntm">約 2 分鐘｜這頁要做到：先把四節經文讀過一遍，知道今天每一話都從這裡出來。</p>
+    <p><span class="nk nk-say">說</span>「我們一起把哥林多後書 5:18–21 唸一次。」全體一起唸，或請自願的同學一人唸一節。</p>
+    <p><span class="nk nk-say">說</span>「螢光筆畫起來的是關鍵詞，右邊藍色的是讀經筆記。等一下每一話，都會回到這四節。」</p>
+    <p><span class="nk nk-ask">問</span>「如果只能圈一個詞，你會圈哪一個？」在心裡選就好，不用說出來。</p>
+    <p><span class="nk nk-go">轉場</span>「這四節經文，我們先從一個真實故事開始。」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>5:18、5:19 對應第 3 話；5:20 對應第 4 話；5:21 對應第 5 話。「職分」「道理」兩個詞先不用解釋，第 4 話會講。</p>
+  </aside>
 </section>
 
 <!-- 4 · episode 1-1 -->
@@ -652,6 +691,15 @@ mark{background:linear-gradient(transparent 50%,var(--hi) 50%,var(--hi) 92%,tran
       <p class="fact"><b>真人真事</b>加拿大宣教士唐·理查森（Don Richardson）1962 年帶著家人住進沙威族，後來把這段經歷寫成《和平之子》（Peace Child）。</p>
     </div>
   </div>
+  <aside class="notes">
+    <p class="ntm">約 1.5 分鐘｜這頁要做到：讓大家感受到沙威族村子之間的仇恨有多深。</p>
+    <p><span class="nk nk-say">說</span>「這是真實故事。1962 年，加拿大宣教士唐·理查森帶著太太和七個月大的孩子，住進印尼巴布亞雨林裡的沙威族。」</p>
+    <p><span class="nk nk-say">說</span>「在沙威人的文化裡，先騙到別人的信任、再背叛他，是會被稱讚的。他們第一次聽到耶穌的故事時，最佩服的居然是出賣耶穌的猶大。」</p>
+    <p><span class="nk nk-ask">問</span>「如果你住在一個『越會背叛越厲害』的地方，你敢相信誰？」</p>
+    <p><span class="nk nk-go">轉場</span>「誰都不敢相信誰。那兩個村子要怎麼停戰？」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>這頁的事實都查過：理查森是加拿大籍，1962 年帶家人住進沙威族；沙威族曾是食人的獵頭族；他們看重背叛，把猶大當成英雄（資料：維基百科 Don Richardson、Sawi people 條目；fieldpartner.org〈Don Richardson and the Peace Child〉）。</p>
+    <p><span class="nk nk-warn">注意</span>「食人」點到為止，不描述細節。不要把沙威人講成好笑或野蠻的「他們」：這一頁的重點是仇恨和不信任，這在每個文化、每個班上都看得到。</p>
+  </aside>
 </section>
 
 <!-- 5 · episode 1-2 -->
@@ -696,6 +744,14 @@ mark{background:linear-gradient(transparent 50%,var(--hi) 50%,var(--hi) 92%,tran
     </div>
     <p class="punch">和平子活著的每一天 ＝ <mark>和平的保證</mark></p>
   </div>
+  <aside class="notes">
+    <p class="ntm">約 1.5 分鐘｜這頁要做到：讓大家體會「把親生孩子交出去」的代價。</p>
+    <p><span class="nk nk-say">說</span>慢慢講：「沙威人有一個古老的做法：兩個村子想停戰，就把自己的孩子交給對方撫養。這個孩子叫『和平子』。只要和平子活著，兩邊就不能再打。」</p>
+    <p><span class="nk nk-stop">停</span>講到「把孩子交給敵人」時停 3 秒，讓這件事沉下去。</p>
+    <p><span class="nk nk-ask">問</span>「你覺得交出孩子的那個爸爸，要多大的決心？」</p>
+    <p><span class="nk nk-go">轉場</span>「宣教士看到這一幕，突然知道該怎麼跟他們講耶穌了。」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>投影片寫「其中一位酋長」。查到的資料說，是兩個村子互相交換孩子；書裡最有名的是一位叫 Kaiyo 的父親，交出了自己唯一的孩子，資料沒有說他是酋長。講的時候說「一位爸爸」比較準確。「和平子活著，和平就在」有出處（資料：Light Magazine〈Don &amp; Carol Richardson’s Peace Child〉2021；Mission Network News 2012；維基百科 Don Richardson 條目）。</p>
+  </aside>
 </section>
 
 <!-- 6 · episode 1-3 -->
@@ -723,6 +779,16 @@ mark{background:linear-gradient(transparent 50%,var(--hi) 50%,var(--hi) 92%,tran
       </div>
     </div>
   </div>
+  <aside class="notes">
+    <p class="ntm">約 2 分鐘｜這頁要做到：從沙威人的和平子，接到上帝送出的和平子耶穌，再接到 5:18。</p>
+    <p><span class="nk nk-say">說</span>「理查森用沙威人自己的『和平子』告訴他們：上帝想跟與祂作對的人類和好，所以把祂獨生的兒子耶穌送給我們。耶穌，就是天國的和平子。」</p>
+    <p><span class="nk nk-say">說</span>「沙威人聽懂了。後來許多人信了耶穌，敵對的村子也真的和好了。」</p>
+    <p><span class="nk nk-ask">問</span>指著「想一想」：「如果你是那位爸爸，你願意嗎？」舉手或在心裡回答都可以，不用說理由。</p>
+    <p><span class="nk nk-stop">停</span>等 5 秒，讓大家真的想一下。</p>
+    <p><span class="nk nk-say">說</span>「上帝卻真的這樣做了。這就是 5:18：『一切都是出於神；他藉著基督使我們與他和好。』」</p>
+    <p><span class="nk nk-go">轉場</span>「要和好，總要有人付代價。這件事，在我們班上也會發生。」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>對白框是宣教士說的大意，不是原話。理查森用和平子比喻耶穌，有出處（fieldpartner.org：「Jesus was God’s peace child」）。「許多人信主」有出處（維基百科）；有些講章說「整個部落都歸主」，說得太滿，不要這樣講。</p>
+  </aside>
 </section>
 
 <!-- 7 · episode 2 -->
@@ -750,6 +816,15 @@ mark{background:linear-gradient(transparent 50%,var(--hi) 50%,var(--hi) 92%,tran
       </div>
     </div>
   </div>
+  <aside class="notes">
+    <p class="ntm">約 2.5 分鐘｜這頁要做到：讓每個人都選一次，發現當「修復師」最難。</p>
+    <p><span class="nk nk-say">說</span>唸上面的情境：「你最好的兩個朋友，因為一則八卦鬧翻了，冷戰一個月，還各自拉人排擠對方。你夾在中間。」</p>
+    <p><span class="nk nk-ask">問</span>「你會選 A、B，還是 C？」選 A 的舉手、選 B 的舉手、選 C 的舉手。先說：「選什麼都沒關係，老實選就好。」</p>
+    <p><span class="nk nk-say">說</span>舉完手再點選項揭曉，三個都可以點給大家看，照螢幕上的說明講。</p>
+    <p><span class="nk nk-warn">注意</span>選 A 或 B 的同學不要被笑。很多人真實的反應就是 A，願意老實舉手很不容易。</p>
+    <p><span class="nk nk-go">轉場</span>「C 看起來最好，可是為什麼最辛苦？」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>這是原稿的情境題；阿哲、小芸是虛構的角色。</p>
+  </aside>
 </section>
 
 <!-- 8 · episode 2 follow-up -->
@@ -773,9 +848,18 @@ mark{background:linear-gradient(transparent 50%,var(--hi) 50%,var(--hi) 92%,tran
       </div>
     </div>
   </div>
+  <aside class="notes">
+    <p class="ntm">約 2 分鐘｜這頁要做到：從「修復師要付代價」，轉到「耶穌是最偉大的修復師」。</p>
+    <p><span class="nk nk-ask">問</span>「剛剛選 C 的同學，有沒有人願意說說看：當修復師為什麼最辛苦？」自願就好，不點名。</p>
+    <p><span class="nk nk-say">說</span>可能聽到的回答：兩邊都可能罵你、要花很多時間、會被說是抓耙子。接著說：「對。要讓兩個鬧翻的人和好，中間那個人要付代價，也要有勇氣。」</p>
+    <p><span class="nk nk-ask">問</span>「那如果鬧翻的是人和上帝呢？」</p>
+    <p><span class="nk nk-stop">停</span>問完停 3 秒。</p>
+    <p><span class="nk nk-say">說</span>「我們本來因為罪，和上帝隔開了。耶穌就是付上最大代價的修復師：祂在十字架上付了代價，讓我們能和上帝和好（5:19）。現在，上帝派我們在學校當『基督的使者』（5:20）。」</p>
+    <p><span class="nk nk-go">轉場</span>「接下來進經文。第一個問題：和好是誰先開始的？」</p>
+  </aside>
 </section>
 
-<section class="slide chap" data-title="第3話 扉頁：恩典的源頭">
+<section class="slide chap" data-title="第3話 扉頁：恩典的源頭" data-skip="1">
   <div class="page">
     <div class="chap-grid grow">
       <div class="pn chap-art">
@@ -788,6 +872,11 @@ mark{background:linear-gradient(transparent 50%,var(--hi) 50%,var(--hi) 92%,tran
       </div>
     </div>
   </div>
+  <aside class="notes">
+    <p class="ntm"><span class="skip">時間不夠可略過</span>約 30 秒｜這頁要做到：進入第一段經文（5:18–19）。</p>
+    <p><span class="nk nk-say">說</span>「第 3 話：恩典的源頭。這一話會看到三個關鍵詞：『一切都是出於神』、『和好』，還有『不將他們的過犯歸到他們身上』。」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>經文在第 4 頁讀過了，趕時間就直接翻下一頁；有時間可以請一位自願的同學再唸一次 5:18–19。</p>
+  </aside>
 </section>
 
 <!-- 9 · episode 3-1 -->
@@ -829,10 +918,20 @@ mark{background:linear-gradient(transparent 50%,var(--hi) 50%,var(--hi) 92%,tran
     </div>
     <p class="foot-line">救恩論的基石：和好完全是上帝主動發起的恩典行動。</p>
   </div>
+  <aside class="notes">
+    <p class="ntm">約 2 分鐘｜這頁要做到：講清楚「和好是上帝先主動的」。</p>
+    <p><span class="nk nk-ask">問</span>「跟好朋友吵架，如果明明是你錯，通常誰要先去道歉？」多半會說：做錯的人。</p>
+    <p><span class="nk nk-say">說</span>指左邊：「很多人想像的宗教也是這樣：做錯的人要帶禮物、要很努力，去討好生氣的神明。」</p>
+    <p><span class="nk nk-say">說</span>指右邊：「聖經卻反過來：做錯的是我們，先走過來、還替我們付代價的，是完全沒有錯的上帝。」</p>
+    <p><span class="nk nk-say">說</span>「這就是『一切都是出於神』：和好不是我們努力爬上去，是上帝先走下來。」</p>
+    <p><span class="nk nk-go">轉場</span>「那『和好』到底是什麼意思？」時間不夠就略過下一頁，直接說：「來看看上帝怎麼處理我們做錯的事。」</p>
+    <p><span class="nk nk-warn">注意</span>講「很多人想像的宗教」時，只說人常有的想法，不點名、不批評別的信仰；班上可能有家裡拜拜的同學。</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>這是整課的地基：救恩是上帝主動的恩典，不是人的努力換來的。</p>
+  </aside>
 </section>
 
 <!-- 10 · episode 3-2 -->
-<section class="slide" data-title="第3話 和好是什麼">
+<section class="slide" data-title="第3話 和好是什麼" data-skip="1">
   <div class="page">
     <header class="hd"><span class="ep">第3話</span><h2>「和好」到底是什麼？</h2><span class="ref">5:18–19a</span></header>
     <div class="cols grow" style="--c:1fr 1.12fr">
@@ -870,6 +969,13 @@ mark{background:linear-gradient(transparent 50%,var(--hi) 50%,var(--hi) 92%,tran
       </div>
     </div>
   </div>
+  <aside class="notes">
+    <p class="ntm"><span class="skip">時間不夠可略過</span>約 1 分鐘｜這頁要做到：知道「和好」的意思，看見上帝親自來搭橋。</p>
+    <p><span class="nk nk-say">說</span>「『和好』這個字，本來是指把錢幣換成等值的錢幣，後來用來說：敵對結束，關係恢復。」</p>
+    <p><span class="nk nk-say">說</span>指右邊的橋：「上帝沒有站得遠遠的發命令。祂親自在基督裡來到世上，成了連接天和地的橋。」</p>
+    <p><span class="nk nk-go">轉場</span>「那上帝怎麼處理我們欠下的『帳』？」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>趕時間只講右邊的橋就好。καταλλάσσω（katallassō）本來是錢幣兌換，有出處（資料：biblehub.com 編號 2644 頁面的 Thayer 與 Abbott-Smith 辭典）；辭典說的是「本來的意思」，不一定是年代上最早的用法。</p>
+  </aside>
 </section>
 
 <!-- 11 · ledger -->
@@ -903,6 +1009,17 @@ mark{background:linear-gradient(transparent 50%,var(--hi) 50%,var(--hi) 92%,tran
       </div>
     </div>
   </div>
+  <aside class="notes">
+    <p class="ntm">約 2 分鐘｜這頁要做到：用帳本體會「不記帳」：不是假裝沒看到，是有人付清了。</p>
+    <p><span class="nk nk-say">說</span>「這是一本罪的帳本，戶名：我。」唸兩三筆就好，例如騙爸媽功課寫完了、在群組轉傳八卦、對媽媽大吼甩門。</p>
+    <p><span class="nk nk-ask">問</span>「如果每一筆都要你自己還，還得起嗎？」</p>
+    <p><span class="nk nk-say">說</span>按紅色按鈕，等每一筆蓋上「已付清」：「5:19 說，上帝『不將他們的過犯歸到他們身上』，就是不記在你的帳上。」</p>
+    <p><span class="nk nk-stop">停</span>蓋完章停 2 秒。</p>
+    <p><span class="nk nk-say">說</span>「上帝不是假裝沒看到，也不是說這些都沒關係。是耶穌在十字架上，一次替我們付清了。」</p>
+    <p><span class="nk nk-go">轉場</span>「我們用一個學校裡的故事來想想看。」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>「歸到……身上」原文 λογίζομαι（logizomai），是記帳、算在帳上的意思。「過犯」原文 παράπτωμα（paraptōma），本來是「失足、偏離」（資料：biblehub.com 編號 3900 頁面，Strong’s：a side-slip；Thayer：a lapse or deviation）。投影片寫的「越過界線」比較接近英文 trespass 的講法；講的時候說「走偏了、踩錯一步」比較貼近原文。</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>帳本的六筆是虛構的例子；「重來」可以讓帳本回到未付的狀態。</p>
+  </aside>
 </section>
 
 <!-- 12 · 4-koma -->
@@ -963,9 +1080,21 @@ mark{background:linear-gradient(transparent 50%,var(--hi) 50%,var(--hi) 92%,tran
     </div>
     <p class="foot-line">校長付清 50 萬，再把紀錄全部清空。這就是 5:19：神在基督裡，不將我們的過犯歸到我們身上。</p>
   </div>
+  <aside class="notes">
+    <p class="ntm">約 2 分鐘｜這頁要做到：用四格漫畫，讓大家感覺到被免掉一切的那一刻。</p>
+    <p><span class="nk nk-say">說</span>照起、承、轉、合四格講，一格比一格緊張：</p>
+    <p class="ntl">・起：「理化課，你一個手滑，50 萬的顯微鏡摔碎了。」</p>
+    <p class="ntl">・承：「而且這個月，你已經遲到 12 次、缺交作業 9 次、上課睡覺 6 次。」</p>
+    <p class="ntl">・轉：「主任和老師準備開懲戒會，要寄警告單回家。你在發抖：賠不起，也不敢面對爸媽。」</p>
+    <p class="ntl">・合：先停一下再講：「校長走進來，沒有罵你，拿出自己的卡付清 50 萬，再把你的紀錄全部清空，握著你的手說：『孩子，沒事了，我們重新開始吧。』」</p>
+    <p><span class="nk nk-ask">問</span>「如果你是那個學生，那一刻是什麼感覺？」在心裡想就好。</p>
+    <p><span class="nk nk-say">說</span>「這就是 5:19：上帝在基督裡，不把我們的過犯算在我們身上。而且耶穌付的，不是一張卡，是祂自己的生命。」</p>
+    <p><span class="nk nk-go">轉場</span>「上帝為我們做了這麼多。接下來，祂要派我們去做一件事。」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>這是虛構的比喻。投影片寫「退學警告」，可能有同學會說「國中又不會被退學」，可以笑著承認：「對，這是誇張的比喻，重點是闖了大禍、賠不起。」</p>
+  </aside>
 </section>
 
-<section class="slide chap" data-title="第4話 扉頁：尊貴的使命">
+<section class="slide chap" data-title="第4話 扉頁：尊貴的使命" data-skip="1">
   <div class="page">
     <div class="chap-grid grow">
       <div class="pn chap-art">
@@ -978,6 +1107,11 @@ mark{background:linear-gradient(transparent 50%,var(--hi) 50%,var(--hi) 92%,tran
       </div>
     </div>
   </div>
+  <aside class="notes">
+    <p class="ntm"><span class="skip">時間不夠可略過</span>約 30 秒｜這頁要做到：從「上帝為我們做了什麼」，轉到「上帝派我們去做什麼」。</p>
+    <p><span class="nk nk-say">說</span>「第 4 話：尊貴的使命。剛剛講的是上帝為我們做了什麼；現在要講的是，上帝派我們去做什麼。」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>這一話對應 5:20，以及 5:18–19 的「職分」和「道理」。趕時間就直接翻下一頁。</p>
+  </aside>
 </section>
 
 <!-- 13 · episode 4-1 -->
@@ -1001,6 +1135,15 @@ mark{background:linear-gradient(transparent 50%,var(--hi) 50%,var(--hi) 92%,tran
       </div>
     </div>
   </div>
+  <aside class="notes">
+    <p class="ntm">約 1.5 分鐘｜這頁要做到：知道「使者」是代表君王說話的人，而保羅說，我們就是。</p>
+    <p><span class="nk nk-say">說</span>「保羅說：『我們作基督的使者。』使者就是大使、特使：代表國王說話的人。」</p>
+    <p><span class="nk nk-say">說</span>「在羅馬帝國，皇帝會派特使出去談判、宣布命令。特使說的話，就代表皇帝說的話。」</p>
+    <p><span class="nk nk-say">說</span>「聖經裡有個例子：大衛王派使者去安慰剛死了父親的鄰國新王哈嫩，哈嫩卻把使者的鬍子剃掉一半、衣服割掉下半截，把他們趕回去。羞辱使者，就是羞辱派他來的王，後來兩國就打起仗來了（撒母耳記下 10 章）。」</p>
+    <p><span class="nk nk-ask">問</span>指著「等等……所以我也是？」：「如果你是基督的使者，別人看你怎麼說話、怎麼做事，會想到誰？」</p>
+    <p><span class="nk nk-go">轉場</span>「不過，天國的大使做事的方法，跟羅馬的特使很不一樣。」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>πρεσβεύω（presbeuō）的意思是「作使者」，字根 πρέσβυς 是「年長的人」；羅馬皇帝會派特使談判、宣布諭令（資料：biblehub.com 編號 4243 頁面的 Thayer 辭典與 Topical Lexicon）。「使者專指皇帝親自派遣」「羞辱使者就等於向皇帝宣戰」這兩種常見的說法找不到出處，不要這樣講；用撒母耳記下 10:1–7 的實例就好。</p>
+  </aside>
 </section>
 
 <!-- 14 · episode 4-2 -->
@@ -1031,6 +1174,15 @@ mark{background:linear-gradient(transparent 50%,var(--hi) 50%,var(--hi) 92%,tran
       </div>
     </div>
   </div>
+  <aside class="notes">
+    <p class="ntm">約 1.5 分鐘｜這頁要做到：看見天國大使最特別的地方：不是威脅，是懇求。</p>
+    <p><span class="nk nk-say">說</span>指左邊：「帝國的特使說：『投降，不然大軍就到！』他背後是軍隊。」</p>
+    <p><span class="nk nk-say">說</span>指右邊：「天國的大使說：『我替基督求你：回到天父的愛裡，好嗎？』他背後是十字架上的愛。」</p>
+    <p><span class="nk nk-say">說</span>「5:20 的『求』，就是懇求、拜託。上帝明明什麼都做得到，卻選擇用拜託的方式，邀請人回家。」</p>
+    <p><span class="nk nk-ask">問</span>「被威脅，跟被真心拜託，哪一種比較能讓你改變？」</p>
+    <p><span class="nk nk-go">轉場</span>「那天國大使身上，要帶什麼裝備？」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>「替基督」原文 ὑπὲρ Χριστοῦ（hyper Christou），意思是代表基督、為了基督；「求」原文 δεόμεθα（deometha），是「我們懇求」。這頁也提醒老師自己：邀請人信主要溫柔，不用壓力。</p>
+  </aside>
 </section>
 
 <!-- equipment -->
@@ -1066,6 +1218,14 @@ mark{background:linear-gradient(transparent 50%,var(--hi) 50%,var(--hi) 92%,tran
     </div>
     <p class="foot-line">宣教不只是傳講客觀的知識，更是活出一個代表天國和平的生命。</p>
   </div>
+  <aside class="notes">
+    <p class="ntm">約 1.5 分鐘｜這頁要做到：記住大使有兩件裝備：用嘴巴說、用生命做，缺一不可。</p>
+    <p><span class="nk nk-say">說</span>「上帝給大使兩件裝備。第一件是『和好的道理』（5:19）：用嘴巴說，讓人聽見上帝想跟他和好。第二件是『和好的職分』（5:18）：用生命做，讓人看見和平真的能走進班上。」</p>
+    <p><span class="nk nk-ask">問</span>「如果只帶一件，會怎樣？」可能的回答：只會說、不做，別人不會信；只當好人、不開口，別人不知道和好是從哪裡來的。</p>
+    <p><span class="nk nk-say">說</span>「所以兩件都要帶。」</p>
+    <p><span class="nk nk-go">轉場</span>「現在，你的委任狀到了。」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>「職分」原文 διακονία（diakonia），是服事；「道理」原文 λόγος（logos），是話語、訊息。分成「用生命做」「用嘴巴說」兩件裝備，是這份簡報的整理方式；原稿說的是「和好的訊息與和好的事奉」。</p>
+  </aside>
 </section>
 
 <!-- 15 · commission -->
@@ -1091,9 +1251,19 @@ mark{background:linear-gradient(transparent 50%,var(--hi) 50%,var(--hi) 92%,tran
       </div>
     </div>
   </div>
+  <aside class="notes">
+    <p class="ntm">約 2 分鐘｜這頁要做到：讓每個人意識到：自己就是被派到班上的大使。</p>
+    <p><span class="nk nk-say">說</span>「天國外交部發委任狀來了。」徵求一位自願的同學，在右邊格子輸入名字和班級，委任狀會馬上填上。沒有人自願，就填老師自己的名字示範。</p>
+    <p><span class="nk nk-say">說</span>唸一次委任狀：「茲任命＿＿同學，為派駐於＿＿之天國特派大使。」</p>
+    <p><span class="nk nk-say">說</span>「派駐在國外的外交官，大家看他的態度，就會想到他代表的國家。同學看你，也會想到耶穌。」</p>
+    <p><span class="nk nk-say">說</span>「你不只是每天只顧著成績的考試機器，也不用跟著傳八卦。你是被派到這個班上的大使。」</p>
+    <p><span class="nk nk-ask">問</span>「如果今天你真的收到這張委任狀，你第一件想做的事是什麼？」在心裡想就好。</p>
+    <p><span class="nk nk-go">轉場</span>「可是，我們這樣的人，怎麼有資格當大使？答案在最後一節：5:21。」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>上完課記得把格子裡的名字刪掉。原稿的例子是「台灣派駐在美國的大使」；臺灣在美國的代表正式名義不是大使，所以改成泛稱的外交官。</p>
+  </aside>
 </section>
 
-<section class="slide chap" data-title="第5話 扉頁：十字架的大交換">
+<section class="slide chap" data-title="第5話 扉頁：十字架的大交換" data-skip="1">
   <div class="page">
     <div class="chap-grid grow">
       <div class="pn chap-art">
@@ -1106,10 +1276,15 @@ mark{background:linear-gradient(transparent 50%,var(--hi) 50%,var(--hi) 92%,tran
       </div>
     </div>
   </div>
+  <aside class="notes">
+    <p class="ntm"><span class="skip">時間不夠可略過</span>約 30 秒｜這頁要做到：進入今天的核心：十字架上的大交換（5:21）。</p>
+    <p><span class="nk nk-say">說</span>「第 5 話，今天最重要的一節：5:21。」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>趕時間就直接翻下一頁。</p>
+  </aside>
 </section>
 
 <!-- 16 · episode 5-1 -->
-<section class="slide" data-title="第5話 拆解 5:21">
+<section class="slide" data-title="第5話 拆解 5:21" data-skip="1">
   <div class="page">
     <header class="hd"><span class="ep">第5話</span><h2>把 5:21 拆成三句</h2><span class="ref">5:21</span></header>
     <blockquote class="vs big">神使<mark>那無罪的</mark>，<mark>替我們成為罪</mark>，好叫我們在他裡面<mark>成為神的義</mark>。</blockquote>
@@ -1119,6 +1294,15 @@ mark{background:linear-gradient(transparent 50%,var(--hi) 50%,var(--hi) 92%,tran
       <article class="pn tri-i"><span class="tri-n">3</span><h3>在祂裡面成為神的義</h3><p>這是福音派救恩論最璀璨的核心：耶穌拿走我們 0 分的罪狀與刑罰，把祂 100 分完全合格的「義」和天父完全的接納換給我們。得著的唯一途徑，不靠好行為，而是因著信與基督生命聯合。</p></article>
     </div>
   </div>
+  <aside class="notes">
+    <p class="ntm"><span class="skip">時間不夠可快速帶過</span>約 1.5 分鐘｜這頁要做到：把 5:21 拆成三句，特別講清楚「成為罪」不是「變成罪人」。</p>
+    <p><span class="nk nk-say">說</span>「5:21 可以拆成三句。」</p>
+    <p class="ntl">・「那無罪的」：「耶穌一生從來沒有犯過罪。」</p>
+    <p class="ntl">・「替我們成為罪」：「耶穌沒有變成壞人。是上帝把我們的罪該受的懲罰，全部放在祂身上；祂在十字架上替我們受了。」</p>
+    <p class="ntl">・「好叫我們在他裡面成為神的義」：「耶穌把祂的 100 分換給我們。怎麼拿到？不是靠表現好，是相信祂、和祂連在一起。」</p>
+    <p><span class="nk nk-ask">問</span>如果有人問「耶穌變成罪人了嗎？」：「沒有。祂是替我們『扛』罪，不是自己『犯』罪。」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>趕時間就只唸經文，強調「成為罪 ≠ 變成罪人」，直接用下一頁的互動來講。和合本 5:21 的「無罪」有小字註明「原文是不知罪」，意思是祂沒有犯過罪。</p>
+  </aside>
 </section>
 
 <!-- 17 · swap -->
@@ -1148,6 +1332,16 @@ mark{background:linear-gradient(transparent 50%,var(--hi) 50%,var(--hi) 92%,tran
       </div>
     </div>
   </div>
+  <aside class="notes">
+    <p class="ntm">約 2 分鐘｜這頁要做到：用一個按鈕，讓大家看見十字架上的交換。</p>
+    <p><span class="nk nk-say">說</span>先唸下面的說明：「段考考卷發下來，你的是 0 分，還寫滿違規扣分。耶穌手上，是一張 100 分的考卷。」</p>
+    <p><span class="nk nk-say">說</span>按「大交換！」，兩張考卷換位置，簽名也換了：「耶穌把你的 0 分考卷拿過去，簽上祂的名字，替你走出教室接受處罰；再把 100 分的考卷簽上你的名字，交到你手上。」</p>
+    <p><span class="nk nk-stop">停</span>換完停 3 秒。</p>
+    <p><span class="nk nk-say">說</span>指審判官的話：「上帝看著你手上的考卷說：『你現在是完全合格、被愛的了。』這就是十字架上的大交換。」</p>
+    <p><span class="nk nk-ask">問</span>「你手上現在拿的，是哪一張？」不用回答。</p>
+    <p><span class="nk nk-go">轉場</span>「這個交換，跟你這一週的生活有什麼關係？」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>可以按「換回來，再看一次」重播。比喻的限制：考卷講的是成績，福音講的是關係；耶穌給我們的不只是分數，是被天父完全接納。</p>
+  </aside>
 </section>
 
 <!-- 18 · challenge 1 -->
@@ -1179,6 +1373,16 @@ mark{background:linear-gradient(transparent 50%,var(--hi) 50%,var(--hi) 92%,tran
       </div>
     </div>
   </div>
+  <aside class="notes">
+    <p class="ntm">約 2.5 分鐘｜這頁要做到：把大交換帶進每個人的生活：犯錯、自卑的時候。</p>
+    <p><span class="nk nk-say">說</span>「考砸、跟爸媽吵架、一直改不掉的壞習慣……很多人都有過這種晚上：躺在床上想，『我好糟，上帝一定不喜歡我了。』」</p>
+    <p><span class="nk nk-ask">問</span>唸「深度思考」：「過去這段時間，有沒有哪件事，讓你一直覺得自己很糟糕、不配被上帝愛？你通常怎麼處理這種感覺？」</p>
+    <p><span class="nk nk-stop">停</span>安靜 30 秒，在心裡想就好。之後有人自願分享就聽；不點名，也不追問細節。</p>
+    <p><span class="nk nk-say">說</span>「剛剛的大交換告訴我們：上帝看你，不是看那張 0 分考卷，是看耶穌給你的 100 分。」</p>
+    <p><span class="nk nk-go">轉場</span>「所以這一週，我們來做一個小練習。」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>老師可以先準備一個自己的小例子（不用是很嚴重的事），先分享，同學比較敢想。</p>
+    <p><span class="nk nk-warn">注意</span>如果有學生透露想傷害自己、被打、被霸凌或被性騷擾，不要在課堂上追問；課後告訴牧者，照教會的兒少保護流程處理。需要時可以打 113 保護專線、1925 安心專線（都是 24 小時）。</p>
+  </aside>
 </section>
 
 <!-- 19 · challenge 2 -->
@@ -1205,6 +1409,14 @@ mark{background:linear-gradient(transparent 50%,var(--hi) 50%,var(--hi) 92%,tran
       </div>
     </div>
   </div>
+  <aside class="notes">
+    <p class="ntm">約 2 分鐘｜這頁要做到：給一個這週做得到的小動作：30 秒的大交換禱告。</p>
+    <p><span class="nk nk-say">說</span>「這週每次犯錯、考砸、覺得自己很爛的時候，先停下來，不要開始在心裡罵自己。然後在心裡說這段 30 秒的禱告。」</p>
+    <p><span class="nk nk-say">說</span>「我們一起唸一次。」全體一起唸左邊的禱告；不想唸的同學，聽就好。</p>
+    <p><span class="nk nk-say">說</span>「右邊是這週的蓋章卡，每用一次就蓋一格。」點一格示範。</p>
+    <p><span class="nk nk-go">轉場</span>「上一頁和這一頁講的是『我是誰』。接下來的任務，是『我被派去做什麼』。」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>原稿的禱告寫「把我無罪的 100 分換給了我」，簡報改成「把祢無罪的 100 分」：義是基督的，是祂換給我們。下週可以問：「這週有人用過嗎？」舉手就好，不用說是什麼事。</p>
+  </aside>
 </section>
 
 <!-- 20 · mission -->
@@ -1247,6 +1459,17 @@ mark{background:linear-gradient(transparent 50%,var(--hi) 50%,var(--hi) 92%,tran
       </div>
     </div>
   </div>
+  <aside class="notes">
+    <p class="ntm">約 2 分鐘｜這頁要做到：把「使者」變成這週的一個具體行動。</p>
+    <p><span class="nk nk-say">說</span>指左邊：「午餐時間，你注意到又是一個人吃飯的同學。大使的第一步，常常只是一句話：『要不要一起吃？』」</p>
+    <p><span class="nk nk-say">說</span>「現在請大家安靜 30 秒，在心裡想一位同學：可能是孤單的、受傷的，或還沒認識耶穌的。名字不用說出來。」</p>
+    <p><span class="nk nk-stop">停</span>安靜 30 秒。</p>
+    <p><span class="nk nk-say">說</span>點三個任務打勾示範：「為他禱告，每天 30 秒；主動關心，做一件小事；如果班上有人冷戰，試著當一次修復師。」</p>
+    <p><span class="nk nk-say">說</span>「記得順序：先禱告，再行動。差派你的那一位，會和你一起去。」</p>
+    <p><span class="nk nk-warn">注意</span>可以補一句：「如果朋友跟你說的事太重，例如他想傷害自己，一定要告訴你信任的大人。這不是背叛他，是在幫他。」</p>
+    <p><span class="nk nk-go">轉場</span>「最後，我們一起整理今天帶回家的三件事。」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>這一頁是簡報加的，原稿沒有。</p>
+  </aside>
 </section>
 
 
@@ -1268,6 +1491,17 @@ mark{background:linear-gradient(transparent 50%,var(--hi) 50%,var(--hi) 92%,tran
       <div class="bub b-dl big" style="--t:44px">這週，去當你們班的天國大使吧！<small>上帝把「和好的職分」交在你手中。關心班上孤單的同學、為未信主的朋友禱告守望，你就是在校園裡代表天國，把上帝的愛、和平與希望帶進這個世界。</small></div>
     </div>
   </div>
+  <aside class="notes">
+    <p class="ntm">約 1.5 分鐘｜這頁要做到：用三件事收尾，帶著任務回家。</p>
+    <p><span class="nk nk-say">說</span>「今天帶回家三件事。」一格一句：</p>
+    <p class="ntl">・「第一，和好是上帝先主動的：祂送出祂的和平子，先走向我們，替我們付清代價。」</p>
+    <p class="ntl">・「第二，十字架的大交換：耶穌拿走我們的過犯、自卑和罪，把祂 100 分的義換給我們，所以我們可以不用害怕，回到上帝身邊。」</p>
+    <p class="ntl">・「第三，你是基督的使者：你不只是成績單上的數字，也不用拚命討好別人。上帝已經親手把委任狀交給你了。」</p>
+    <p><span class="nk nk-say">說</span>「這一週，去當你們班的天國大使吧：關心那個孤單的同學，為還沒認識耶穌的朋友禱告。你這樣做的時候，就是代表天國，把上帝的愛、和平和希望帶進這個世界，從你的班上開始。」</p>
+    <p><span class="nk nk-say">說</span>指最後一格：「你們看，阿哲和小芸和好了。」</p>
+    <p><span class="nk nk-fin">收尾</span>用禱告結束。</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>這段依原稿的「課堂總結」改寫成口語，意思沒有變。</p>
+  </aside>
 </section>
 
 </div>
@@ -1279,8 +1513,11 @@ mark{background:linear-gradient(transparent 50%,var(--hi) 50%,var(--hi) 92%,tran
   <span class="count"><b id="curN">1</b> / <span id="totN">20</span></span>
   <button class="nb" id="nextBtn" aria-label="下一頁"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5 2 L12 8 L5 14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
   <span class="bt" id="barTitle"></span>
+  <button class="nb" id="notesBtn" aria-pressed="false">講者備註 <kbd>N</kbd></button>
+  <button class="nb" id="pvBtn" aria-pressed="false">講者視窗 <kbd>P</kbd></button>
   <button class="nb" id="fsBtn">全螢幕 <kbd>F</kbd></button>
 </nav>
+<div class="notes-panel" id="notesPanel" hidden></div>
 
 <script>
 (function(){
@@ -1390,9 +1627,11 @@ mark{background:linear-gradient(transparent 50%,var(--hi) 50%,var(--hi) 92%,tran
       if(hide)s.setAttribute('aria-hidden','true');else s.removeAttribute('aria-hidden');
     });
     $('curN').textContent=cur+1;
-    $('barTitle').textContent=(slides[cur].dataset.title||'');
+    $('barTitle').textContent=(slides[cur].dataset.title||'')+(slides[cur].dataset.skip?'　· 時間不夠可略過':'');
     $('progFill').style.width=((cur+1)/N*100)+'%';
     $('prevBtn').disabled=cur===0;$('nextBtn').disabled=cur===N-1;
+    var nt=slides[cur].querySelector('.notes');
+    $('notesPanel').innerHTML='<b>P.'+(cur+1)+'　'+(slides[cur].dataset.title||'')+'</b>'+(nt?nt.innerHTML:'');
   }
   function go(n){
     cur=Math.max(0,Math.min(N-1,n));render();
@@ -1401,6 +1640,7 @@ mark{background:linear-gradient(transparent 50%,var(--hi) 50%,var(--hi) 92%,tran
   function jump(n){
     if(mq.matches){slides[n].scrollIntoView({behavior:reduce?'auto':'smooth',block:'start'});}else go(n);
   }
+  function toggleNotes(){var p=$('notesPanel');p.hidden=!p.hidden;$('notesBtn').setAttribute('aria-pressed',String(!p.hidden));}
   function toggleFs(){
     try{
       if(document.fullscreenElement){var x=document.exitFullscreen();if(x&&x.catch)x.catch(function(){});}
@@ -1411,6 +1651,7 @@ mark{background:linear-gradient(transparent 50%,var(--hi) 50%,var(--hi) 92%,tran
 
   $('prevBtn').addEventListener('click',function(){go(cur-1);});
   $('nextBtn').addEventListener('click',function(){go(cur+1);});
+  $('notesBtn').addEventListener('click',toggleNotes);
   $('fsBtn').addEventListener('click',toggleFs);
   document.querySelectorAll('[data-go]').forEach(function(b){b.addEventListener('click',function(){jump(+b.dataset.go-1);});});
 
@@ -1425,6 +1666,8 @@ mark{background:linear-gradient(transparent 50%,var(--hi) 50%,var(--hi) 92%,tran
       case ' ':if(onBtn)return;go(e.shiftKey?cur-1:cur+1);e.preventDefault();break;
       case 'Home':go(0);e.preventDefault();break;
       case 'End':go(N-1);e.preventDefault();break;
+      case 'n':case 'N':toggleNotes();break;
+      case 'p':case 'P':openPresenter();break;
       case 'f':case 'F':toggleFs();break;
     }
   });
@@ -1499,6 +1742,264 @@ mark{background:linear-gradient(transparent 50%,var(--hi) 50%,var(--hi) 92%,tran
 
   /* ---------- final: stamp card ---------- */
   document.querySelectorAll('.day,.task').forEach(function(d){d.addEventListener('click',function(){d.setAttribute('aria-pressed',String(d.getAttribute('aria-pressed')!=='true'));});});
+
+  /* ---------- presenter window ---------- */
+  /* 講者視窗（2026-10-25 加）：按 P 或導覽列的「講者視窗」，另開一個視窗放在筆電螢幕上（投影機設成延伸桌面）。
+     視窗裡有：投影中的這一頁（可以直接點按鈕、在格子裡打字，會傳到投影畫面）、下一頁預覽、講者備註、計時。
+     在任一個視窗翻頁，另一個會跟著翻。計時在第一次翻頁時自動開始。
+     公開版由 make_public.py 把這一段整段拿掉（到 end presenter window 為止）。 */
+  var TALK_MIN=40; /* 課堂長度（分鐘）：剩 5 分鐘時計時變黃，超過變紅 */
+  var pv=null, pvCurDoc=null, pvNxDoc=null, pvShown=-1, pvMO=null, pvDue=0, pvIv=0;
+  var pvAcc=0, pvFrom=0, pvIdle=true, pvFs=20;
+  try{var pvFs0=+localStorage.getItem('deck-presenter-fs');if(pvFs0>=14&&pvFs0<=34)pvFs=pvFs0;}catch(e){}
+  var PV_CSS=[
+    '*,*::before,*::after{box-sizing:border-box}',
+    'html,body{height:100%;margin:0}',
+    'body{background:#17171F;color:#FFFDF6;font:16px/1.5 "PingFang TC","Noto Sans TC","Microsoft JhengHei",system-ui,sans-serif;overflow:hidden;-webkit-font-smoothing:antialiased}',
+    '[hidden]{display:none!important}',
+    'button{font:inherit;font-size:14px;font-weight:700;color:#FFFDF6;background:transparent;border:2px solid rgba(255,253,246,.35);height:34px;min-width:38px;padding:0 12px;cursor:pointer;flex:none}',
+    'button:hover:not(:disabled){border-color:#FFE047;color:#FFE047}',
+    'button:disabled{opacity:.3;cursor:default}',
+    'button:focus-visible{outline:3px solid #FFE047;outline-offset:2px}',
+    '#pvRoot{height:100%;display:flex;flex-direction:column}',
+    '.top{flex:none;display:flex;align-items:center;gap:10px;padding:10px 16px;border-bottom:2px solid rgba(255,253,246,.14);white-space:nowrap;min-width:0}',
+    '.pno{flex:none;font-size:22px;font-weight:900;font-variant-numeric:tabular-nums;min-width:4.4em;text-align:center}',
+    '.pno b{color:#FFE047}',
+    '.ttl{font-weight:700;font-size:17px;overflow:hidden;text-overflow:ellipsis;min-width:0;flex:0 1 auto;padding-left:4px}',
+    '.skip{flex:none;background:#E5383B;color:#fff;font-weight:900;font-size:13px;padding:1px 8px;letter-spacing:.06em}',
+    '.sp{flex:1 1 0;min-width:8px}',
+    '.tm{flex:none;font:700 26px/1 ui-monospace,"SF Mono",Menlo,Consolas,monospace;font-variant-numeric:tabular-nums}',
+    '.tm.warn{color:#FFE047}.tm.over{color:#FF6B6E}',
+    '.tmax{flex:none;color:rgba(255,253,246,.6);font-size:14px}',
+    '.clock{flex:none;color:rgba(255,253,246,.7);font-variant-numeric:tabular-nums;padding-left:12px;border-left:1px solid rgba(255,253,246,.25)}',
+    '.grid{flex:1;min-height:0;display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:16px;padding:12px 16px 16px}',
+    '.col{display:flex;flex-direction:column;gap:8px;min-height:0;min-width:0}',
+    '.lab{flex:none;display:flex;align-items:center;gap:8px;min-height:28px;font-size:13px;font-weight:700;letter-spacing:.06em;color:rgba(255,253,246,.65);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}',
+    '.lab button{height:28px;font-size:13px;padding:0 8px}',
+    '.box{position:relative;overflow:hidden;min-height:0}',
+    '.box iframe{position:absolute;left:0;top:0;width:1280px;height:720px;border:0;transform-origin:0 0;background:#FFFDF6}',
+    '.cur{flex:1}',
+    '.nxrow{flex:none;display:flex;gap:14px;align-items:stretch;margin-top:6px}',
+    '.nx{flex:none;width:48%;aspect-ratio:16/9;cursor:pointer;opacity:.9}',
+    '.nx:hover{opacity:1}',
+    '.nx iframe{pointer-events:none}',
+    '.end{position:absolute;inset:0;display:grid;place-items:center;border:2px dashed rgba(255,253,246,.3);background:#17171F;color:rgba(255,253,246,.6);font-weight:700}',
+    '.nxinfo{flex:1;min-width:0;display:flex;flex-direction:column;gap:6px}',
+    '.nxt{font-weight:700;font-size:16px;line-height:1.45;color:rgba(255,253,246,.9)}',
+    '.navbig{margin-top:auto;display:flex;gap:10px}',
+    '.navbig button{flex:1;height:48px;font-size:16px}',
+    '.pvn{flex:1;min-height:0;overflow:auto;background:#FFFDF6;color:#17171F;padding:14px 18px;line-height:1.75;border-left:6px solid #FFE047}',
+    '.pvn .skip{display:inline-block;margin-right:8px;font-size:.7em;vertical-align:.12em}',
+    '.pvn .none{color:#555463}',
+    '.pvn p{margin:0}.pvn p+p{margin-top:.5em}',
+    '.pvn .ntm{font-weight:700;color:#555463}',
+    '.pvn .ntl{padding-left:1.2em}',
+    '.pvn .ntp{color:#555463;font-size:.92em}',
+    '.nk{display:inline-block;margin-right:8px;padding:0 6px;border:2px solid #17171F;font-size:.7em;font-weight:900;line-height:1.5;letter-spacing:.06em;vertical-align:.14em;white-space:nowrap;color:#17171F}',
+    '.nk-say{background:#D3E9FF}.nk-ask{background:#FFDCD8}.nk-stop{background:#FFE047}.nk-go,.nk-fin{background:#D8F0E3}.nk-prep{background:#ECEBF0}.nk-warn{background:#E5383B;color:#fff}',
+    '@media (max-width:900px){.grid{display:flex;flex-direction:column}.grid>.col:first-child{flex:none}.cur{flex:none;height:34vh}.grid>.col:last-child{flex:1}.nx{display:none}.tmax,.clock{display:none}}'
+  ].join('\n');
+  function pvHTML(){
+    var t=document.title.replace(/[<>&]/g,'');
+    return '<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><title>講者視窗｜'+t+'</title><style>'+PV_CSS+'</style></head><body><div id="pvRoot">'+
+      '<header class="top">'+
+        '<span class="pno"><b id="pvN">1</b> / '+N+'</span>'+
+        '<span class="ttl" id="pvTitle"></span><span class="skip" id="pvSkip" hidden>時間不夠可略過</span>'+
+        '<span class="sp"></span>'+
+        '<span class="tm" id="pvTime">00:00</span><span class="tmax">/ '+TALK_MIN+':00</span>'+
+        '<button id="pvPause">開始</button><button id="pvReset">歸零</button>'+
+        '<span class="clock" id="pvClock"></span>'+
+      '</header>'+
+      '<main class="grid">'+
+        '<section class="col"><div class="lab">投影中 · 這一頁的按鈕可以直接點，格子可以直接打字</div>'+
+          '<div class="box cur"><iframe id="pvCur" title="投影中的這一頁"></iframe></div>'+
+          '<div class="nxrow">'+
+            '<div class="box nx" id="pvNxBox" title="點一下翻到下一頁"><iframe id="pvNx" title="下一頁預覽" tabindex="-1"></iframe><div class="end" id="pvEnd" hidden>已經是最後一頁</div></div>'+
+            '<div class="nxinfo"><div class="lab">下一頁</div><div class="nxt" id="pvNxLab"></div>'+
+              '<div class="navbig"><button id="pvPrev">◀ 上一頁</button><button id="pvNext">下一頁 ▶</button></div></div>'+
+          '</div></section>'+
+        '<section class="col">'+
+          '<div class="lab">講者備註<span class="sp"></span><button id="pvSm" aria-label="備註字縮小">A−</button><button id="pvLg" aria-label="備註字放大">A＋</button></div>'+
+          '<div class="pvn" id="pvNotes"></div></section>'+
+      '</main></div></body></html>';
+  }
+  function pvAlive(){try{return !!(pv&&!pv.closed&&pv.document.getElementById('pvRoot'));}catch(e){return false;}}
+  function pvFrame(ifr){
+    var d=ifr.contentDocument, h='', defs=document.querySelector('svg.defs');
+    document.querySelectorAll('head style, head link[rel="stylesheet"]').forEach(function(n){h+=n.outerHTML;});
+    h+='<style>html,body{background:transparent!important}.deck{position:fixed;inset:0;--s:1}.slide{transition:none!important;box-shadow:none!important}</style>';
+    d.open();d.write('<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">'+h+'</head><body>'+(defs?defs.outerHTML:'')+'<div class="deck"></div></body></html>');d.close();
+    return d;
+  }
+  function pvFix(c,live){c.classList.add('on');c.classList.remove('before','after');c.removeAttribute('aria-hidden');if(live)c.removeAttribute('inert');else c.setAttribute('inert','');}
+  function pvVals(a,b){
+    var x=a.querySelectorAll('input,textarea,select'), y=b.querySelectorAll('input,textarea,select');
+    for(var i=0;i<x.length&&i<y.length;i++){y[i].value=x[i].value;if(x[i].type==='checkbox'||x[i].type==='radio')y[i].checked=x[i].checked;}
+  }
+  function pvPut(d,k,live){
+    var host=d.querySelector('.deck');if(!host)return;
+    host.textContent='';
+    if(k<0||k>=N)return;
+    var c=d.importNode(slides[k],true);pvVals(slides[k],c);pvFix(c,live);host.appendChild(c);
+  }
+  /* 把投影畫面上這一頁的變化（點了選項、蓋章、打字）同步到講者視窗，只改有變的地方，正在打字的格子不動 */
+  function pvPatch(a,b,d){
+    if(a.nodeType!==1){if(b.nodeValue!==a.nodeValue)b.nodeValue=a.nodeValue;return;}
+    var i,n,at=b.attributes;
+    for(i=at.length-1;i>=0;i--){n=at[i].name;if(!a.hasAttribute(n))b.removeAttribute(n);}
+    at=a.attributes;
+    for(i=0;i<at.length;i++){if(b.getAttribute(at[i].name)!==at[i].value)b.setAttribute(at[i].name,at[i].value);}
+    if(/^(INPUT|TEXTAREA|SELECT)$/.test(a.tagName)){if(d.activeElement!==b&&b.value!==a.value)b.value=a.value;if(b.checked!==a.checked)b.checked=a.checked;}
+    var x=a.childNodes, y=b.childNodes, same=x.length===y.length;
+    for(i=0;same&&i<x.length;i++)if(x[i].nodeName!==y[i].nodeName)same=false;
+    if(same){for(i=0;i<x.length;i++)pvPatch(x[i],y[i],d);return;}
+    var ae=d.activeElement;if(ae&&ae!==d.body&&b.contains(ae))return;
+    var f=d.createDocumentFragment();for(i=0;i<x.length;i++)f.appendChild(d.importNode(x[i],true));
+    b.textContent='';b.appendChild(f);pvVals(a,b);
+  }
+  function pvSync(){
+    if(!pvAlive())return;
+    var d=pv.document, k=cur;
+    if(k!==pvShown){
+      if(pvShown>=0&&pvIdle){pvIdle=false;pvFrom=Date.now();}
+      pvShown=k;
+      pvPut(pvCurDoc,k,true);pvPut(pvNxDoc,k+1,false);
+      var s=slides[k], nt=s.querySelector('.notes'), el=d.getElementById('pvNotes');
+      d.getElementById('pvN').textContent=k+1;
+      d.getElementById('pvTitle').textContent=s.dataset.title||'';
+      d.getElementById('pvSkip').hidden=!s.dataset.skip;
+      d.getElementById('pvPrev').disabled=k===0;d.getElementById('pvNext').disabled=k===N-1;
+      d.getElementById('pvNxLab').textContent=k<N-1?'P.'+(k+2)+'　'+(slides[k+1].dataset.title||''):'（已經是最後一頁）';
+      d.getElementById('pvEnd').hidden=k<N-1;
+      el.innerHTML=nt&&nt.innerHTML.trim()?nt.innerHTML:'<span class="none">這一頁沒有備註。</span>';
+      el.scrollTop=0;
+      pvTick();
+    }else{
+      var root=pvCurDoc.querySelector('.deck > .slide');
+      if(root){pvPatch(slides[k],root,pvCurDoc);pvFix(root,true);}else pvPut(pvCurDoc,k,true);
+    }
+  }
+  function pvFit(){
+    if(!pvAlive())return;
+    var d=pv.document;
+    ['pvCur','pvNx'].forEach(function(id){
+      var f=d.getElementById(id), b=f.parentNode, w=b.clientWidth, h=b.clientHeight;
+      if(!w||!h)return;
+      var k=Math.min(w/1280,h/720);
+      f.style.transform='translate('+((w-1280*k)/2).toFixed(1)+'px,'+((h-720*k)/2).toFixed(1)+'px) scale('+k.toFixed(4)+')';
+    });
+  }
+  /* 在講者視窗裡點這一頁：找到投影畫面上同一個位置的元素，替它按一下 */
+  function pvTwin(t){
+    var root=pvCurDoc&&pvCurDoc.querySelector('.deck > .slide'), p=[], m=slides[cur], i;
+    if(!root||!t)return null;
+    while(t&&t!==root){var u=t.parentElement;if(!u)return null;p.unshift([].indexOf.call(u.children,t));t=u;}
+    if(t!==root)return null;
+    for(i=0;i<p.length&&m;i++)m=m.children[p[i]];
+    return m||null;
+  }
+  function pvClick(e){
+    var t=e.target;
+    if(t&&t.closest&&t.closest('input,textarea,select,label'))return;
+    e.preventDefault();
+    var m=pvTwin(t);if(!m)return;
+    if(typeof m.click==='function')m.click();else m.dispatchEvent(new MouseEvent('click',{bubbles:true,cancelable:true}));
+  }
+  function pvFwd(t){
+    var m=pvTwin(t);if(!m||!('value' in m)||m.value===t.value)return;
+    m.value=t.value;m.dispatchEvent(new Event('input',{bubbles:true}));
+  }
+  function pvKey(e){
+    if(e.altKey||e.ctrlKey||e.metaKey)return;
+    var t=e.target;
+    if(t&&t.closest&&t.closest('input,textarea,select,[contenteditable="true"]'))return;
+    var onBtn=t&&t.closest&&t.closest('button');
+    switch(e.key){
+      case 'ArrowRight':case 'PageDown':go(cur+1);e.preventDefault();break;
+      case 'ArrowLeft':case 'PageUp':go(cur-1);e.preventDefault();break;
+      case ' ':if(onBtn)return;go(e.shiftKey?cur-1:cur+1);e.preventDefault();break;
+      case 'Home':go(0);e.preventDefault();break;
+      case 'End':go(N-1);e.preventDefault();break;
+      case 'f':case 'F':pvFull();break;
+    }
+  }
+  function pvFull(){
+    try{
+      var d=pv.document;
+      if(d.fullscreenElement){var x=d.exitFullscreen();if(x&&x.catch)x.catch(function(){});}
+      else if(d.documentElement.requestFullscreen){var y=d.documentElement.requestFullscreen();if(y&&y.catch)y.catch(function(){});}
+    }catch(e){}
+  }
+  function pvMs(){return pvAcc+(pvFrom?Date.now()-pvFrom:0);}
+  function pvTick(){
+    if(!pvAlive()){if(pv)pvEnd();return;}
+    var d=pv.document, s=Math.floor(pvMs()/1000), m=Math.floor(s/60), el=d.getElementById('pvTime'), c=new Date();
+    el.textContent=String(m).padStart(2,'0')+':'+String(s%60).padStart(2,'0');
+    el.className='tm'+(m>=TALK_MIN?' over':m>=TALK_MIN-5?' warn':'');
+    d.getElementById('pvClock').textContent=String(c.getHours()).padStart(2,'0')+':'+String(c.getMinutes()).padStart(2,'0');
+    d.getElementById('pvPause').textContent=pvIdle?'開始':pvFrom?'暫停':'繼續';
+  }
+  function pvToggleTime(){
+    if(pvIdle){pvIdle=false;pvFrom=Date.now();}
+    else if(pvFrom){pvAcc+=Date.now()-pvFrom;pvFrom=0;}
+    else pvFrom=Date.now();
+    pvTick();
+  }
+  function pvResetTime(){pvAcc=0;pvFrom=0;pvIdle=true;pvTick();}
+  function pvSize(dl){
+    pvFs=Math.max(14,Math.min(34,pvFs+dl));
+    try{localStorage.setItem('deck-presenter-fs',String(pvFs));}catch(e){}
+    if(pvAlive())pv.document.getElementById('pvNotes').style.fontSize=pvFs+'px';
+  }
+  function pvSay(msg){
+    var bt=$('barTitle');bt.textContent=msg;
+    setTimeout(function(){if(bt.textContent===msg)render();},6000);
+  }
+  function pvEnd(){
+    if(pvMO){pvMO.disconnect();pvMO=null;}
+    if(pvIv){clearInterval(pvIv);pvIv=0;}
+    if(pvDue){clearTimeout(pvDue);pvDue=0;}
+    pv=null;pvCurDoc=pvNxDoc=null;pvShown=-1;
+    $('pvBtn').setAttribute('aria-pressed','false');
+  }
+  function pvBuild(w){
+    var d=w.document, g=function(id){return d.getElementById(id);};
+    d.open();d.write(pvHTML());d.close();
+    pv=w;pvShown=-1;
+    pvCurDoc=pvFrame(g('pvCur'));pvNxDoc=pvFrame(g('pvNx'));
+    g('pvPrev').addEventListener('click',function(){go(cur-1);});
+    g('pvNext').addEventListener('click',function(){go(cur+1);});
+    g('pvNxBox').addEventListener('click',function(){go(cur+1);});
+    g('pvPause').addEventListener('click',pvToggleTime);
+    g('pvReset').addEventListener('click',pvResetTime);
+    g('pvSm').addEventListener('click',function(){pvSize(-2);});
+    g('pvLg').addEventListener('click',function(){pvSize(2);});
+    d.addEventListener('keydown',pvKey);
+    pvCurDoc.addEventListener('keydown',pvKey);
+    pvCurDoc.addEventListener('click',pvClick,true);
+    pvCurDoc.addEventListener('input',function(e){if(!e.isComposing)pvFwd(e.target);});
+    pvCurDoc.addEventListener('compositionend',function(e){pvFwd(e.target);});
+    pvCurDoc.addEventListener('focusout',function(){setTimeout(pvSync,0);});
+    w.addEventListener('resize',pvFit);
+    pvSize(0);pvSync();pvFit();setTimeout(pvFit,150);
+    pvMO=new MutationObserver(function(){if(!pvDue)pvDue=setTimeout(function(){pvDue=0;pvSync();},40);});
+    pvMO.observe(deck,{subtree:true,childList:true,attributes:true,characterData:true});
+    pvIv=setInterval(pvTick,500);pvTick();
+    $('pvBtn').setAttribute('aria-pressed','true');
+    if(!$('notesPanel').hidden)toggleNotes();
+  }
+  function openPresenter(){
+    if(pvAlive()){try{pv.focus();}catch(e){}return;}
+    if(pv)pvEnd();
+    var w=null;
+    try{w=window.open('','','popup=yes,width=1200,height=760');}catch(e){}
+    if(!w){pvSay('講者視窗被瀏覽器擋住了：請允許這個網頁開彈出式視窗，再按一次 P');return;}
+    try{pvBuild(w);try{w.focus();}catch(e){}}
+    catch(e){try{w.close();}catch(x){}pvEnd();pvSay('這個瀏覽器開不了講者視窗，請改用 Chrome');}
+  }
+  $('pvBtn').addEventListener('click',openPresenter);
+  window.addEventListener('pagehide',function(){try{if(pv&&!pv.closed)pv.close();}catch(e){}});
+  /* ---------- end presenter window ---------- */
 
   /* ---------- boot ---------- */
   function fromHash(){var m=(location.hash||'').match(/^#p(\d+)$/);return m?Math.min(N,Math.max(1,+m[1]))-1:0;}
