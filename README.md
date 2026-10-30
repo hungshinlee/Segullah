@@ -2,7 +2,7 @@
 
 <https://hungshinlee.github.io/segullah/>
 
-教會服事中可以公開分享的內容：主日學的教材與學習單，以及其他服事用得上的資料。
+教會服事中可以公開分享的內容：主日學的教材與學習單、團契的分享，以及其他服事用得上的資料。
 
 ## 結構
 
@@ -13,6 +13,8 @@ sunday-school/junior-high/index.html    板新青少主日學 · 國中部：每
 sunday-school/junior-high/YYYY-MM-DD/   國中部每一課一個資料夾（投影片、學習單）
 sunday-school/senior-high/              高中部，結構同上
 sunday-school/slides-guide.html         投影片使用說明（列表頁連過來）
+fellowship/youth/index.html             青年團契（首頁「團契」底下）：我的分享，每一次一列（日期、主題、經文、資料）
+fellowship/youth/YYYY-MM-DD/            每一次分享一個資料夾（投影片、講義）
 enoch-fellowship/index.html             以諾團契小組問題：每一次一列（日期、主題、經文、資料）
 enoch-fellowship/YYYY-MM-DD/            每一次一個資料夾（討論題頁面）
 scripts/check.py                        發布前檢查
@@ -23,7 +25,7 @@ scripts/check.py                        發布前檢查
 
 簡報含講者備註與講者視窗（按 P 另開一個視窗：投影中的這一頁、下一頁、講稿、計時），給要拿去教的老師備課用（2026-10-25 起）。
 
-新增一課或一次團契：把檔案放進該次的資料夾，再到列表頁照 HTML 註解裡的範本加一列（新的放最上面）。
+新增一課、一次團契小組問題或一次分享：把檔案放進該次的資料夾，再到列表頁照 HTML 註解裡的範本加一列（新的放最上面）。
 `check.py` 會檢查站內連結有沒有指到不存在的檔案。
 
 ## 發布
