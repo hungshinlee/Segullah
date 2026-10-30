@@ -2,7 +2,7 @@
 
 <https://hungshinlee.github.io/segullah/>
 
-教會服事中可以公開分享的內容：主日學的教材與學習單、團契的分享，以及其他服事用得上的資料。
+教會服事中可以公開分享的內容：主日學的教材與學習單，以及團契的分享與小組問題。
 
 ## 結構
 
@@ -15,7 +15,7 @@ sunday-school/senior-high/              高中部，結構同上
 sunday-school/slides-guide.html         投影片使用說明（列表頁連過來）
 fellowship/youth/index.html             青年團契（首頁「團契」底下）：我的分享，每一次一列（日期、主題、經文、資料）
 fellowship/youth/YYYY-MM-DD/            每一次分享一個資料夾（投影片、講義）
-enoch-fellowship/index.html             以諾團契小組問題：每一次一列（日期、主題、經文、資料）
+enoch-fellowship/index.html             以諾團契小組問題（首頁「團契」底下；網址沿用 2026-10-19 起的，沒搬進 fellowship/）：每一次一列（日期、主題、經文、資料）
 enoch-fellowship/YYYY-MM-DD/            每一次一個資料夾（討論題頁面）
 scripts/check.py                        發布前檢查
 .github/workflows/                      push 到 main 後自動發布
