@@ -1,0 +1,2040 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px/1.4 system-ui,-apple-system,"PingFang TC","Microsoft JhengHei",sans-serif}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>恐懼與撕裂時代中的自由主義與愛｜板新青契</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;0,600;1,500&family=LXGW+WenKai+TC:wght@400;700&family=Noto+Sans+TC:wght@500;700;900&family=Noto+Serif+TC:wght@600;700;900&display=swap">
+<style>
+/* Layout: reading-group notebook pages (1280×720) lying on a dark desk. Wide screens show one page at a time, scaled to fit; phones and portrait tablets stack the pages and scroll. Single printed-paper look by choice. */
+:root{
+  --desk:#2B2724; --paper:#FBF7EE; --card:#FFFDF8; --ink:#2A2521; --mute:#6F665C; --rule:#E3D9C7;
+  --red:#A3432A; --red-l:#E6BBA8; --verse:#2C3A5A; --verse-l:#DCE1EC; --hi:#F2D680; --note:#F7E8A4; --note2:#F6DCCB; --fog:#EFE8DA;
+  --f-sans:"Noto Sans TC","PingFang TC","Microsoft JhengHei","Heiti TC",sans-serif;
+  --f-serif:"Noto Serif TC","Songti TC","PMingLiU","Noto Serif CJK TC",serif;
+  --f-hand:"LXGW WenKai TC","Kaiti TC","BiauKai","DFKai-SB",serif;
+  --f-lat:"EB Garamond","Noto Serif TC",Georgia,"Times New Roman",serif;
+  --fs-mega:64px; --fs-h:40px; --fs-lead:28px; --fs-body:23px; --fs-small:19px; --fs-tiny:16px; --fs-verse:24px;
+  --sh:0 1px 0 rgba(42,37,33,.06),0 6px 16px -8px rgba(42,37,33,.35);
+  color-scheme:light;
+}
+*,*::before,*::after{box-sizing:border-box}
+html,body{height:100%}
+body{background-color:var(--desk);background-image:repeating-linear-gradient(115deg,rgba(255,255,255,.025) 0 2px,transparent 2px 7px);color:var(--ink);font-family:var(--f-sans);font-weight:500;overflow:hidden;-webkit-font-smoothing:antialiased}
+p,h1,h2,h3,ul,ol,blockquote,figure{margin:0}
+ul,ol{padding:0;list-style:none}
+button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+mark{background:linear-gradient(transparent 52%,var(--hi) 52%,var(--hi) 90%,transparent 90%);color:inherit;padding:0 2px}
+
+/* ---------- stage ---------- */
+.viewport{position:fixed;left:0;right:0;top:env(safe-area-inset-top,0px);bottom:calc(60px + env(safe-area-inset-bottom,0px));padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:14px}
+.deck{position:relative;width:100%;height:100%}
+.slide{position:absolute;left:50%;top:50%;width:1280px;height:720px;background:var(--paper);color:var(--ink);font-size:var(--fs-body);line-height:1.6;overflow:hidden;box-shadow:0 20px 50px rgba(0,0,0,.5);transform:translate(-50%,-50%) scale(var(--s,.5)) translateX(var(--dx,0px));opacity:0;visibility:hidden;transition:opacity .3s ease,transform .45s cubic-bezier(.2,.8,.2,1),visibility 0s linear .45s}
+.slide.before{--dx:-60px}.slide.after{--dx:60px}
+.slide.on{opacity:1;visibility:visible;transition:opacity .3s ease,transform .45s cubic-bezier(.2,.8,.2,1),visibility 0s}
+.slide::before{content:"";position:absolute;inset:0;pointer-events:none;background:
+  radial-gradient(circle at 40px 120px,var(--desk) 0 9px,rgba(0,0,0,.18) 10px,transparent 11px),
+  radial-gradient(circle at 40px 360px,var(--desk) 0 9px,rgba(0,0,0,.18) 10px,transparent 11px),
+  radial-gradient(circle at 40px 600px,var(--desk) 0 9px,rgba(0,0,0,.18) 10px,transparent 11px),
+  linear-gradient(90deg,transparent 80px,var(--red-l) 80px 81.5px,transparent 81.5px 85px,var(--red-l) 85px 86.5px,transparent 86.5px)}
+.page{position:absolute;inset:0;padding:26px 58px 42px 118px;display:flex;flex-direction:column;gap:16px}
+.pg{position:absolute;right:30px;bottom:12px;font-family:var(--f-lat);font-style:italic;font-size:18px;letter-spacing:.06em;color:var(--mute)}
+.notes{display:none}
+
+/* ---------- running head & titles ---------- */
+.rh{display:flex;align-items:baseline;gap:14px;border-bottom:1.5px solid var(--rule);padding-bottom:7px;font-size:var(--fs-tiny);letter-spacing:.12em;color:var(--mute);white-space:nowrap}
+.rh .sec{color:var(--red);font-weight:700}
+.rh .src{margin-left:auto;letter-spacing:.06em;font-weight:700;color:var(--ink);border:1.5px solid var(--ink);border-radius:999px;padding:0 12px;line-height:1.75}
+.ttl{font-family:var(--f-serif);font-weight:900;font-size:var(--fs-h);line-height:1.28;text-wrap:balance}
+.ttl small{display:block;font-family:var(--f-sans);font-weight:700;font-size:var(--fs-small);color:var(--mute);letter-spacing:.04em;margin-top:4px}
+.kick{font-size:var(--fs-tiny);font-weight:700;letter-spacing:.14em;color:var(--red)}
+.grow{flex:1;min-height:0}
+.cols{display:grid;grid-template-columns:var(--c,1fr 1fr);gap:var(--g,28px);min-height:0}
+.stack{display:flex;flex-direction:column;gap:var(--g,14px);min-width:0;min-height:0}
+.ctr{justify-content:center}
+.small{font-size:var(--fs-small);line-height:1.65}
+.tiny{font-size:var(--fs-tiny);line-height:1.6;color:var(--mute)}
+.lead{font-size:var(--fs-lead);line-height:1.5;font-weight:700}
+.en{font-family:var(--f-lat);font-style:italic;font-weight:500;letter-spacing:.01em}
+.red{color:var(--red)}
+.ul{text-decoration:underline;text-decoration-color:var(--red);text-decoration-thickness:3px;text-underline-offset:6px}
+.wv{text-decoration:underline wavy var(--red);text-decoration-thickness:2px;text-underline-offset:7px}
+.circ{display:inline-block;border:2.5px solid var(--red);border-radius:50% 46% 52% 48%/55% 50% 50% 45%;padding:0 10px;margin:0 2px;transform:rotate(-2deg)}
+.strike{position:relative;color:var(--mute)}
+.strike::after{content:"";position:absolute;left:-4px;right:-4px;top:52%;height:3px;background:var(--red);transform:rotate(-4deg)}
+
+/* ---------- source layers (legend on the TOC page) ---------- */
+.tag{display:inline-block;font-family:var(--f-sans);font-size:14px;font-weight:700;letter-spacing:.1em;line-height:1.6;padding:0 9px;border:1.5px solid currentColor;white-space:nowrap;vertical-align:.18em}
+.tag.t-vs{color:var(--verse)} .tag.t-aq{color:var(--ink)} .tag.t-oq{color:var(--mute)} .tag.t-mg{color:var(--red);font-family:var(--f-hand);font-weight:700;letter-spacing:.06em} .tag.t-q{background:var(--note);color:#5A4A12;border-color:#D9C46A}
+/* 經文：藍黑墨水的明體 */
+.vs{font-family:var(--f-serif);font-weight:600;color:var(--verse);font-size:var(--fs-verse);line-height:1.7;border-left:4px solid var(--verse);padding:2px 0 2px 18px}
+.vs sup{font-family:var(--f-lat);font-weight:600;font-size:.72em;color:var(--red);margin-right:4px;vertical-align:.35em}
+.vs cite{display:block;font-family:var(--f-sans);font-style:normal;font-weight:700;font-size:var(--fs-tiny);color:var(--mute);margin-top:4px;letter-spacing:.06em}
+.vs.sm{font-size:var(--fs-small);line-height:1.65}
+/* 作者說：黑色明體＋粗直線 */
+.aq{position:relative;font-family:var(--f-serif);font-weight:700;font-size:var(--fs-lead);line-height:1.55;border-left:6px solid var(--ink);padding:4px 0 4px 22px}
+.aq .by,.oq .by{display:block;font-family:var(--f-sans);font-weight:700;font-size:var(--fs-tiny);color:var(--mute);letter-spacing:.06em;margin-top:8px}
+.aq .en,.oq .en{display:block;font-size:19px;color:var(--mute);margin-top:6px;line-height:1.4}
+.aq.big{font-size:34px;line-height:1.5}
+/* 書中引用（作者引別人的話）：灰框 */
+.oq{position:relative;background:var(--card);border:1.5px solid #CFC5B3;padding:16px 22px 14px;font-family:var(--f-serif);font-weight:600;font-size:var(--fs-body);line-height:1.6;box-shadow:var(--sh)}
+.oq::before{content:"書中引用";position:absolute;top:-12px;left:16px;background:var(--paper);padding:0 8px;font-family:var(--f-sans);font-size:13px;font-weight:700;letter-spacing:.14em;color:var(--mute)}
+/* 我的眉批：紅色手寫 */
+.mg{font-family:var(--f-hand);font-weight:700;color:var(--red);font-size:var(--fs-small);line-height:1.5;transform:rotate(-1.2deg)}
+.mg.r{transform:rotate(1.4deg)}
+.mg b{font-weight:700;background:linear-gradient(transparent 60%,rgba(242,214,128,.8) 60%)}
+.mg.arrow::before{content:"→ "}
+/* 討論：便利貼 */
+.sticky{position:relative;background:var(--note);padding:22px 22px 18px;box-shadow:0 10px 18px -10px rgba(42,37,33,.55);transform:rotate(-1.2deg);font-family:var(--f-hand);font-weight:700;color:#3F3510;font-size:var(--fs-small);line-height:1.5}
+.sticky::before{content:"";position:absolute;top:-12px;left:50%;width:92px;height:24px;margin-left:-46px;background:rgba(255,255,255,.55);border:1px solid rgba(0,0,0,.06);transform:rotate(2deg)}
+.sticky.p{background:var(--note2);color:#4D2A1C;transform:rotate(1.4deg)}
+.sticky .h{display:block;font-family:var(--f-sans);font-size:14px;letter-spacing:.14em;color:#8A7420;margin-bottom:4px}
+.sticky.p .h{color:#9B5A40}
+
+/* ---------- people cards ---------- */
+.who{display:grid;grid-template-columns:56px 1fr;gap:4px 14px;align-items:center;background:var(--card);border:1.5px solid var(--rule);padding:12px 16px;box-shadow:var(--sh);min-width:0}
+.who .mono{grid-row:span 2;width:56px;height:56px;border-radius:50%;border:2px solid var(--ink);display:grid;place-items:center;font-family:var(--f-serif);font-weight:900;font-size:26px;background:var(--paper)}
+.who .nm2{font-weight:900;font-size:var(--fs-small);line-height:1.35}
+.who .nm2 .en{font-weight:500;font-size:16px;color:var(--mute);margin-left:6px}
+.who .id{font-size:15px;color:var(--mute);line-height:1.4}
+.who .say{grid-column:1/-1;font-size:var(--fs-small);line-height:1.5;border-top:1px dashed var(--rule);padding-top:8px;margin-top:4px}
+.whos{display:grid;grid-template-columns:var(--c,1fr 1fr);gap:16px;align-content:start}
+
+/* ---------- cover ---------- */
+.cv{padding:34px 60px 46px 118px}
+.cv-top{display:flex;justify-content:space-between;align-items:baseline;border-bottom:2px solid var(--ink);padding-bottom:8px;font-weight:900;font-size:var(--fs-small);letter-spacing:.16em}
+.cv-top .en{font-weight:500;letter-spacing:.04em;color:var(--mute);font-size:18px}
+.cv-title{font-family:var(--f-serif);font-weight:900;font-size:var(--fs-mega);line-height:1.22;letter-spacing:.01em}
+.cv-title span{display:block}
+.cv-title .r{color:var(--red)}
+.cv-en{font-family:var(--f-lat);font-style:italic;font-size:24px;color:var(--mute);line-height:1.35}
+.cv-meta{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:var(--fs-small);color:var(--mute);font-weight:700}
+.cv-meta b{color:var(--ink)}
+.cv-art{position:relative;display:flex;align-items:center;justify-content:center}
+.cv-art svg{width:100%;max-width:440px;height:auto}
+
+/* ---------- toc ---------- */
+.toc{display:flex;flex-direction:column;gap:2px}
+.toc button{display:grid;grid-template-columns:52px auto 1fr auto;align-items:baseline;gap:12px;background:none;border:0;padding:5px 6px;text-align:left;cursor:pointer;font-size:var(--fs-small);line-height:1.45}
+.toc button:hover{background:rgba(242,214,128,.35)}
+.toc .n{font-family:var(--f-serif);font-weight:900;color:var(--red);font-size:20px}
+.toc .t{font-weight:900}
+.toc .t small{font-weight:500;color:var(--mute);font-size:15px;margin-left:8px}
+.toc .dots{border-bottom:2px dotted #BDB2A0;transform:translateY(-6px)}
+.toc .p{font-family:var(--f-lat);font-style:italic;color:var(--mute)}
+.toc button.st .t{color:#7A6418}
+.toc button.st .n{color:#7A6418}
+.legend{display:flex;flex-direction:column;gap:14px;background:var(--card);border:1.5px solid var(--rule);padding:16px 20px;box-shadow:var(--sh)}
+.legend h3{font-size:var(--fs-tiny);letter-spacing:.14em;color:var(--mute)}
+.legend li{display:grid;grid-template-columns:96px 1fr;gap:12px;align-items:center;font-size:17px;line-height:1.45}
+
+/* ---------- section title pages ---------- */
+.slide.chap .page{flex-direction:row;align-items:center;gap:46px;padding-right:80px}
+.chap-n{flex:none;font-family:var(--f-serif);font-weight:900;font-size:230px;line-height:1;color:var(--red);opacity:.9;width:250px;text-align:center}
+.chap-b{display:flex;flex-direction:column;gap:16px;min-width:0}
+.chap-t{font-family:var(--f-serif);font-weight:900;font-size:58px;line-height:1.2}
+.chap-s{font-size:var(--fs-lead);color:var(--mute);font-weight:700;line-height:1.45}
+.chap-k{display:flex;flex-direction:column;gap:6px;border-top:1.5px solid var(--rule);padding-top:14px;font-size:var(--fs-small)}
+.chap-k li::before{content:"✓";color:var(--red);font-weight:900;margin-right:10px}
+.chap-k .h{font-size:var(--fs-tiny);letter-spacing:.14em;color:var(--mute);font-weight:700}
+
+/* ---------- ditch diagram（兩邊的水溝） ---------- */
+.ditch{display:grid;grid-template-columns:1fr 1.25fr 1fr;align-items:stretch;gap:0;min-height:0}
+.ditch .d{position:relative;display:flex;flex-direction:column;justify-content:flex-end;gap:6px;padding:18px 18px 20px;background:repeating-linear-gradient(135deg,rgba(163,67,42,.08) 0 10px,transparent 10px 20px),var(--card);border:2px solid var(--red);min-width:0}
+.ditch .d.l{border-radius:0 0 0 60px;border-right:0}
+.ditch .d.r{border-radius:0 0 60px 0;border-left:0}
+.ditch .road{display:flex;flex-direction:column;justify-content:flex-start;gap:8px;padding:18px 22px;background:var(--paper);border-top:8px double var(--ink);border-bottom:2px solid var(--ink);box-shadow:inset 0 -14px 0 -10px var(--rule);min-width:0;text-align:center;align-items:center}
+.ditch .lab{font-size:var(--fs-tiny);letter-spacing:.14em;font-weight:700;color:var(--red)}
+.ditch .road .lab{color:var(--ink)}
+.ditch h3{font-family:var(--f-serif);font-weight:900;font-size:30px;line-height:1.25}
+.ditch p{font-size:var(--fs-small);line-height:1.5}
+.ditch .road h3{font-size:32px}
+.ditch .d p{color:#5A4038}
+
+/* ---------- reveal（逐條點開） ---------- */
+.rvbox{display:flex;flex-direction:column;gap:12px;min-height:0}
+.rv{position:relative;cursor:pointer;transition:background .2s}
+.rv .rv-c{transition:opacity .25s}
+.rv:not(.shown) .rv-c{opacity:0}
+.rv:not(.shown){background:repeating-linear-gradient(135deg,rgba(42,37,33,.05) 0 8px,transparent 8px 16px),var(--fog)!important;border-style:dashed!important}
+.rv:not(.shown)::after{content:attr(data-h);position:absolute;inset:0;display:grid;place-items:center;font-family:var(--f-hand);font-weight:700;color:var(--mute);font-size:var(--fs-small)}
+.rv-ctl{display:flex;gap:12px;align-items:center}
+.btn{font-weight:700;font-size:var(--fs-tiny);letter-spacing:.06em;border:2px solid var(--ink);background:var(--card);color:var(--ink);padding:6px 16px;cursor:pointer;border-radius:2px;box-shadow:2px 2px 0 var(--ink);transition:transform .1s,box-shadow .1s}
+.btn:hover{transform:translate(-1px,-1px);box-shadow:3px 3px 0 var(--ink)}
+.btn:active{transform:translate(2px,2px);box-shadow:0 0 0 var(--ink)}
+.btn.pri{background:var(--ink);color:var(--paper)}
+
+/* ---------- numbered cards ---------- */
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.nc{display:flex;flex-direction:column;gap:6px;background:var(--card);border:1.5px solid #CFC5B3;padding:14px 16px;box-shadow:var(--sh);min-width:0}
+.nc .no{font-family:var(--f-serif);font-weight:900;font-size:30px;line-height:1;color:var(--red)}
+.nc h3{font-weight:900;font-size:var(--fs-small);line-height:1.35}
+.nc p{font-size:16px;line-height:1.55;color:#4D463F}
+.nc.hot{border-color:var(--red);border-width:2.5px}
+.nc.lg{padding:20px 22px;gap:10px}.nc.lg h3{font-size:28px}.nc.lg p{font-size:20px}.nc.lg .no{font-size:40px}
+.g2.grow,.g3.grow{align-content:center}
+.lst{display:flex;flex-direction:column;gap:10px}
+.lst li{display:grid;grid-template-columns:40px 1fr;gap:10px;align-items:baseline;line-height:1.5}
+.lst li>b:first-child{font-family:var(--f-serif);font-weight:900;color:var(--red);font-size:1.1em}
+.dot li{position:relative;padding-left:22px;line-height:1.55}
+.dot li+li{margin-top:6px}
+.dot li::before{content:"";position:absolute;left:2px;top:.62em;width:8px;height:8px;border-radius:50%;background:var(--red)}
+
+/* ---------- shift rows（典範轉移） ---------- */
+.shift{display:grid;grid-template-columns:1fr 64px 1fr;align-items:center;gap:10px;background:var(--card);border:1.5px solid #CFC5B3;padding:12px 18px;box-shadow:var(--sh)}
+.shift .from{color:var(--mute);font-family:var(--f-serif);font-weight:700;font-size:var(--fs-small);line-height:1.4}
+.shift .to{font-family:var(--f-serif);font-weight:900;font-size:var(--fs-body);line-height:1.4}
+.shift .arw{font-family:var(--f-lat);font-size:34px;color:var(--red);text-align:center;line-height:1}
+.shift small{display:block;font-family:var(--f-lat);font-style:italic;font-weight:500;font-size:17px;color:var(--mute)}
+
+/* ---------- timeline ---------- */
+.tline{position:relative;display:grid;grid-template-columns:repeat(var(--n,4),1fr);gap:16px;padding-top:30px}
+.tline::before{content:"";position:absolute;left:0;right:0;top:12px;height:3px;background:var(--ink)}
+.tline .ev{position:relative;display:flex;flex-direction:column;gap:6px;min-width:0}
+.tline .ev::before{content:"";position:absolute;top:-25px;left:0;width:16px;height:16px;border-radius:50%;background:var(--paper);border:3px solid var(--ink)}
+.tline .ev.bad::before{background:var(--red);border-color:var(--red)}
+.tline .yr{font-family:var(--f-lat);font-weight:600;font-size:36px;line-height:1}
+.tline .ev p{font-size:20px;line-height:1.55}
+
+/* ---------- quadrant（信念 × 同理） ---------- */
+.q4{position:relative;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:10px;padding:0 0 34px 40px}
+.q4 .ax-y{position:absolute;left:0;top:0;bottom:34px;width:30px;display:flex;align-items:center;justify-content:center;writing-mode:vertical-rl;font-weight:700;font-size:var(--fs-tiny);letter-spacing:.14em;border-right:3px solid var(--ink)}
+.q4 .ax-x{position:absolute;left:40px;right:0;bottom:0;height:30px;text-align:center;font-weight:700;font-size:var(--fs-tiny);letter-spacing:.14em;border-top:3px solid var(--ink);line-height:30px}
+.q4 .qd{display:flex;flex-direction:column;justify-content:center;gap:2px;padding:10px 14px;background:var(--card);border:1.5px solid #CFC5B3;min-width:0}
+.q4 .qd h3{font-family:var(--f-serif);font-weight:900;font-size:var(--fs-body);line-height:1.3}
+.q4 .qd p{font-size:15px;line-height:1.45;color:var(--mute)}
+.q4 .qd.best{background:var(--note);border:2.5px solid var(--red)}
+
+/* ---------- discussion station ---------- */
+.stn{display:grid;grid-template-columns:1.45fr 1fr;gap:30px;min-height:0}
+.stn .qq{font-family:var(--f-serif);font-weight:900;font-size:30px;line-height:1.5}
+.timer{display:flex;flex-direction:column;align-items:center;gap:10px;background:var(--card);border:2px solid var(--ink);padding:14px 16px 16px;box-shadow:3px 3px 0 var(--ink)}
+.timer .tm-h{font-size:var(--fs-tiny);letter-spacing:.14em;font-weight:700;color:var(--mute)}
+.timer .tm-d{font-family:var(--f-lat);font-weight:600;font-size:76px;line-height:1;font-variant-numeric:tabular-nums}
+.timer.low .tm-d{color:var(--red)}
+.timer.done .tm-d{color:var(--red)}
+.timer.done .tm-h::after{content:"　時間到"}
+.timer .row{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+.timer .btn{padding:5px 12px}
+.fu{display:flex;flex-direction:column;gap:12px}
+.fu .rv{background:var(--note2);padding:12px 16px;border:1.5px solid #E2BBA7;font-size:var(--fs-small);line-height:1.5;min-height:58px}
+.fu .rv b{font-family:var(--f-sans);color:#9B5A40;margin-right:8px}
+
+/* ---------- checklist ---------- */
+.chk{display:grid;grid-template-columns:34px 1fr;gap:12px;align-items:start;background:var(--card);border:1.5px solid #CFC5B3;padding:12px 16px;cursor:pointer;text-align:left;font-size:var(--fs-small);line-height:1.5;width:100%}
+.chk .bx{width:30px;height:30px;border:2.5px solid var(--ink);display:grid;place-items:center;font-family:var(--f-hand);font-weight:700;font-size:28px;color:var(--red);line-height:1}
+.chk[aria-pressed="true"] .bx::after{content:"✓"}
+.chk[aria-pressed="true"]{background:#FFF7D6}
+.chk b{display:block;font-weight:900}
+
+/* ---------- misc pieces ---------- */
+.big-q{font-family:var(--f-serif);font-weight:900;font-size:44px;line-height:1.45}
+.big-q .r{color:var(--red)}
+.box{background:var(--card);border:1.5px solid #CFC5B3;padding:16px 20px;box-shadow:var(--sh);min-width:0}
+.box h3{font-weight:900;font-size:var(--fs-small);margin-bottom:6px}
+.box.dash{border-style:dashed;background:transparent;box-shadow:none}
+.chip{display:inline-block;font-size:16px;font-weight:700;border:1.5px solid var(--ink);background:var(--card);padding:1px 10px;margin:3px 4px 3px 0;border-radius:2px;line-height:1.6}
+.sil{display:flex;flex-direction:column;align-items:center;gap:10px}
+.sil svg{width:120px;height:auto}
+.vsg{display:flex;flex-direction:column;justify-content:center;gap:22px;background:var(--card);border:1.5px solid var(--rule);padding:14px 26px;box-shadow:var(--sh);min-height:0}
+.vsg .vs{border-left:0;padding-left:0}
+.prayer{font-family:var(--f-serif);font-weight:600;font-size:var(--fs-body);line-height:1.75;background:var(--card);border:1.5px solid var(--rule);padding:20px 30px;box-shadow:var(--sh)}
+.prayer p+p{margin-top:10px}
+.foot{font-weight:900;font-size:var(--fs-small);text-align:center;border-top:1.5px solid var(--rule);padding-top:10px}
+.foot .r{color:var(--red)}
+.vsx{font-size:30px;font-family:var(--f-lat);font-style:italic;color:var(--red);text-align:center;align-self:center}
+.circle2{display:grid;grid-template-columns:1fr 1fr;gap:0;align-items:center}
+.circle2 .cc{aspect-ratio:1;border-radius:50%;border:2.5px solid var(--ink);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:46px;text-align:center;min-width:0}
+.circle2 .cc + .cc{margin-left:-60px;border-color:var(--red)}
+.circle2 .cc h3{font-family:var(--f-serif);font-weight:900;font-size:28px;line-height:1.25}
+.circle2 .cc p{font-size:17px;line-height:1.5}
+.circle2 .cc .kk{font-size:var(--fs-tiny);letter-spacing:.14em;font-weight:700;color:var(--mute)}
+
+/* ---------- bar + notes ---------- */
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:20;height:calc(60px + env(safe-area-inset-bottom,0px));padding:0 max(16px,env(safe-area-inset-right,0px)) env(safe-area-inset-bottom,0px) max(16px,env(safe-area-inset-left,0px));display:flex;align-items:center;gap:10px;background:#1C1917;color:var(--paper)}
+.prog{position:absolute;left:0;right:0;top:0;height:4px;background:rgba(251,247,238,.15)}
+.prog span{display:block;height:100%;background:var(--hi);transition:width .3s}
+.nb{background:transparent;color:var(--paper);border:2px solid rgba(251,247,238,.35);height:38px;min-width:42px;padding:0 12px;cursor:pointer;font-weight:700;font-size:14px;display:inline-flex;align-items:center;justify-content:center;gap:8px}
+.nb:hover:not(:disabled){border-color:var(--hi);color:var(--hi)}
+.nb:disabled{opacity:.3;cursor:default}
+.nb[aria-pressed="true"]{background:var(--hi);color:var(--ink);border-color:var(--hi)}
+.nb svg{width:16px;height:16px}
+a.nb{text-decoration:none}
+.nb kbd{font-family:var(--f-lat);font-size:15px;opacity:.75}
+.count{font-family:var(--f-lat);font-size:22px;letter-spacing:.04em;min-width:72px;text-align:center;font-variant-numeric:tabular-nums}
+.count b{font-weight:600;color:var(--hi)}
+.bt{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:700;font-size:15px;opacity:.85;padding-left:6px}
+.notes-panel{position:fixed;left:50%;bottom:calc(74px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);width:min(880px,calc(100% - 32px));max-height:34vh;overflow:auto;background:var(--paper);color:var(--ink);border:2px solid var(--ink);box-shadow:4px 4px 0 var(--ink);padding:14px 20px;font-size:16px;line-height:1.7;z-index:21}
+.notes-panel b{display:block;font-weight:900;margin-bottom:4px}
+.notes-panel .skip{display:inline-block;background:var(--red);color:#fff;font-weight:900;font-size:13px;padding:0 8px;margin-right:8px;letter-spacing:.06em}
+.notes-panel p+p{margin-top:6px}
+.notes-panel .ntm{font-weight:700;color:var(--mute)}
+.notes-panel .ntl{padding-left:1.2em}
+.notes-panel .ntp{color:var(--mute)}
+.nk{display:inline-block;margin-right:8px;padding:0 6px;border:2px solid var(--ink);font-size:.72em;font-weight:900;line-height:1.5;letter-spacing:.06em;vertical-align:.12em;white-space:nowrap;color:var(--ink)}
+.nk-say{background:#D3E9FF}.nk-ask{background:#FFDCD8}.nk-stop{background:#FFE047}.nk-go,.nk-fin{background:#D8F0E3}.nk-prep{background:#ECEBF0}.nk-warn{background:#E5383B;color:#fff}
+.notes .skip{display:none}
+.defs{position:absolute;width:0;height:0;overflow:hidden}
+
+@media (prefers-reduced-motion:reduce){
+  .slide,.slide.on,.btn,.rv,.rv .rv-c,.prog span{transition:none!important}
+}
+
+/* ---------- phones & portrait: stacked pages ---------- */
+@media (max-width:760px),(orientation:portrait) and (max-width:1100px){
+  :root{--fs-mega:36px;--fs-h:25px;--fs-verse:17.5px;--fs-lead:19px;--fs-body:16.5px;--fs-small:16px;--fs-tiny:14.5px}
+  body{overflow-x:hidden;overflow-y:auto}
+  .viewport{position:static;padding-block:16px 32px}
+  .deck{height:auto;display:flex;flex-direction:column;gap:26px}
+  .slide{position:relative;left:auto;top:auto;width:auto;height:auto;transform:none;opacity:1;visibility:visible;transition:none;box-shadow:0 10px 24px rgba(0,0,0,.45)}
+  .slide::before{background:linear-gradient(90deg,transparent 22px,var(--red-l) 22px 23.5px,transparent 23.5px)}
+  .page,.cv{position:relative;inset:auto;padding:20px 16px 44px 36px;gap:14px}
+  .bar,.notes-panel{display:none!important}
+  .cols,.g4,.g3,.g2,.whos,.stn,.ditch,.circle2,.legend li{grid-template-columns:1fr}
+  .tline{grid-template-columns:1fr;padding-top:0;padding-left:28px}
+  .tline::before{left:7px;right:auto;top:0;bottom:0;width:3px;height:auto}
+  .tline .ev::before{top:4px;left:-28px}
+  .rh{flex-wrap:wrap;white-space:normal;gap:4px 10px}
+  .rh .src{margin-left:0}
+  .slide.chap .page{flex-direction:column;align-items:flex-start;gap:8px}
+  .chap-n{font-size:90px;width:auto;text-align:left}
+  .chap-t{font-size:30px}
+  .ditch .d.l,.ditch .d.r{border-radius:0;border:2px solid var(--red)}
+  .ditch h3,.ditch .road h3{font-size:22px}
+  .circle2 .cc{aspect-ratio:auto;border-radius:24px;padding:18px}
+  .circle2 .cc + .cc{margin-left:0;margin-top:12px}
+  .circle2 .cc h3{font-size:20px}
+  .q4{padding:0;grid-template-columns:1fr;grid-template-rows:none}
+  .q4 .ax-y,.q4 .ax-x{display:none}
+  .big-q{font-size:24px}
+  .aq.big{font-size:21px}
+  .stn .qq{font-size:20px}
+  .timer .tm-d{font-size:48px}
+  .toc button{grid-template-columns:40px 1fr auto;font-size:16px}
+  .toc .dots{display:none}
+  .shift{grid-template-columns:1fr;gap:4px}
+  .shift .arw{transform:rotate(90deg);text-align:left;width:30px}
+  .cv-art svg{max-width:260px}
+  .rv:not(.shown) .rv-c{opacity:1}
+  .rv:not(.shown){background:var(--card)!important;border-style:solid!important}
+  .rv:not(.shown)::after{display:none}
+  .rv-ctl{display:none}
+  .fu .rv:not(.shown){background:var(--note2)!important}
+  .sticky{font-size:16px}
+  .mg{font-size:16px}
+  .hide-m{display:none}
+  .vs sup{font-size:14px}
+}
+.credit{font-size:var(--fs-tiny);color:var(--mute);line-height:1.5;border-top:1px dashed var(--rule);padding-top:10px}
+</style>
+</head>
+<body>
+<!-- shared drawings -->
+<svg class="defs" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="fig" viewBox="0 0 40 100"><circle cx="20" cy="12" r="9"/><path d="M9 26 Q20 20 31 26 L34 58 L28 58 L27 98 L21 98 L20 64 L19 98 L13 98 L12 58 L6 58 Z"/></symbol>
+  </defs>
+</svg>
+
+<main class="viewport" id="viewport">
+<div class="deck" id="deck">
+
+<!-- cover -->
+<section class="slide" data-title="封面">
+  <div class="page cv">
+    <div class="cv-top"><span>板新青契</span></div>
+    <div class="cols grow" style="--c:1.2fr 1fr">
+      <div class="stack ctr" style="--g:18px">
+        <p class="kick">第 7 章</p>
+        <h1 class="cv-title"><span>恐懼與撕裂時代中的</span><span class="r">自由主義與愛</span></h1>
+        <p class="cv-en">Liberalism and Love in a Time of Fear and Fragmentation</p>
+        <p class="cv-meta"><span><b>《耶穌與權勢》</b></span><span>賴特（N. T. Wright）、伯德（Michael F. Bird）著</span></p>
+        <p class="cv-en" style="font-size:18px">Jesus and the Powers: Christian Political Witness in an Age of Totalitarian Terror and Dysfunctional Democracies</p>
+        <p class="mg" style="margin-top:10px">上一章在「拆」，這一章開始「建」。</p>
+      </div>
+      <div class="cv-art">
+        <svg viewBox="0 0 440 400" role="img" aria-label="一本攤開的筆記本，紅色書籤垂下，一頁畫了螢光筆">
+          <path d="M30 118 Q122 92 214 124 L214 342 Q122 312 30 338 Z" fill="#FFFDF8" stroke="#2A2521" stroke-width="3" stroke-linejoin="round"/>
+          <path d="M226 124 Q318 92 410 118 L410 338 Q318 312 226 342 Z" fill="#FFFDF8" stroke="#2A2521" stroke-width="3" stroke-linejoin="round"/>
+          <path d="M214 124 Q220 132 226 124 M214 342 Q220 352 226 342" fill="none" stroke="#2A2521" stroke-width="3"/>
+          <g stroke="#B9AE9B" stroke-width="3" stroke-linecap="round"><path d="M56 150 Q120 134 190 152"/><path d="M56 176 Q120 160 190 178"/><path d="M56 202 Q120 186 170 202"/><path d="M56 254 Q120 238 190 256"/><path d="M56 280 Q120 264 160 280"/></g>
+          <path d="M250 176 Q318 158 386 172" stroke="#F2D680" stroke-width="16" stroke-linecap="round" fill="none"/>
+          <g stroke="#B9AE9B" stroke-width="3" stroke-linecap="round"><path d="M250 150 Q318 132 386 146"/><path d="M250 176 Q318 158 386 172"/><path d="M250 202 Q318 184 386 198"/><path d="M250 228 Q318 210 360 222"/><path d="M250 280 Q318 262 386 276"/></g>
+          <path d="M60 226 q12 -10 24 0 t24 0 t24 0" fill="none" stroke="#A3432A" stroke-width="3" stroke-linecap="round"/>
+          <path d="M210 98 L210 378 L220 366 L230 378 L230 98 Z" fill="#A3432A"/>
+          <g transform="rotate(8 344 74)"><rect x="300" y="32" width="96" height="86" fill="#F7E8A4"/><path d="M318 62 H378 M318 82 H366" stroke="#8A7420" stroke-width="3" stroke-linecap="round"/><text x="330" y="108" font-family="LXGW WenKai TC, Kaiti TC, serif" font-weight="700" font-size="18" fill="#8A7420">？×3</text></g>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <aside class="notes">
+    <p class="ntm">約 1.5 分鐘｜這頁要做到：讓大家知道今天讀哪一章、會怎麼進行。</p>
+    <p><span class="nk nk-say">說</span>「今天我們讀《耶穌與權勢》第 7 章：〈恐懼與撕裂時代中的自由主義與愛〉。作者是兩位新約學者，賴特和伯德。」</p>
+    <p><span class="nk nk-say">說</span>「上一章比較像在『拆』：拆穿政治裡的幾個假神。這一章開始『建』：如果那些都不能信，那基督徒到底可以肯定什麼？今天中間會停三次，大家一起討論。」</p>
+    <p><span class="nk nk-say">說</span>「先講一件事：今天談政治，但我們不是來選邊站的。你支持誰、投給誰，今天都不用說出來。」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>全部講完約 121 分鐘（含三個討論站，各約 10 分鐘）；標「時間不夠可略過」的頁都跳過，約 108 分鐘。講者視窗的計時設為 120 分鐘。討論站的倒數可以加減，依現場調整。</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>投影片上的符號：藍黑色明體是經文；黑色直線框是作者的話；灰框「書中引用」是作者引別人的話；紅色手寫是分享者自己的眉批；便利貼是討論題。第 2 頁有圖例。</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>這本書沒有查到正式的中文譯本（2026-10-31）。中文書名簡稱《耶穌與權勢》（分享者定）；投影片上書中的話，中文取自講稿大綱，引用前請對照原書，補上頁碼。原書：Jesus and the Powers（Zondervan, 2024），第 7 章章名已確認。投影片的五段分法和小標，是講稿大綱的整理，不是原書的小節標題。</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>聚會前：投影機設成延伸桌面，按 P 開講者視窗。討論站不分組，由講者帶全場討論；可以先請一兩位熟悉的弟兄姊妹，冷場時先開口。</p>
+  </aside>
+</section>
+
+<!-- toc -->
+<section class="slide" data-title="今天的路線" data-skip="1">
+  <div class="page">
+    <header class="rh"><span>《耶穌與權勢》第 7 章</span><span class="sec">目次</span><span class="src">點一行，直接翻過去</span></header>
+    <div class="cols grow" style="--c:1.35fr 1fr;--g:34px">
+      <div class="toc">
+        <button data-go="3"><span class="n">序</span><span class="t">開場<small>那我們到底該支持什麼？</small></span><span class="dots"></span><span class="p">3</span></button>
+        <button data-go="7"><span class="n">一</span><span class="t">權柄從哪裡來<small>羅 13、彼前 2</small></span><span class="dots"></span><span class="p">7</span></button>
+        <button data-go="15"><span class="n">二</span><span class="t">走失的孩子<small>基督教與自由民主</small></span><span class="dots"></span><span class="p">15</span></button>
+        <button class="st" data-go="21"><span class="n">站</span><span class="t">討論站 1<small>民主的脆弱</small></span><span class="dots"></span><span class="p">21</span></button>
+        <button data-go="23"><span class="n">三</span><span class="t">愛鄰舍與人的罪<small>自由與民主的根基</small></span><span class="dots"></span><span class="p">23</span></button>
+        <button class="st" data-go="30"><span class="n">站</span><span class="t">討論站 2<small>尊重 vs. 相對主義</small></span><span class="dots"></span><span class="p">30</span></button>
+        <button data-go="32"><span class="n">四</span><span class="t">防堵專制的護欄<small>八道護欄、七個警訊</small></span><span class="dots"></span><span class="p">32</span></button>
+        <button data-go="38"><span class="n">五</span><span class="t">自信的多元主義<small>信念＋同理心</small></span><span class="dots"></span><span class="p">38</span></button>
+        <button class="st" data-go="42"><span class="n">站</span><span class="t">討論站 3<small>溫柔的自信</small></span><span class="dots"></span><span class="p">42</span></button>
+        <button data-go="44"><span class="n">行</span><span class="t">回到生活<small>三個操練、禱告</small></span><span class="dots"></span><span class="p">44</span></button>
+      </div>
+      <div class="legend" style="align-self:start">
+        <h3>這份筆記怎麼讀</h3>
+        <ul class="stack" style="--g:12px">
+          <li><span class="tag t-vs">經文</span><span>藍黑色明體：新標點和合本</span></li>
+          <li><span class="tag t-aq">作者說</span><span>黑色直線框：賴特、伯德的話</span></li>
+          <li><span class="tag t-oq">書中引用</span><span>灰框：書中引述別人的話</span></li>
+          <li><span class="tag t-mg">我的眉批</span><span>紅色手寫：分享者的整理與提醒</span></li>
+          <li><span class="tag t-q">討論</span><span>便利貼：一起討論的問題</span></li>
+        </ul>
+        <p class="credit">經文引自《新標點和合本》（神版）。© 1988, 1989, 1996 聯合聖經公會。</p>
+      </div>
+    </div>
+  </div>
+  <aside class="notes">
+    <p class="ntm"><span class="skip">時間不夠可略過</span>約 30 秒｜這頁要做到：讓大家知道今天的路線，以及投影片上幾種字代表什麼。</p>
+    <p><span class="nk nk-say">說</span>「今天有五段，中間停三站討論。右邊是看這份筆記的方法：藍黑色是聖經，黑框是作者說的，紅色手寫是我自己的眉批。這樣你分得出哪句是作者講的、哪句是我講的。」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>點左邊任何一行，可以直接跳到那一段。趕時間就直接翻下一頁。</p>
+  </aside>
+</section>
+
+<!-- recap of ch.6 -->
+<section class="slide" data-title="開場：上一章拆掉的三個假神" data-skip="1" id="open">
+  <div class="page">
+    <header class="rh"><span>《耶穌與權勢》第 7 章</span><span class="sec">開場</span><span class="src">第 6 章回顧</span></header>
+    <h2 class="ttl">上一章，我們拆穿了三個假神<small>政治很容易變成拜偶像</small></h2>
+    <div class="g3 grow" style="align-items:center">
+      <div class="nc lg"><span class="no">1</span><h3><span class="strike">極權獨裁</span></h3><p>一個人、一個黨說了算，國家要你獻上一切。</p></div>
+      <div class="nc lg"><span class="no">2</span><h3><span class="strike">基督徒民族主義</span></h3><p>披著十字架的外衣，把國家和信仰綁在一起。</p></div>
+      <div class="nc lg"><span class="no">3</span><h3><span class="strike">公民極權</span></h3><p>打著進步的旗號，卻封殺意見不同的人。</p></div>
+    </div>
+    <p class="mg" style="align-self:center;font-size:26px">拆完之後呢？基督徒可以「肯定」什麼？</p>
+  </div>
+  <aside class="notes">
+    <p class="ntm"><span class="skip">時間不夠可略過</span>約 1 分鐘｜這頁要做到：接上第 6 章，帶出這一章的問題：拆完之後，要建什麼。</p>
+    <p><span class="nk nk-say">說</span>「上一章作者拆穿了三個假神：極權獨裁、披著十字架外衣的民族主義，還有打著進步旗號、卻封殺異己的公民極權。」</p>
+    <p><span class="nk nk-say">說</span>「你會發現，作者左右兩邊都批評了：第二個常出現在保守的一方，第三個常出現在進步的一方。」</p>
+    <p><span class="nk nk-go">轉場</span>「問題來了：拆完之後，我們還能相信什麼？」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>這三個名稱依講稿大綱的整理，第 6 章的實際標題與用語請對照原書。</p>
+  </aside>
+</section>
+
+<!-- opening question -->
+<section class="slide" data-title="開場：那我們到底該支持什麼？">
+  <div class="page">
+    <header class="rh"><span>《耶穌與權勢》第 7 章</span><span class="sec">開場</span></header>
+    <div class="cols grow" style="--c:1.5fr 1fr;--g:40px">
+      <div class="stack ctr" style="--g:22px">
+        <p class="kick">你心裡可能有的疑問</p>
+        <p class="big-q">如果獨裁不能信，民主又天天吵架、互相出征——<span class="r">那我們到底該支持什麼？</span></p>
+        <p class="lead" style="color:var(--mute)">我們還能對民主抱有盼望嗎？</p>
+      </div>
+      <div class="stack ctr" style="--g:16px">
+        <div class="sticky"><span class="h">在心裡選一個就好</span>我現在對臺灣民主的感覺比較像——<br>A　還有盼望<br>B　好累<br>C　不想管了</div>
+        <p class="mg r">三個答案都很正常。今天不打分數。</p>
+      </div>
+    </div>
+  </div>
+  <aside class="notes">
+    <p class="ntm">約 2.5 分鐘｜這頁要做到：把這一章要回答的問題，變成每個人自己的問題。</p>
+    <p><span class="nk nk-say">說</span>「獨裁不能信，這我們都同意。可是民主呢？立法院吵、網路上出征、每次選舉都像打仗。你可能會想：那我們到底該支持什麼？還能對民主有盼望嗎？」</p>
+    <p><span class="nk nk-ask">問</span>「右邊三個選項：還有盼望、好累、不想管了。在心裡選一個就好。」停 5 秒。想舉手的可以舉手，不勉強。</p>
+    <p><span class="nk nk-stop">停</span>不要評論哪個答案比較屬靈。只要說：「三種感覺都很真實，作者其實也有。」</p>
+    <p><span class="nk nk-go">轉場</span>「我們先看一個你每天都會遇到的畫面。」</p>
+    <p><span class="nk nk-warn">注意</span>今天的主題容易讓人急著表態。開場就先講清楚：不需要說出自己支持哪個政黨。有人開始批評特定政黨或人物時，溫和地拉回來：「我們今天先看原則，不點名。」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>大綱原句是「民主又天天在立法院打架、政客忙著分贓、社群媒體上充斥著非友即敵的獵巫出征」。投影片縮短成「天天吵架、互相出征」。</p>
+  </aside>
+</section>
+
+<!-- two neighbours -->
+<section class="slide" data-title="開場：美食街的兩位鄰居">
+  <div class="page">
+    <header class="rh"><span>《耶穌與權勢》第 7 章</span><span class="sec">開場</span><span class="src">想像一下</span></header>
+    <h2 class="ttl">美食街裡，坐在你左右的兩個人<small>演算法每天把我們推得更遠</small></h2>
+    <div class="cols grow" style="--c:1fr 150px 1fr;--g:18px;align-items:center">
+      <div class="box" style="display:flex;gap:16px;align-items:center">
+        <svg viewBox="0 0 40 100" width="70" aria-hidden="true"><use href="#fig" fill="#6F665C"/></svg>
+        <div><p class="kick" style="margin-bottom:6px">左邊</p>
+          <span class="chip">單身</span><span class="chip">無神論</span><span class="chip">純素</span><span class="chip">挺大麻合法化</span><span class="chip">支持開放邊境</span><span class="chip">在餐飲業打工</span><span class="chip">進步派</span><span class="chip">酷兒</span></div>
+      </div>
+      <div class="stack ctr" style="align-items:center;text-align:center;--g:6px">
+        <p class="vsx" style="font-size:64px;line-height:1">？</p>
+        <p class="small" style="font-weight:900">你</p>
+      </div>
+      <div class="box" style="display:flex;gap:16px;align-items:center">
+        <svg viewBox="0 0 40 100" width="70" aria-hidden="true"><use href="#fig" fill="#8A6A4F"/></svg>
+        <div><p class="kick" style="margin-bottom:6px">右邊</p>
+          <span class="chip">保守派</span><span class="chip">浸信會信徒</span><span class="chip">開大休旅車</span><span class="chip">無肉不歡</span><span class="chip">反對性別意識形態</span><span class="chip">四個孩子的媽</span></div>
+      </div>
+    </div>
+    <div class="cols" style="--c:1.5fr 1fr;align-items:end">
+      <p class="lead">他們能和平共處、一起決定國家的未來嗎？<br>還是政治注定是一場「把對方消滅」的零和內戰？</p>
+      <p class="mg r">標籤 ≠ 一個人的全部。<br>兩個人都是照著神的形像造的（創 1:27）。</p>
+    </div>
+  </div>
+  <aside class="notes">
+    <p class="ntm">約 3 分鐘｜這頁要做到：讓大家感覺到「撕裂」不是新聞，是每天坐在旁邊的人。</p>
+    <p><span class="nk nk-say">說</span>「想像你在學校美食街、捷運上，或滑 Threads。左邊坐著一個人：單身、無神論、吃純素、挺大麻合法化、支持開放邊境、在餐飲業打工、進步派、酷兒。右邊坐著另一個人：保守派、浸信會信徒、開大休旅車、無肉不歡、反對性別意識形態、四個孩子的媽。」</p>
+    <p><span class="nk nk-ask">問</span>「你讀到哪一邊的標籤時，心裡比較有反應？」不用說出來。「這兩個人，有可能一起決定國家的未來嗎？」</p>
+    <p><span class="nk nk-stop">停</span>讓大家想 5 秒。可以請一兩位自願的人說說看。</p>
+    <p><span class="nk nk-say">說</span>「這一章要回答的就是這個：在這麼分裂的時代，政治是不是只能變成你死我活？」</p>
+    <p><span class="nk nk-go">轉場</span>「作者引了一位神學家的兩個問題，當作這一章的起點。」</p>
+    <p><span class="nk nk-warn">注意</span>不要拿任何一邊開玩笑。在場的人、他們的家人或朋友，可能就符合其中某些標籤。如果有人笑出來，可以接一句：「我們先記得，標籤底下都是真的人。」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>這兩個人物取自講稿大綱，看起來是書中的例子，帶著英美的生活情境（大麻合法化、開放邊境），請對照原書。兩個人刻意畫成一樣的剪影，只換顏色，表示同樣是人。</p>
+  </aside>
+</section>
+
+<!-- the chapter's questions -->
+<section class="slide" data-title="開場：這一章要回答的問題">
+  <div class="page">
+    <header class="rh"><span>《耶穌與權勢》第 7 章</span><span class="sec">開場</span></header>
+    <h2 class="ttl">這一章要回答的問題</h2>
+    <div class="cols grow" style="--c:1fr 1.15fr;--g:36px">
+      <div class="stack" style="--g:18px">
+        <div class="who"><span class="mono">巴</span><p class="nm2">文森·巴科特<span class="en">Vincent Bacote</span></p><p class="id">美國神學家</p></div>
+        <div class="oq">① 基督徒有可能在公共領域中，活出對神的忠心嗎？<br>② 如果政治指的是我們的公民生活，那同時身為「基督徒」和「公民」，究竟意味著什麼？<span class="by">巴科特</span></div>
+      </div>
+      <div class="stack ctr" style="--g:16px">
+        <p class="kick">今天的三個問題</p>
+        <ol class="lst lead" style="--g:16px">
+          <li><b>1</b><span>權柄從哪裡來？<br><span class="small" style="color:var(--mute);font-weight:500">上帝的主權和政府的權柄是什麼關係　→ 一</span></span></li>
+          <li><b>2</b><span>要支持哪一種體制？<br><span class="small" style="color:var(--mute);font-weight:500">為什麼說自由民主是「走失的孩子」　→ 二～四</span></span></li>
+          <li><b>3</b><span>怎麼和差異共處？<br><span class="small" style="color:var(--mute);font-weight:500">不妥協信仰，也不霸凌異己　→ 五</span></span></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <aside class="notes">
+    <p class="ntm">約 1.5 分鐘｜這頁要做到：把今天的三段串起來，讓大家知道每一段在回答什麼。</p>
+    <p><span class="nk nk-say">說</span>「作者引了神學家巴科特的兩個問題：基督徒能不能在公共領域忠於神？同時當基督徒、又當公民，是什麼意思？」</p>
+    <p><span class="nk nk-say">說</span>「今天我們用三個問題回答：權柄從哪裡來；要支持哪一種體制；怎麼和不一樣的人共處。」</p>
+    <p><span class="nk nk-go">轉場</span>「先從第一個開始：權柄從哪裡來？我們回到聖經。」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>巴科特的書是 The Political Disciple（Zondervan, 2015），書評引的核心問題是「基督徒能不能在參與政治的同時，活出忠心的生命」。大綱這兩個問題的原文字句沒有查到，請對照原書。</p>
+  </aside>
+</section>
+
+<!-- section 1 title -->
+<section class="slide chap" data-title="一 扉頁：權柄從哪裡來" data-skip="1" id="s1">
+  <div class="page">
+    <p class="chap-n">壹</p>
+    <div class="chap-b">
+      <p class="kick">《耶穌與權勢》第 7 章 ⦁ 第一段</p>
+      <h2 class="chap-t">權柄從哪裡來</h2>
+      <p class="chap-s">上帝的主權 vs. 國家的權柄</p>
+      <ul class="chap-k"><li class="h">這一段會看到</li><li>羅馬書 13 章、彼得前書 2 章</li><li>兩邊的水溝：無政府與極權</li><li>從「君權神授」到「法律為王」</li></ul>
+    </div>
+  </div>
+  <aside class="notes">
+    <p class="ntm"><span class="skip">時間不夠可略過</span>約 30 秒｜這頁要做到：預告第一段。</p>
+    <p><span class="nk nk-say">說</span>「第一段：權柄從哪裡來。我們會讀兩段經文，看兩邊的水溝，再看看歷史怎麼從『國王代表神』走到『法律比國王大』。」</p>
+  </aside>
+</section>
+
+<!-- Romans 13 -->
+<section class="slide" data-title="一 經文：羅馬書 13:1–7">
+  <div class="page">
+    <header class="rh"><span>《耶穌與權勢》第 7 章</span><span class="sec">一｜權柄從哪裡來</span><span class="src">新標點和合本</span></header>
+    <div class="cols grow" style="--c:1.75fr 1fr;--g:26px">
+      <div class="vsg">
+        <p class="vs"><sup>1</sup>在上有權柄的，人人當順服他，因為<mark>沒有權柄不是出於神的</mark>。凡掌權的都是神所命的。<sup>2</sup>所以，抗拒掌權的就是抗拒神的命；抗拒的必自取刑罰。<sup>3</sup>作官的原不是叫行善的懼怕，乃是叫作惡的懼怕。你願意不懼怕掌權的嗎？你只要行善，就可得他的稱讚；<sup>4</sup>因為他是<mark>神的用人</mark>，是<mark>與你有益的</mark>。你若作惡，卻當懼怕，因為他不是空空地佩劍；他是神的用人，是伸冤的，<mark>刑罰那作惡的</mark>。<sup>5</sup>所以，你們必須順服，不但是因為刑罰，也是因為良心。<sup>6</sup>你們納糧，也為這個緣故；因他們是<mark>神的差役</mark>，常常特管這事。<sup>7</sup>凡人所當得的，就給他。當得糧的，給他納糧；當得稅的，給他上稅；當懼怕的，懼怕他；當恭敬的，恭敬他。<cite>羅馬書 13:1–7</cite></p>
+      </div>
+      <div class="stack" style="--g:14px">
+        <p class="mg">政府是神的「用人」「差役」——是僕人，不是主人。</p>
+        <div class="box"><p class="en" style="font-size:24px;font-style:normal">διάκονος</p><p class="tiny">diakonos｜僕人、執事（13:4「用人」）</p></div>
+        <div class="box"><p class="en" style="font-size:24px;font-style:normal">λειτουργός</p><p class="tiny">leitourgos｜公僕、服事的人（13:6「差役」）</p></div>
+        <p class="mg r">保羅寫這封信時，羅馬皇帝是尼祿。</p>
+      </div>
+    </div>
+  </div>
+  <aside class="notes">
+    <p class="ntm">約 3 分鐘｜這頁要做到：一起讀羅馬書 13:1–7，注意保羅怎麼稱呼政府。</p>
+    <p><span class="nk nk-say">說</span>「我們一起讀羅馬書 13:1–7。」可以全體一起讀，或請自願的人一人讀一兩節。</p>
+    <p><span class="nk nk-ask">問</span>「保羅用了哪些詞來稱呼政府？」讓大家找：神的用人、與你有益的、神的差役。</p>
+    <p><span class="nk nk-say">說</span>「『用人』這個字，希臘文 diakonos，就是後來『執事』的那個字，意思是僕人。『差役』是 leitourgos，服事的人。政府很重要，但它是僕人，不是主人。」</p>
+    <p><span class="nk nk-say">說</span>「還有一件事：保羅寫羅馬書的時候，坐在皇帝位子上的是尼祿。保羅不是在一個完美的政府底下寫這段話的。」</p>
+    <p><span class="nk nk-go">轉場</span>「彼得也講了類似的話，而且他多講了一個很細的分別。」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>經文照新標點和合本（神版），以 YouVersion 為準。13:4「卻當懼怕，因為」：YouVersion 是逗號，信望愛站是分號，投影片照 YouVersion。</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>διάκονος、λειτουργός 是字典層級的字義。羅馬書一般認為寫於主後 57 年左右，尼祿在位是主後 54–68 年。這兩點是補充，不是作者的話。</p>
+  </aside>
+</section>
+
+<!-- 1 Peter 2 -->
+<section class="slide" data-title="一 經文：彼得前書 2:13–17">
+  <div class="page">
+    <header class="rh"><span>《耶穌與權勢》第 7 章</span><span class="sec">一｜權柄從哪裡來</span><span class="src">新標點和合本</span></header>
+    <div class="cols grow" style="--c:1.35fr 1fr;--g:30px">
+      <div class="vsg">
+        <p class="vs" style="font-size:28px"><sup>13</sup>你們<mark>為主的緣故</mark>，要順服人的一切制度，或是在上的君王，<sup>14</sup>或是君王所派罰惡賞善的臣宰。<sup>15</sup>因為神的旨意原是要你們行善，可以堵住那糊塗無知人的口。<sup>16</sup>你們<mark>雖是自由的</mark>，卻不可藉著自由遮蓋惡毒，總要<mark>作神的僕人</mark>。<sup>17</sup>務要尊敬眾人，親愛教中的弟兄，敬畏神，尊敬君王。<cite>彼得前書 2:13–17</cite></p>
+      </div>
+      <div class="stack" style="--g:12px">
+        <p class="kick">2:17 的四個動詞</p>
+        <div class="box" style="padding:12px 18px">
+          <ul class="stack small" style="--g:8px">
+            <li><b>尊敬</b>眾人　<span class="tiny en">τιμήσατε</span></li>
+            <li><b>親愛</b>教中的弟兄　<span class="tiny en">ἀγαπᾶτε</span></li>
+            <li><b class="circ">敬畏</b>神　<span class="tiny en">φοβεῖσθε</span></li>
+            <li><b>尊敬</b>君王　<span class="tiny en">τιμᾶτε</span></li>
+          </ul>
+        </div>
+        <p class="mg">君王拿到的是「尊敬」，和眾人一樣。<br><b>「敬畏」只留給神。</b></p>
+      </div>
+    </div>
+  </div>
+  <aside class="notes">
+    <p class="ntm">約 2.5 分鐘｜這頁要做到：看見使徒要我們尊重政府，但政府的位置在神底下。</p>
+    <p><span class="nk nk-say">說</span>「彼得說：為主的緣故，要順服人的一切制度。注意 16 節：你們是自由的，但這自由是用來作神的僕人。」</p>
+    <p><span class="nk nk-ask">問</span>「17 節有四個動作：尊敬、親愛、敬畏、尊敬。哪一個只給了神？」等大家找到「敬畏」。</p>
+    <p><span class="nk nk-say">說</span>「君王拿到的動詞是『尊敬』，和『尊敬眾人』是同一個字。皇帝不是神，他跟每個人一樣，值得尊重；只有神配得敬畏。」</p>
+    <p><span class="nk nk-go">轉場</span>「為什麼使徒要信徒尊重一個不完美、甚至會逼迫他們的政府？作者的回答很簡單。」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>講稿大綱把 2:17 引成「親愛教會」，新標點和合本是「親愛教中的弟兄」，投影片已照經文改正。</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>2:17 的希臘文：πάντας τιμήσατε（尊敬眾人）、τὴν ἀδελφότητα ἀγαπᾶτε（親愛弟兄）、τὸν θεὸν φοβεῖσθε（敬畏神）、τὸν βασιλέα τιμᾶτε（尊敬君王）。「眾人」和「君王」都用 τιμάω（尊敬），只有神用 φοβέω（敬畏）。這是補充，不是作者的話。</p>
+  </aside>
+</section>
+
+<!-- order vs anarchy -->
+<section class="slide" data-title="一 秩序勝過無政府">
+  <div class="page">
+    <header class="rh"><span>《耶穌與權勢》第 7 章</span><span class="sec">一｜權柄從哪裡來</span></header>
+    <h2 class="ttl">為什麼要順服一個不完美的政府？</h2>
+    <div class="cols grow" style="--c:1.1fr 1fr;--g:34px">
+      <div class="stack ctr" style="--g:22px">
+        <p class="aq big">幾乎任何政府，都比無政府狀態好。<span class="by">賴特、伯德</span></p>
+        <p class="small">沒有秩序的地方，結果一定是「強權就是公理」：拳頭大的說了算，弱勢的人最先受害。</p>
+        <p class="mg">普遍恩典：神給全人類的禮物，不只給基督徒——就像祂叫日頭照好人，也照歹人（太 5:45）。</p>
+      </div>
+      <div class="stack ctr" style="--g:14px">
+        <div class="who"><span class="mono">加</span><p class="nm2">約翰·加爾文<span class="en">John Calvin</span></p><p class="id">1509–1564｜日內瓦的改教家，長老會傳統的源頭之一</p></div>
+        <div class="oq">政府的職分是：保障眾人的共同安全與和平、維持公共安寧、抑制暴徒的煽動、救助受強暴壓迫的人、懲罰惡行。<span class="by">加爾文</span></div>
+      </div>
+    </div>
+  </div>
+  <aside class="notes">
+    <p class="ntm">約 2.5 分鐘｜這頁要做到：理解使徒為什麼要信徒尊重政府：政府是神給人類的普遍恩典。</p>
+    <p><span class="nk nk-say">說</span>「作者的回答是：幾乎任何政府，都比無政府好。一旦沒有秩序，就是強權即公理，誰拳頭大誰說了算。」</p>
+    <p><span class="nk nk-say">說</span>「加爾文，也就是我們長老會傳統的源頭之一，說政府要保障共同的安全與和平、抑制暴徒、救助受壓迫的人、懲罰惡行。」</p>
+    <p><span class="nk nk-say">說</span>「神學上叫這個『普遍恩典』：不是只給基督徒的恩典，是給全人類的。就像耶穌說的，天父叫日頭照好人，也照歹人。」</p>
+    <p><span class="nk nk-go">轉場</span>「可是政府也會出問題。我們畫一張圖。」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>加爾文這串政府職能，出自《基督教要義》4.20.11，是在討論戰爭的段落（英譯開頭：For if power has been given them to maintain the tranquillity of their subjects…；結尾是懲罰惡行）；4.20.9 也有「救助、保護受壓迫者」的說法。投影片是大意，中間兩項沒有逐字核對。「普遍恩典」連到太 5:45 是補充，不是作者的話。</p>
+  </aside>
+</section>
+
+<!-- ditch 1 -->
+<section class="slide" data-title="一 兩邊的水溝：無政府與極權">
+  <div class="page">
+    <header class="rh"><span>《耶穌與權勢》第 7 章</span><span class="sec">一｜權柄從哪裡來</span><span class="src">兩邊的水溝</span></header>
+    <h2 class="ttl">路的兩邊都有水溝</h2>
+    <div class="ditch grow">
+      <div class="d l"><p class="lab">左邊的溝</p><h3>無政府</h3><p>沒有秩序，強權就是公理。</p></div>
+      <div class="road"><p class="lab">路</p><h3>有限的政府</h3><p>賞善罰惡、保護弱者；<br>權柄來自神，也要向神交帳。</p><p class="mg" style="margin-top:6px">羅 13：神的用人</p></div>
+      <div class="d r"><p class="lab">右邊的溝</p><h3>絕對極權</h3><p>政府把自己當成神，要你獻上一切。</p></div>
+    </div>
+    <p class="aq" style="font-size:var(--fs-body)">無政府是政府要解決的問題；極權卻是政府自己會製造出來的災難。<span class="by">賴特、伯德｜大意</span></p>
+  </div>
+  <aside class="notes">
+    <p class="ntm">約 2 分鐘｜這頁要做到：看見政府的兩種失敗：太少（無政府）和太多（極權）。</p>
+    <p><span class="nk nk-say">說</span>「想像一條路，兩邊都有水溝。左邊是無政府：沒有秩序，強權即公理。右邊是極權：政府自己變成神。」</p>
+    <p><span class="nk nk-say">說</span>「作者的意思是：無政府是政府要解決的問題，但極權是政府自己會製造的問題。所以我們需要政府，但需要一個有界線的政府。」</p>
+    <p><span class="nk nk-ask">問</span>「你覺得我們這個時代，比較容易掉進哪一邊的溝？」在心裡想就好。</p>
+    <p><span class="nk nk-go">轉場</span>「那政府的界線在哪裡？作者借了一位哲學家的話。」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>「兩邊的水溝」是分享者的整理方式，用來畫出大綱的「無政府狀態 vs. 絕對極權」，今天會出現三次。</p>
+  </aside>
+</section>
+
+<!-- God is authority -->
+<section class="slide" data-title="一 唯獨上帝「是」權柄">
+  <div class="page">
+    <header class="rh"><span>《耶穌與權勢》第 7 章</span><span class="sec">一｜權柄從哪裡來</span></header>
+    <div class="cols grow" style="--c:1.3fr 1fr;--g:38px">
+      <div class="stack ctr" style="--g:22px">
+        <p class="aq big">唯獨上帝「<span class="ul">是</span>」權柄，<br>國家只是「<span class="ul">有</span>」權柄。<span class="en">God alone is authority; states merely have authority.</span><span class="by">賴特、伯德</span></p>
+        <div class="who"><span class="mono">沃</span><p class="nm2">尼古拉斯·沃特斯多夫<span class="en">Nicholas Wolterstorff</span></p><p class="id">美國哲學家｜The Mighty and the Almighty（2012）</p><p class="say">政府的命令有沒有約束力，不只看它坐在那個位子上，還要看它是不是照著授權、秉公履行職務。</p></div>
+      </div>
+      <div class="stack ctr">
+        <div class="box" style="border:2px solid var(--ink);background:var(--card);padding:20px 24px;transform:rotate(1deg)">
+          <p class="kick" style="text-align:center">委 任 狀</p>
+          <ul class="stack small" style="--g:8px;margin-top:10px">
+            <li><b>受委任：</b>地上的政府</li>
+            <li><b>職務：</b>賞善罰惡、維護公共福祉</li>
+            <li><b>期限：</b>暫時的</li>
+            <li><b>交帳對象：</b>神</li>
+          </ul>
+          <p class="mg r" style="margin-top:12px;text-align:right">不管它承不承認。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <aside class="notes">
+    <p class="ntm">約 2.5 分鐘｜這頁要做到：記住這一章最重要的一句話：上帝「是」權柄，國家只是「有」權柄。</p>
+    <p><span class="nk nk-say">說</span>「這是今天最重要的一句：唯獨上帝『是』權柄，國家只是『有』權柄。差一個字，差很多。」</p>
+    <p><span class="nk nk-say">說</span>「哲學家沃特斯多夫分了兩種權柄：一種是坐在那個位子上，一種是照著授權把職務做好。政府發出不義的命令時，它還坐在位子上，但那道命令就沒有道德上的約束力了。就像一張委任狀：委任它賞善罰惡、維護公共福祉，期限是暫時的，最後要向神交帳。」</p>
+    <p><span class="nk nk-ask">問</span>「如果政府只是『持有委任狀的僕人』，那當它要求的東西超過委任狀寫的範圍，我們怎麼辦？」不用回答，先放在心裡，後面會回來。</p>
+    <p><span class="nk nk-go">轉場</span>「不過，很多現代人一聽到『政府的權柄來自神』，會起雞皮疙瘩。為什麼？」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>英文句出自講稿大綱，請對照原書與頁碼。沃特斯多夫在 The Mighty and the Almighty（2012）區分「職位的權柄」（positional authority）和「履行的權柄」（performance-authority），這裡依書評的整理（NDPR 書評）。大綱寫成「不是終極地位，而是職能的履行、有限度的授權」，投影片改成上面的說法。委任狀的比喻是分享者的整理。</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>如果有人問「政府要求違背信仰的事怎麼辦」，可以提徒 5:29「順從神，不順從人，是應當的」。這不是本章的重點，簡短帶過即可。</p>
+  </aside>
+</section>
+
+<!-- Christendom to Lex Rex -->
+<section class="slide" data-title="一 從君權神授到法律為王">
+  <div class="page">
+    <header class="rh"><span>《耶穌與權勢》第 7 章</span><span class="sec">一｜權柄從哪裡來</span><span class="src">歷史</span></header>
+    <h2 class="ttl">為什麼現代人聽到「政府代表神」會起雞皮疙瘩？</h2>
+    <div class="cols grow" style="--c:1fr 1.45fr;--g:30px">
+      <div class="stack" style="--g:14px">
+        <div class="box"><h3>基督教王國（Christendom）</h3><p class="small">王權和祭司結盟；國王宣稱「君權神授」，違抗國王就是違抗上帝。</p></div>
+        <div class="box"><h3>留下的傷口</h3><ul class="dot small"><li>絕對君主的殘暴</li><li>帝國殖民的恐怖</li><li>宗教戰爭的流血</li></ul></div>
+        <p class="mg">所以人們把「政教合一」拆掉了。</p>
+      </div>
+      <div class="rvbox">
+        <p class="kick">三個轉變</p>
+        <div class="shift rv" data-h="點開：口號"><div class="rv-c from">願神拯救國王！<small>God save the king!</small></div><span class="arw rv-c">→</span><div class="rv-c to">共和國萬歲！<small>Long live the republic!</small></div></div>
+        <div class="shift rv" data-h="點開：權柄的方向"><div class="rv-c from">由上而下：神 → 國王<small>君權神授</small></div><span class="arw rv-c">→</span><div class="rv-c to">由下而上：人民 → 公職人員<small>vox populi, vox Dei（民意即天意）</small></div></div>
+        <div class="shift rv" data-h="點開：法律的位置"><div class="rv-c from">王就是法律<small>Rex Lex</small></div><span class="arw rv-c">→</span><div class="rv-c to">法律才是王<small>Lex Rex：法治高於君王與平民</small></div></div>
+        <div class="rv-ctl"><button class="btn pri rv-next">下一個</button><button class="btn rv-all">全部打開</button><span class="mg" style="font-size:17px">Lex, Rex：1644 年，蘇格蘭長老會牧師盧瑟福的書名</span></div>
+      </div>
+    </div>
+  </div>
+  <aside class="notes">
+    <p class="ntm">約 3 分鐘｜這頁要做到：明白現代民主是從歷史的傷口裡長出來的，以及三個轉變。</p>
+    <p><span class="nk nk-say">說</span>「中古到近代早期，是所謂的『基督教王國』：國王和教會結盟，國王說自己的權柄直接來自神，甚至有主教說違抗國王就是違抗上帝。」</p>
+    <p><span class="nk nk-say">說</span>「結果是絕對君主、殖民、宗教戰爭。這些傷口太深，西方社會後來把政教合一的國家機器拆掉了。」</p>
+    <p><span class="nk nk-say">說</span>按「下一個」逐一打開：「第一，口號從『願神拯救國王』變成『共和國萬歲』。第二，權柄從由上而下，變成由下而上：人民授權給公職人員。第三，從『王就是法律』，變成『法律才是王』，連最有權的人都在法律底下。」</p>
+    <p><span class="nk nk-say">說</span>「最後這個 Lex, Rex，其實是一本書的書名，作者是 1644 年蘇格蘭的長老會牧師盧瑟福。我們長老會的傳統，在這件事上是有份的。」</p>
+    <p><span class="nk nk-go">轉場</span>「由下而上聽起來很好。可是作者說，它有一個致命的弱點。」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>大綱的拉丁文「jus divinum regum」用法待核對，投影片只寫「君權神授」。</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>盧瑟福（Samuel Rutherford）的 Lex, Rex 出版於 1644 年（維基百科「Lex, Rex」條，2026-10-31 查詢）。這是補充，不是作者的話。</p>
+  </aside>
+</section>
+
+<!-- weakness of democracy -->
+<section class="slide" data-title="一 民主的軟肋：沒有共同的故事">
+  <div class="page">
+    <header class="rh"><span>《耶穌與權勢》第 7 章</span><span class="sec">一｜權柄從哪裡來</span></header>
+    <h2 class="ttl">只有「由下而上」，夠嗎？</h2>
+    <div class="cols grow" style="--c:1.25fr 1fr;--g:34px">
+      <div class="stack" style="--g:16px">
+        <p class="aq">如果人民之間沒有共享的大故事，對「什麼是公義、什麼是公共福祉」也沒有基本共識，社會就會分崩離析。<span class="by">賴特、伯德｜大意</span></p>
+        <div class="box dash"><p class="small"><b>「人民的聲音」</b>就可能變成：</p>
+          <p class="small" style="margin-top:6px"><span class="chip">暴民的暴政</span><span class="chip">多數人的暴政</span><span class="chip">吵鬧少數人的暴政</span></p>
+          <p class="small" style="margin-top:6px">→ 最後是<b class="red">共和國的手足相殘</b>（republican fratricide）</p></div>
+        <p class="mg">vox populi, vox Dei 這句話最早見於 798 年左右，阿爾昆寫信給查理曼：別聽那些這樣說的人，因為群眾的喧囂近乎瘋狂。</p>
+      </div>
+      <div class="stack ctr" style="--g:14px">
+        <p class="kick">基督徒能帶來的兩件事</p>
+        <div class="nc"><span class="no">1</span><h3>國家絕不是無誤的</h3><p>它是僕人，必須向神交帳。</p></div>
+        <div class="nc"><span class="no">2</span><h3>一個共同的故事</h3><p>耶穌的故事與十字架，能為快要撕裂的社會，提供凝聚公民情誼的資源。</p></div>
+      </div>
+    </div>
+  </div>
+  <aside class="notes">
+    <p class="ntm">約 2.5 分鐘｜這頁要做到：看見只靠「民意」的民主會出什麼問題，以及基督徒能貢獻什麼。</p>
+    <p><span class="nk nk-say">說</span>「作者說，單靠由下而上的授權，有一個致命弱點：如果人民之間沒有共同的故事，對什麼是公義、什麼是大家的好處沒有共識，社會就會散掉。」</p>
+    <p><span class="nk nk-say">說</span>「當『好』變成一時的流行，人民的聲音就可能變成暴民的暴政、多數人的暴政，或者最大聲那一小群人的暴政。最後是同一個國家的人自相殘殺。」</p>
+    <p><span class="nk nk-say">說</span>「有趣的是，『民意即天意』這句話最早出現的時候，是一位叫阿爾昆的學者寫信給查理曼大帝，勸他『不要』聽那些這樣說的人。」</p>
+    <p><span class="nk nk-say">說</span>「那基督徒能帶來什麼？兩件事：第一，提醒國家它不是神；第二，帶來一個能把人連在一起的故事：耶穌的故事。」</p>
+    <p><span class="nk nk-go">轉場</span>「這就帶到第二段：作者說，自由民主其實本來就是基督教的孩子。」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>阿爾昆的拉丁原文大意是：「不要聽那些常說『民意即天意』的人，因為群眾的喧囂總是近乎瘋狂。」出處：阿爾昆致查理曼書信，約 798 年（St Andrews 大學 MacTutor 網站「Alcuin」引文頁，2026-10-31 查詢）。這是補充，不是作者的話。</p>
+  </aside>
+</section>
+<!-- section 2 title -->
+<section class="slide chap" data-title="二 扉頁：走失的孩子" data-skip="1" id="s2">
+  <div class="page">
+    <p class="chap-n">貳</p>
+    <div class="chap-b">
+      <p class="kick">《耶穌與權勢》第 7 章 ⦁ 第二段</p>
+      <h2 class="chap-t">走失的孩子</h2>
+      <p class="chap-s">基督教與自由民主</p>
+      <ul class="chap-k"><li class="h">這一段會看到</li><li>這裡的「自由主義」到底指什麼</li><li>創世記 1:27、約翰福音 3:16 留下的基因</li><li>歷史上的基督徒，支持過各種政體</li></ul>
+    </div>
+  </div>
+  <aside class="notes">
+    <p class="ntm"><span class="skip">時間不夠可略過</span>約 30 秒｜這頁要做到：預告第二段。</p>
+    <p><span class="nk nk-say">說</span>「第二段：作者說自由民主是基督教『走失的孩子』。在那之前，先把一個詞講清楚。」</p>
+  </aside>
+</section>
+
+<!-- define liberalism -->
+<section class="slide" data-title="二 先定義：這裡的「自由主義」">
+  <div class="page">
+    <header class="rh"><span>《耶穌與權勢》第 7 章</span><span class="sec">二｜走失的孩子</span><span class="src">先定義</span></header>
+    <h2 class="ttl">這裡的「自由主義」，不是你想的那個</h2>
+    <div class="cols" style="--c:1fr 1.35fr;--g:26px">
+      <div class="box dash"><h3><span class="strike">不是指</span></h3><p class="small">政治光譜上的「自由派」「左派」<br>（美國說的 liberal，和 conservative 相對）</p></div>
+      <div class="box" style="border-color:var(--ink)"><h3>而是指：政治自由主義／自由民主</h3><p class="small"><span class="chip">憲政</span><span class="chip">法治</span><span class="chip">個人權利</span><span class="chip">宗教自由</span><span class="chip">選舉</span><span class="chip">權力制衡</span></p></div>
+    </div>
+    <div class="cols grow" style="--c:1.45fr 1fr;--g:30px;align-items:center">
+      <p class="aq">許多人以為政治自由主義是基督教的死敵。其實，自由民主是「基督教王國 2.0」：為了修補前現代世界的裂痕，重新配置過的版本。<span class="by">賴特、伯德｜大意</span></p>
+      <p class="mg r">左派、右派，其實都住在這間房子裡。</p>
+    </div>
+  </div>
+  <aside class="notes">
+    <p class="ntm">約 2.5 分鐘｜這頁要做到：先把「自由主義」講清楚，避免大家以為作者在支持某一派。</p>
+    <p><span class="nk nk-say">說</span>「先講清楚：這章說的『自由主義』，不是政治光譜上的『自由派』或『左派』。在美國，liberal 常常是 conservative 的相反，但這裡不是那個意思。」</p>
+    <p><span class="nk nk-say">說</span>「這裡指的是自由民主這整套制度：憲政、法治、個人權利、宗教自由、選舉、權力制衡。臺灣的左派、右派、藍綠白，其實都住在這間房子裡。」</p>
+    <p><span class="nk nk-say">說</span>「作者說了一句很大膽的話：自由民主其實是『基督教王國 2.0』，是為了修補舊世界的裂痕而重新配置的版本。」</p>
+    <p><span class="nk nk-ask">問</span>「聽到『自由主義是基督教的孩子』，你的第一個反應是什麼？覺得有道理，還是覺得怪怪的？」可以請一兩位說說看。</p>
+    <p><span class="nk nk-go">轉場</span>「作者的證據，來自聖經裡的兩節經文。」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>「這裡不是指自由派」這個澄清是補充，大綱沒有。這一點講清楚很重要，不然後面「認領自由主義」很容易被聽成「支持某一派」。</p>
+  </aside>
+</section>
+
+<!-- biblical DNA -->
+<section class="slide" data-title="二 聖經留下的基因">
+  <div class="page">
+    <header class="rh"><span>《耶穌與權勢》第 7 章</span><span class="sec">二｜走失的孩子</span></header>
+    <h2 class="ttl">「人人生而平等」，真的是不證自明嗎？</h2>
+    <div class="cols grow" style="--c:1fr 1fr;--g:30px">
+      <div class="stack" style="--g:16px">
+        <p class="vs">神就照著自己的形像造人，乃是照著他的形像造男造女。<cite>創世記 1:27</cite></p>
+        <p class="vs">神愛世人，甚至將他的獨生子賜給他們，叫一切信他的，不致滅亡，反得永生。<cite>約翰福音 3:16</cite></p>
+      </div>
+      <div class="stack" style="--g:16px">
+        <div class="box"><p class="en" style="font-size:21px;line-height:1.45">“We hold these truths to be self-evident, that all men are created equal …”</p><p class="tiny" style="margin-top:6px">美國《獨立宣言》，1776 年</p></div>
+        <p class="aq" style="font-size:var(--fs-body)">如果沒有讀過創世記 1:27 和約翰福音 3:16，人類歷史上不會有人認為「人人生而平等」是不證自明的真理。<span class="by">賴特、伯德｜大意</span></p>
+        <p class="mg">現代人權、憲政、宗教寬容的根，作者說來自宣教的新教徒：「一切真理都是神的真理」。</p>
+      </div>
+    </div>
+  </div>
+  <aside class="notes">
+    <p class="ntm">約 2.5 分鐘｜這頁要做到：理解作者的論證：人人平等的觀念，根在聖經。</p>
+    <p><span class="nk nk-say">說</span>「美國《獨立宣言》說：我們認為這些真理是不證自明的，人人生而平等。作者問：真的是不證自明嗎？」</p>
+    <p><span class="nk nk-say">說</span>「作者說，如果沒有創世記 1:27，每個人都照著神的形像被造；沒有約翰福音 3:16，神愛世人，人類歷史上不會有人覺得『人人平等』是理所當然的。」</p>
+    <p><span class="nk nk-ask">問</span>「你同意嗎？你身邊不信主的朋友，會怎麼說明『人人平等』？」可以請一兩位說說看。</p>
+    <p><span class="nk nk-say">說</span>「這是作者的主張，也有學者不完全同意，會說平等的觀念也來自古希臘、斯多葛學派或啟蒙運動。這可以留著討論。」</p>
+    <p><span class="nk nk-go">轉場</span>「所以作者用了一個很有畫面的比喻。」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>《獨立宣言》引文是補充，不是作者的話。也有人提出不同的看法，可以補充：主張這個觀念源自基督教的學者，例如 Larry Siedentop《Inventing the Individual》；強調古典與啟蒙來源的學者也不少。這是一般性的理解，分享時說「有學者認為」即可。</p>
+  </aside>
+</section>
+
+<!-- the lost child -->
+<section class="slide" data-title="二 走失的孩子">
+  <div class="page">
+    <header class="rh"><span>《耶穌與權勢》第 7 章</span><span class="sec">二｜走失的孩子</span><span class="src">核心比喻</span></header>
+    <div class="cols grow" style="--c:1.5fr 1fr;--g:40px">
+      <div class="stack ctr" style="--g:20px">
+        <p class="aq big">政治自由主義不是基督教的死敵，而是它<span class="ul">走失的孩子</span>——只是這孩子不肯相信，自己的親生父親是誰。<span class="en">… proves in fact to be its lost child, who refuses to believe the truth about its paternity.</span><span class="by">賴特、伯德</span></p>
+      </div>
+      <div class="stack ctr" style="--g:18px">
+        <p class="kick">基督徒的態度可以是</p>
+        <ul class="stack small" style="--g:10px">
+          <li><span class="strike">打倒它</span>：當它是敵人</li>
+          <li><span class="strike">崇拜它</span>：當它是救主</li>
+          <li><b class="circ">認領它</b>：告訴它，它從哪裡來</li>
+        </ul>
+        <p class="mg r">孩子會走失，但身世不會改變。</p>
+      </div>
+    </div>
+  </div>
+  <aside class="notes">
+    <p class="ntm">約 2 分鐘｜這頁要做到：記住「走失的孩子」這個比喻，以及基督徒可以怎麼面對自由民主。</p>
+    <p><span class="nk nk-say">說</span>「作者說：政治自由主義不是基督教的死敵，而是它走失的孩子，只是這孩子不肯相信自己的親生父親是誰。」</p>
+    <p><span class="nk nk-say">說</span>「這樣說來，基督徒對自由民主，不必打倒它，也不必崇拜它，而是可以『認領』它：在公共討論裡，溫和地說出人權、平等、法治背後的故事。」</p>
+    <p><span class="nk nk-ask">問</span>「你會怎麼跟一個不信主的朋友說『人權從哪裡來』，而不會讓他覺得你在說教？」</p>
+    <p><span class="nk nk-go">轉場</span>「不過，基督教也沒有和某一種政體綁死。我們看看歷史上的基督徒怎麼想。」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>讀者在原書的劃線證實書中有這句（Political liberalism, far from being the formidable foe of Christianity, proves in fact to be its lost child, who refuses to believe the truth about its paternity.），但沒有查到它是作者自己的話，還是引用別人（有文章把類似的「浪子」說法連到神學家 O’Donovan，沒有證實）。投影片先寫「賴特、伯德」，請對照原書的註腳。</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>大綱把這個比喻叫做「基督教浪子」。如果要連到路加福音 15 章浪子的比喻，要說清楚只是借用畫面：路加福音 15 章講的是父神對罪人的恩典，不是在講政治制度。</p>
+  </aside>
+</section>
+
+<!-- Christians on regimes -->
+<section class="slide" data-title="二 歷史上的基督徒怎麼看政體" data-skip="1">
+  <div class="page">
+    <header class="rh"><span>《耶穌與權勢》第 7 章</span><span class="sec">二｜走失的孩子</span><span class="src">歷史</span></header>
+    <h2 class="ttl">基督教沒有和任何一種政體綁死</h2>
+    <div class="whos grow">
+      <div class="who"><span class="mono">優</span><p class="nm2">優西比烏<span class="en">Eusebius</span></p><p class="id">約 260–339｜教會歷史學家</p><p class="say">支持君主制：一位神，對應一位王；民主只會帶來混亂。</p></div>
+      <div class="who"><span class="mono">加</span><p class="nm2">加爾文<span class="en">John Calvin</span></p><p class="id">1509–1564｜改教家</p><p class="say">君主制容易變暴政，貴族制容易變派系，民治最容易生亂；最好的是貴族制，或用民主調和的貴族制。</p></div>
+      <div class="who"><span class="mono">托</span><p class="nm2">托爾金<span class="en">J. R. R. Tolkien</span></p><p class="id">1892–1973｜《魔戒》作者</p><p class="say">批判極權（魔多、艾辛格），也在〈夏爾的收復〉批判官僚與破壞自然的現代社會。</p></div>
+      <div class="who"><span class="mono">艾</span><p class="nm2">艾略特<span class="en">T. S. Eliot</span></p><p class="id">1888–1965｜詩人</p><p class="say">把任何一種政府形式等同於基督教，都是危險的錯誤：混淆了永恆與短暫、絕對與相對。</p></div>
+    </div>
+  </div>
+  <aside class="notes">
+    <p class="ntm"><span class="skip">時間不夠可略過</span>約 2.5 分鐘｜這頁要做到：看見基督徒在歷史上支持過各種政體，沒有一種是「基督教唯一的」。</p>
+    <p><span class="nk nk-say">說</span>「四位基督徒，四種看法。優西比烏支持君主制，理由是一神對應一王。加爾文說三種政體各有毛病，最推崇用民主調和的貴族制，因為很少有人能自我節制。托爾金在《魔戒》裡批判極權，也批判現代社會的官僚。艾略特則提醒：把任何一種政府等同於基督教，都是危險的錯誤。」</p>
+    <p><span class="nk nk-say">說</span>「所以作者很誠實：聖經沒有規定一種標準政體。」</p>
+    <p><span class="nk nk-go">轉場</span>「那為什麼作者還是支持自由民主？他的用詞很保守。」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>出處：優西比烏《君士坦丁頌辭》第 3 章；加爾文《基督教要義》4.20.8（大綱漏了「民治最容易生亂」，投影片補上）；托爾金 1943 年 11 月 29 日給兒子的信（Letter 52），說自己的政治傾向越來越偏向「無政府」或「不受憲法約束的君主制」；艾略特 The Idea of a Christian Society（1939）第四章開頭。大綱說托爾金「被學者稱為天主教生態保皇派／無政府君主主義者」：「無政府君主主義」有出處（David Bentley Hart 2010 年在 First Things 的文章），「天主教生態保皇派」查不到，投影片都不放。</p>
+  </aside>
+</section>
+
+<!-- least worst -->
+<section class="slide" data-title="二 最不壞的選擇">
+  <div class="page">
+    <header class="rh"><span>《耶穌與權勢》第 7 章</span><span class="sec">二｜走失的孩子</span></header>
+    <h2 class="ttl">自由民主：最不壞的選擇</h2>
+    <p class="aq">在這個充滿罪惡、貪婪與不義的世界裡，自由民主仍是人類治理中「最不壞的選擇」：它不是公義社會的充分條件，卻是促成公義社會最好的「賦能條件」。<span class="en">the least worst option … an enabling condition</span><span class="by">賴特、伯德｜大意</span></p>
+    <div class="g2 grow" style="align-items:center">
+      <div class="box dash"><h3><span class="strike">充分條件</span></h3><p class="small">「有了民主，社會就一定公義。」</p></div>
+      <div class="box" style="border:2px solid var(--ink)"><h3>賦能條件</h3><p class="small">「有了民主，公義比較有機會長出來。」</p></div>
+    </div>
+    <p class="mg">像一座好球場：保證不了比賽精彩，但爛球場一定踢不好。</p>
+  </div>
+  <aside class="notes">
+    <p class="ntm">約 2 分鐘｜這頁要做到：理解作者支持自由民主的方式：不是把它當天國，而是當作「最不壞」的選擇。</p>
+    <p><span class="nk nk-say">說</span>「作者的用詞很保守：自由民主是最不壞的選擇。它不是公義的充分條件，有了它不保證公義；但它是最好的賦能條件，讓公義比較有機會長出來。」</p>
+    <p><span class="nk nk-say">說</span>「打個比方：好的球場保證不了比賽精彩，但爛球場一定踢不好。」</p>
+    <p><span class="nk nk-go">轉場</span>「好，我們停在這裡，進入第一個討論站。」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>球場是分享者的比喻，用來說明「賦能條件」，有它的限制：民主不只是場地，也需要公民的品格。如果有人提到邱吉爾「民主是最壞的制度，除了其他所有試過的制度以外」，那是他 1947 年 11 月 11 日在英國下議院說的，他自己也說是引述別人的說法。這是補充，不是作者的話。</p>
+  </aside>
+</section>
+
+<!-- station 1 -->
+<section class="slide" data-title="討論站 1：當民意失去共識" id="d1">
+  <div class="page">
+    <header class="rh"><span>《耶穌與權勢》第 7 章</span><span class="sec">討論站 1</span><span class="src">大家一起</span></header>
+    <div class="stn grow">
+      <div class="stack" style="--g:18px">
+        <p class="kick">當「民意」失去共識，基督徒怎麼看民主的脆弱？</p>
+        <p class="qq">選票過半、聲量夠大，就什麼都對嗎？還是乾脆冷感？讀完「由下而上的權柄」和「走失的孩子」，你對臺灣的民主、對自己的公民身分，有什麼新的看法？</p>
+        <div class="fu rvbox">
+          <div class="rv" data-h="追問 1（點開）"><span class="rv-c"><b>追問 1</b>和朋友談人權、言論自由、平等的時候，「沒有上帝形象（創 1:27）作根基的自由」，會遇到什麼危機？</span></div>
+          <div class="rv" data-h="追問 2（點開）"><span class="rv-c"><b>追問 2</b>如果政府只是「持有委任狀的僕人」（羅 13:4），那麼一個政黨勝選或敗選時，基督徒的態度和一般狂熱的選民，應該有什麼不同？</span></div>
+        </div>
+      </div>
+      <div class="stack" style="--g:18px">
+        <div class="timer" data-min="10"><span class="tm-h">討論時間</span><span class="tm-d">10:00</span><div class="row"><button class="btn pri tm-go">開始</button><button class="btn" data-add="-1">−1 分</button><button class="btn" data-add="1">＋1 分</button><button class="btn tm-reset">重來</button></div></div>
+        <div class="sticky"><span class="h">怎麼參與</span>想到就舉手說，一句話也可以。<br>不想說，在心裡想也很好。</div>
+      </div>
+    </div>
+  </div>
+  <aside class="notes">
+    <p class="ntm">約 10 分鐘｜這頁要做到：把前兩段的內容，連到自己對臺灣民主的看法。</p>
+    <p><span class="nk nk-say">說</span>「我們停在這裡，我想聽聽大家的想法。先給大家 30 秒，安靜想一想左邊的問題。」按「開始」計時。</p>
+    <p><span class="nk nk-stop">停</span>安靜 30 秒，再開口。</p>
+    <p><span class="nk nk-ask">問</span>「有沒有人想先說說看？一句話也可以。」有人回應時，先用自己的話重述一次（「你的意思是……」），再問「有沒有人想法不太一樣？」不評對錯。</p>
+    <p><span class="nk nk-say">說</span>冷場的時候，點開追問 1，或講者先說一個自己的例子，把話題打開。</p>
+    <p><span class="nk nk-warn">注意</span>先說清楚：不用說出自己支持哪個政黨、投給誰。追問 2 用「如果」的方式問。如果有人開始批評特定的政黨或人物，溫和地拉回來：「我們用今天讀到的原則來看，不點名。」</p>
+    <p><span class="nk nk-stop">停</span>時間到或討論告一段落，就翻下一頁收尾。</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>青年常見的兩個盲點（大綱的整理）：一是「民主偶像化」，把政黨勝選或某種意識形態當成天國降臨，對不同立場的人充滿仇恨；二是「犬儒冷漠」，覺得政客都在演戲，基督徒管好教會就好。下一頁用水溝圖收這兩個盲點。</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>全場討論容易變成少數人的對話。可以說「剛剛說話的大多是同幾位，有沒有還沒說過的人想補充？」但不點名。</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>倒數可以按「＋1 分」「−1 分」調整，在講者視窗裡也點得到。時間到，數字會變紅。</p>
+  </aside>
+</section>
+
+<!-- after station 1: ditch 2 -->
+<section class="slide" data-title="討論站 1 之後：參與，但不拜偶像">
+  <div class="page">
+    <header class="rh"><span>《耶穌與權勢》第 7 章</span><span class="sec">討論站 1</span><span class="src">兩邊的水溝</span></header>
+    <h2 class="ttl">討論完，再看一次水溝</h2>
+    <div class="ditch grow">
+      <div class="d l"><p class="lab">左邊的溝</p><h3>民主偶像化</h3><p>把政黨勝選當成天國降臨；對另一邊充滿仇恨。</p></div>
+      <div class="road"><p class="lab">路</p><h3>參與，但不拜偶像</h3><p>為公共福祉積極參與、守護民主法治；<br>但不把任何政黨或民意當成終極的神。</p><p class="mg" style="margin-top:6px">羅 13、彼前 2 的平衡</p></div>
+      <div class="d r"><p class="lab">右邊的溝</p><h3>犬儒冷漠</h3><p>「反正政客都在演戲，基督徒管好教會就好。」</p></div>
+    </div>
+    <p class="foot">民主因失去共識而撕裂時，教會帶著「人人都有神的形像」（創 1:27），<span class="r">成為社會的穩定錨與良心。</span></p>
+  </div>
+  <aside class="notes">
+    <p class="ntm">約 1.5 分鐘｜這頁要做到：用水溝圖收第一站的討論。</p>
+    <p><span class="nk nk-say">說</span>「剛剛大家分享的，常常會落在兩邊的溝裡。一邊是把民主、把某個政黨當偶像；另一邊是冷感：反正都一樣，不管了。」</p>
+    <p><span class="nk nk-say">說</span>「羅馬書 13 章和彼得前書 2 章給的是中間那條路：政府是神給的普遍恩典，所以我們積極參與；但任何政黨、任何民意都不是神。」</p>
+    <p><span class="nk nk-go">轉場</span>「接下來第三段，作者要說明：為什麼『愛鄰舍』讓自由變得必要，『人的罪』讓民主變得必要。」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>這一頁依大綱「青年常見盲點與講員引導方針」整理。剛剛如果有人分享得很好，可以在這裡點出他的話落在路上的哪裡。</p>
+  </aside>
+</section>
+<!-- section 3 title -->
+<section class="slide chap" data-title="三 扉頁：愛鄰舍與人的罪" data-skip="1" id="s3">
+  <div class="page">
+    <p class="chap-n">參</p>
+    <div class="chap-b">
+      <p class="kick">《耶穌與權勢》第 7 章 ⦁ 第三段</p>
+      <h2 class="chap-t">愛鄰舍與人的罪</h2>
+      <p class="chap-s">為什麼「自由」和「民主」都是必要的</p>
+      <ul class="chap-k"><li class="h">這一段會看到</li><li>好撒馬利亞人：允許鄰舍與我不同</li><li>自由的界線：「各人任意而行」</li><li>尼布爾：民主為什麼「必要」</li></ul>
+    </div>
+  </div>
+  <aside class="notes">
+    <p class="ntm"><span class="skip">時間不夠可略過</span>約 30 秒｜這頁要做到：預告第三段。</p>
+    <p><span class="nk nk-say">說</span>「第三段把『自由』和『民主』拆開來看：愛鄰舍，讓自由變得必要；人的罪，讓民主變得必要。」</p>
+  </aside>
+</section>
+
+<!-- scripture: love of neighbour -->
+<section class="slide" data-title="三 經文：愛鄰舍、愛仇敵">
+  <div class="page">
+    <header class="rh"><span>《耶穌與權勢》第 7 章</span><span class="sec">三｜愛鄰舍與人的罪</span><span class="src">新標點和合本</span></header>
+    <div class="cols grow" style="--c:1.5fr 1fr;--g:28px">
+      <div class="vsg">
+        <p class="vs">其次也相倣，就是要<mark>愛人如己</mark>。<cite>馬太福音 22:39</cite></p>
+        <p class="vs">只是我告訴你們，要<mark>愛你們的仇敵</mark>，為那逼迫你們的禱告。<cite>馬太福音 5:44</cite></p>
+        <p class="vs">那人要顯明自己有理，就對耶穌說：「<mark>誰是我的鄰舍呢？</mark>」……惟有一個撒馬利亞人行路來到那裡，看見他就動了慈心……你想，這三個人<mark>哪一個是落在強盜手中的鄰舍呢？</mark>」他說：「是憐憫他的。」耶穌說：「你去照樣行吧。」<cite>路加福音 10:29, 33, 36–37</cite></p>
+      </div>
+      <div class="stack ctr" style="--g:18px">
+        <p class="mg">律法師問：「<b>誰是</b>我的鄰舍？」<br>——想知道界線劃在哪裡。</p>
+        <p class="mg r">耶穌反問：「哪一個<b>是</b>落在強盜手中的<b>鄰舍</b>？」<br>——鄰舍不是被劃出來的，是去做出來的。</p>
+        <p class="mg">而且做到的，是撒馬利亞人：在當時猶太人眼中，宗教和族群上的「他者」。</p>
+      </div>
+    </div>
+  </div>
+  <aside class="notes">
+    <p class="ntm">約 2.5 分鐘｜這頁要做到：一起讀經文，看見耶穌怎麼翻轉「誰是我的鄰舍」。</p>
+    <p><span class="nk nk-say">說</span>「我們讀三段經文：愛人如己、愛仇敵，還有好撒馬利亞人。」可以請三位自願的人各讀一段。</p>
+    <p><span class="nk nk-ask">問</span>「律法師問『誰是我的鄰舍』，耶穌最後反問了什麼？兩個問題有什麼不一樣？」</p>
+    <p><span class="nk nk-say">說</span>「律法師想知道界線劃在哪裡：誰算、誰不算。耶穌反過來問：誰作了他的鄰舍？而且作到的，偏偏是撒馬利亞人，當時猶太人眼中宗教和族群都不對的那個人。」</p>
+    <p><span class="nk nk-go">轉場</span>「作者從這裡，說出一句很重要的話。」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>路加福音 10 章是節錄，刪節處用「……」。「誰是我的鄰舍」與「哪一個是……鄰舍」的對比，以及撒馬利亞人是當時的「他者」（參約 4:9），是一般性的理解，屬於補充。</p>
+  </aside>
+</section>
+
+<!-- beside us yet different -->
+<section class="slide" data-title="三 允許鄰舍與我不同">
+  <div class="page">
+    <header class="rh"><span>《耶穌與權勢》第 7 章</span><span class="sec">三｜愛鄰舍與人的罪</span><span class="src">自由的根基</span></header>
+    <div class="cols grow" style="--c:1.45fr 1fr;--g:38px">
+      <div class="stack ctr" style="--g:22px">
+        <p class="aq big">為了愛我們的鄰舍，我們必須允許鄰舍站在我們身邊，卻與我們<span class="ul">不同</span>。<span class="en">… be beside us and yet be different from us.</span><span class="by">賴特、伯德</span></p>
+        <p class="small">所以真正的自由主義是：<b>儘管有差異，仍有去愛的自由</b><span class="en" style="color:var(--mute)">（liberty to love despite our differences）</span>。不按身分階級、也不按誰受的委屈比較多來分配地位；選擇慷慨，而不是強迫一致。</p>
+      </div>
+      <div class="stack ctr" style="align-items:center;--g:14px">
+        <div style="display:flex;gap:30px;align-items:flex-end">
+          <svg viewBox="0 0 40 100" width="78" aria-hidden="true"><use href="#fig" fill="#6F665C"/></svg>
+          <svg viewBox="0 0 40 100" width="92" aria-hidden="true"><use href="#fig" fill="#8A6A4F"/></svg>
+        </div>
+        <p class="mg" style="text-align:center">不是「對面」，是「身邊」。</p>
+        <p class="mg r" style="text-align:center">好撒馬利亞人告訴我們：<br>和我們不同的人，也能行善、去愛、憐憫人。</p>
+      </div>
+    </div>
+  </div>
+  <aside class="notes">
+    <p class="ntm">約 2.5 分鐘｜這頁要做到：理解作者怎麼從「愛鄰舍」推到「自由」。</p>
+    <p><span class="nk nk-say">說</span>「作者說：為了愛我們的鄰舍，我們必須允許鄰舍站在我們身邊，卻與我們不同。注意，是『身邊』，不是『對面』。」</p>
+    <p><span class="nk nk-say">說</span>「好撒馬利亞人的比喻告訴我們，那個和我們不同的人，一樣能行善、能愛、能憐憫人。所以作者說，真正的自由主義是：儘管有差異，仍有去愛的自由。」</p>
+    <p><span class="nk nk-ask">問</span>「在你的生活裡，誰是那個『站在你身邊、卻和你不一樣』的人？」在心裡想一個人就好，不用說出名字。</p>
+    <p><span class="nk nk-go">轉場</span>「可是，自由有沒有界線？聖經也有一句很重的話。」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>英文片語出自講稿大綱，請對照原書與頁碼。「不按身分階級與受害者的怨恨來分配地位」是大綱的說法，投影片改成口語：「不按誰受的委屈比較多來分配地位」，意思請對照原書確認。</p>
+  </aside>
+</section>
+
+<!-- ditch 3: limits of liberty -->
+<section class="slide" data-title="三 自由的界線">
+  <div class="page">
+    <header class="rh"><span>《耶穌與權勢》第 7 章</span><span class="sec">三｜愛鄰舍與人的罪</span><span class="src">兩邊的水溝</span></header>
+    <h2 class="ttl">自由也有兩邊的水溝</h2>
+    <div class="ditch grow">
+      <div class="d l"><p class="lab">左邊的溝</p><h3>強迫一致</h3><p>什麼都不准。國家替你決定該信什麼、怎麼活。</p></div>
+      <div class="road"><p class="lab">路</p><h3>表達性自由</h3><p>人有權按自己的信念生活，特別是宗教、良心、政治參與的自由。國家要限制自由，得負很重的舉證責任，而且要靠說服，不靠強制。</p><p class="mg" style="margin-top:4px">政治學者加爾斯頓（William Galston）</p></div>
+      <div class="d r"><p class="lab">右邊的溝</p><h3>絕對自主</h3><p>「那時，以色列中沒有王，各人任意而行。」（士 21:25）</p></div>
+    </div>
+    <div class="oq" style="font-size:var(--fs-small)">活在什麼都不准許的君王底下固然很糟，活在什麼都准許的君王底下卻糟糕得多。<span class="by">加爾文引用羅馬皇帝涅爾瓦時代的話</span></div>
+  </div>
+  <aside class="notes">
+    <p class="ntm">約 3 分鐘｜這頁要做到：看見自由也有兩邊的溝：強迫一致，和各人任意而行。</p>
+    <p><span class="nk nk-say">說</span>「政治學者加爾斯頓說，自由民主預設每個人有權照自己的信念生活，國家要限制自由，得負很重的舉證責任，而且要用說服，不能用強制。這是中間這條路。」</p>
+    <p><span class="nk nk-say">說</span>「但自由不是『絕對自主』。士師記最後一節說：那時以色列中沒有王，各人任意而行。結果是什麼？讀過士師記最後幾章就知道，是一片混亂。」</p>
+    <p><span class="nk nk-say">說</span>「加爾文引過一句羅馬時代的話：活在什麼都不准的君王底下很糟，活在什麼都准的君王底下更糟。兩邊都是溝。」</p>
+    <p><span class="nk nk-say">說</span>「前教宗若望保祿二世也提醒過：當自由被曲解成完全不顧別人的絕對自主，每個人都會把別人當成要防範的敵人。所以個人的自由，要和照顧別人的責任放在一起。」</p>
+    <p><span class="nk nk-go">轉場</span>「好，這是『自由』。那『民主』呢？聖經裡有教民主嗎？」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>大綱在士 21:25 後面加了「（行自己眼中看為正的事）」，那是別的譯本的說法，不是新標點和合本的經文，投影片沒有放。</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>出處：加爾斯頓的 expressive liberty，Liberal Pluralism（2002）；加爾文《基督教要義》4.20.10 引這句話，古代出處是卡西烏斯·狄奧《羅馬史》68.1.3，說話的是執政官弗朗托；若望保祿二世《生命的福音》（1995）第 19–20 節。</p>
+  </aside>
+</section>
+
+<!-- democracy in the Bible? -->
+<section class="slide" data-title="三 聖經有教導民主嗎？" data-skip="1">
+  <div class="page">
+    <header class="rh"><span>《耶穌與權勢》第 7 章</span><span class="sec">三｜愛鄰舍與人的罪</span><span class="src">新標點和合本</span></header>
+    <h2 class="ttl">聖經有教導民主嗎？</h2>
+    <p class="aq" style="font-size:var(--fs-body)">我們無法直接從聖經「證明」民主，就像無法直接從聖經證明三權分立。但聖經裡確實有「經由百姓同意設立領袖」的蹤跡。<span class="by">賴特、伯德｜大意</span></p>
+    <div class="g3 grow">
+      <p class="vs sm">你們要按著各支派選舉有智慧、有見識、為眾人所認識的，我立他們為你們的首領。<cite>申命記 1:13</cite></p>
+      <p class="vs sm">猶大人來到希伯崙，在那裡膏大衛作猶大家的王。<cite>撒母耳記下 2:4a</cite></p>
+      <p class="vs sm">祭司撒督就從帳幕中取了盛膏油的角來，用膏膏所羅門。人就吹角，眾民都說：「願所羅門王萬歲！」<cite>列王紀上 1:39</cite></p>
+    </div>
+    <p class="mg">共同點：領袖的正當性，需要百姓認可。但這還不是現代的一人一票。</p>
+  </div>
+  <aside class="notes">
+    <p class="ntm"><span class="skip">時間不夠可略過</span>約 2.5 分鐘｜這頁要做到：誠實地看聖經和民主的關係：沒有直接教導，但有「同意」的蹤跡。</p>
+    <p><span class="nk nk-say">說</span>「作者很誠實：聖經沒有直接教民主，就像聖經也沒有教三權分立。但有幾個蹤跡。」</p>
+    <p><span class="nk nk-say">說</span>「摩西請各支派自己選出有智慧、有見識、大家都認識的人；猶大人到希伯崙膏大衛作王；所羅門受膏的時候，眾民一起歡呼『願所羅門王萬歲』。」</p>
+    <p><span class="nk nk-ask">問</span>「這三段有什麼共同點？」引導到：領袖的正當性，需要百姓的認可。</p>
+    <p><span class="nk nk-say">說</span>「但要小心，這還不是現代的一人一票。作者沒有說聖經教民主，他說的是『有蹤跡』。」</p>
+    <p><span class="nk nk-go">轉場</span>「那作者真正支持民主的理由是什麼？是一位神學家的名言。」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>撒下 2:4 只引前半節。申 1:13 在原文是摩西對百姓說的話，新標點和合本句尾有『，投影片只引到句號。</p>
+  </aside>
+</section>
+
+<!-- Niebuhr -->
+<section class="slide" data-title="三 尼布爾：民主為什麼必要">
+  <div class="page">
+    <header class="rh"><span>《耶穌與權勢》第 7 章</span><span class="sec">三｜愛鄰舍與人的罪</span><span class="src">民主的根基</span></header>
+    <div class="cols grow" style="--c:1.55fr 1fr;--g:36px">
+      <div class="stack ctr" style="--g:22px">
+        <div class="oq" style="font-size:34px;line-height:1.55;padding:24px 28px 20px">人類行公義的能力，使民主成為<mark>可能</mark>；但人類行不義的傾向，使民主成為<span class="ul">必要</span>。<span class="en">Man’s capacity for justice makes democracy possible; but man’s inclination to injustice makes democracy necessary.</span><span class="by">尼布爾，1944</span></div>
+        <div class="who"><span class="mono">尼</span><p class="nm2">萊因霍爾德·尼布爾<span class="en">Reinhold Niebuhr</span></p><p class="id">1892–1971｜美國神學家</p></div>
+      </div>
+      <div class="stack ctr" style="--g:20px">
+        <p class="mg">「可能」←<br>照著神的形像造的（創 1:27）：<br>渴望公義、能夠立約同行。</p>
+        <p class="mg r">「必要」←<br>世人都犯了罪（羅 3:23）：<br>作者說人是「罪入骨髓」的，<br>一握有絕對權力就腐化。</p>
+        <p class="tiny">所以要分權、要制衡、要能換人。</p>
+      </div>
+    </div>
+  </div>
+  <aside class="notes">
+    <p class="ntm">約 2.5 分鐘｜這頁要做到：記住尼布爾這句話，以及它背後的兩個聖經真理。</p>
+    <p><span class="nk nk-say">說</span>「這是今天第二句要記住的話。尼布爾說：人類行公義的能力，使民主成為可能；但人類行不義的傾向，使民主成為必要。」</p>
+    <p><span class="nk nk-say">說</span>「『可能』是因為人照著神的形像被造，人渴望公義。『必要』是因為人都犯了罪，一旦握有絕對的權力就會腐化。所以不能把所有權力交給任何一個人，不管他多好，包括基督徒。」</p>
+    <p><span class="nk nk-ask">問</span>「你比較常對政治人物有哪一種想像：太天真，還是太悲觀？」在心裡想就好。</p>
+    <p><span class="nk nk-go">轉場</span>「歷史上也真的發生過：民主自己走回獨裁。」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>尼布爾這句話出自《光明之子與黑暗之子》（The Children of Light and the Children of Darkness）初版序言，署 1944 年 8 月。</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>作者用 sinful to the bone，大綱譯成「澈底敗壞」，投影片譯成「罪入骨髓」。長老會傳統講「全然敗壞」（total depravity），意思不是人壞到極點、做不出任何好事，而是人的每一部分都受到罪的影響，所以沒有一部分能自己擔保自己。如果有人問，可以這樣說明。羅 3:23 是補充，不是作者的話。</p>
+  </aside>
+</section>
+
+<!-- democratic backsliding -->
+<section class="slide" data-title="三 民主也會走回獨裁">
+  <div class="page">
+    <header class="rh"><span>《耶穌與權勢》第 7 章</span><span class="sec">三｜愛鄰舍與人的罪</span><span class="src">歷史</span></header>
+    <h2 class="ttl">民主也會走回獨裁<small>權力常落在最想要權力的人手裡</small></h2>
+    <div class="stack ctr grow"><div class="tline" style="--n:4">
+      <div class="ev"><span class="yr">1932</span><p><b>德國</b>　國會選舉，納粹黨成為國會第一大黨，但沒有過半。</p></div>
+      <div class="ev bad"><span class="yr">1933–34</span><p>希特勒被興登堡總統任命為總理；興登堡死後，他把總統和總理合而為一，自稱「元首」。</p></div>
+      <div class="ev"><span class="yr">1946</span><p><b>捷克斯洛伐克</b>　共產黨在選舉中成為第一大黨，黨魁哥特瓦爾德出任總理。</p></div>
+      <div class="ev bad"><span class="yr">1948</span><p>二月政變，共產黨奪取全部政權，建立一黨專政。</p></div>
+    </div></div>
+    <p class="aq" style="font-size:var(--fs-body)">民主若缺乏有美德的公民與健全的制度守護，隨時可能倒退回獨裁。<span class="by">賴特、伯德｜大意</span></p>
+  </div>
+  <aside class="notes">
+    <p class="ntm">約 2 分鐘｜這頁要做到：看見民主會從內部被掏空，不是只會被外力推翻。</p>
+    <p><span class="nk nk-say">說</span>「兩個例子。德國：納粹在 1932 年的選舉成為國會第一大黨，1933 年希特勒被總統任命為總理，一年後就把總統和總理合而為一，自稱元首。」</p>
+    <p><span class="nk nk-say">說</span>「捷克斯洛伐克：1946 年共產黨在選舉中成為第一大黨，黨魁當上總理；兩年後發動政變，從此一黨專政。」</p>
+    <p><span class="nk nk-say">說</span>「作者的提醒是：民主會倒退，而且常常是透過合法的程序開始的。民主需要有品格的公民，和健全的制度。」</p>
+    <p><span class="nk nk-go">轉場</span>「好，第二個討論站。」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>大綱寫「希特勒透過民主選舉上台成為總理」，這個說法不精確，投影片照史實改寫。德國：1932 年 7 月選舉納粹得票 37.3%（230 席），11 月 33.1%；1933 年 1 月 30 日興登堡任命希特勒為總理；1934 年 8 月 1 日立法，規定興登堡死後總統職併入總理，8 月 2 日興登堡去世。捷克斯洛伐克：1946 年 5 月選舉，共產黨是第一大黨（捷克、斯洛伐克兩黨合計約 38%），哥特瓦爾德 7 月任總理；1948 年 2 月政變。</p>
+  </aside>
+</section>
+
+<!-- station 2 -->
+<section class="slide" data-title="討論站 2：尊重與相對主義" id="d2">
+  <div class="page">
+    <header class="rh"><span>《耶穌與權勢》第 7 章</span><span class="sec">討論站 2</span><span class="src">大家一起</span></header>
+    <div class="stn grow">
+      <div class="stack" style="--g:18px">
+        <p class="kick">「允許鄰舍與我不同」vs.「各人任意而行」</p>
+        <p class="qq">在學校、職場或家裡，你怎麼分辨「出於基督的愛，尊重別人的自由」和「沒有底線的道德相對主義」？</p>
+        <div class="fu rvbox">
+          <div class="rv" data-h="追問 1（點開）"><span class="rv-c"><b>追問 1</b>朋友選擇了和聖經教導不同的生活方式（感情觀、金錢觀、人生追求），我們能不能一方面真心捍衛他在法律上作選擇的自由，一方面溫柔而堅定地持守自己的信仰？</span></div>
+          <div class="rv" data-h="追問 2（點開）"><span class="rv-c"><b>追問 2</b>尼布爾說「人類行不義的傾向，使民主成為必要」。這句話怎麼幫助我們，不對任何政治人物（包括基督徒政治人物）抱著天真的幻想？</span></div>
+        </div>
+      </div>
+      <div class="stack" style="--g:18px">
+        <div class="timer" data-min="10"><span class="tm-h">討論時間</span><span class="tm-d">10:00</span><div class="row"><button class="btn pri tm-go">開始</button><button class="btn" data-add="-1">−1 分</button><button class="btn" data-add="1">＋1 分</button><button class="btn tm-reset">重來</button></div></div>
+        <div class="sticky p"><span class="h">分享時的提醒</span>談原則，不談某個人。<br>說「我」的經驗，不說「他」的八卦。</div>
+      </div>
+    </div>
+  </div>
+  <aside class="notes">
+    <p class="ntm">約 10 分鐘｜這頁要做到：分辨尊重和相對主義的差別。</p>
+    <p><span class="nk nk-say">說</span>「第二站。一樣先安靜想 30 秒，再請大家說說看。」按「開始」計時。</p>
+    <p><span class="nk nk-say">說</span>先把右邊的提醒唸一次：「談原則，不談某個人；說『我』的經驗，不說『他』的八卦。」</p>
+    <p><span class="nk nk-ask">問</span>「你遇過這種情況嗎？當時你怎麼分辨？」有人回應時先重述，再問其他人；不評對錯。冷場時點開追問。</p>
+    <p><span class="nk nk-warn">注意</span>追問 1 很容易談到感情、性別這類敏感的話題，在場可能有人正在經歷。在全場面前說出自己的掙扎更不容易；如果有人說了，先謝謝他願意說，會後再找時間陪他聊，不在現場給答案。</p>
+    <p><span class="nk nk-stop">停</span>時間到或討論告一段落，就翻下一頁收尾。</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>青年常見的盲點（大綱的整理）：以為「愛與尊重」就是「認同你做的每件事」；或反過來，以為「聖經說不對，就該用公投或法律強制所有人照聖經過活」。下一頁用兩個圈收這兩個盲點。</p>
+  </aside>
+</section>
+
+<!-- after station 2: two circles -->
+<section class="slide" data-title="討論站 2 之後：兩個圈">
+  <div class="page">
+    <header class="rh"><span>《耶穌與權勢》第 7 章</span><span class="sec">討論站 2</span></header>
+    <h2 class="ttl">分清楚兩個圈</h2>
+    <div class="cols grow" style="--c:1.25fr 1fr;--g:30px;align-items:center">
+      <div class="circle2">
+        <div class="cc"><p class="kk">教會裡</p><h3>門徒群體的倫理</h3><p>我們彼此勸勉，<br>按聖經的標準一起生活。</p></div>
+        <div class="cc"><p class="kk">社會上</p><h3>公民的法律空間</h3><p>我們捍衛每個人<br>按良心選擇的自由。</p></div>
+      </div>
+      <div class="stack" style="--g:16px">
+        <p class="vs sm">這樣就可以作你們天父的兒子；因為他叫日頭照好人，也照歹人；降雨給義人，也給不義的人。<cite>馬太福音 5:45</cite></p>
+        <p class="mg">捍衛別人的自由，不是放棄真理；<br>是因為信仰和愛，只能透過自由的回應和說服，<b>不能靠國家機器強迫</b>。</p>
+        <p class="mg r">而且人人都有罪性，包括我們自己——所以更需要分權與法治。</p>
+      </div>
+    </div>
+  </div>
+  <aside class="notes">
+    <p class="ntm">約 2 分鐘｜這頁要做到：分清楚教會內部的標準，和多元社會的公民空間。</p>
+    <p><span class="nk nk-say">說</span>「剛剛的難處，很多來自把兩個圈混在一起。左邊是教會裡：我們是門徒，彼此勸勉，照聖經的標準生活。右邊是社會上：我們是公民，捍衛每個人照良心選擇的自由。」</p>
+    <p><span class="nk nk-say">說</span>「捍衛別人的自由，不等於我們放棄真理。神自己都叫日頭照好人也照歹人。真正的信仰和愛，只能透過自由的回應和說服，不能靠國家強迫。」</p>
+    <p><span class="nk nk-say">說</span>「而且，正因為每個人都有罪性，包括我們自己，我們更需要分權和法治，來限制每一個掌權的人。」</p>
+    <p><span class="nk nk-go">轉場</span>「第四段，我們看自由民主具體保護了我們什麼，以及它怎麼死掉。」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>這一頁依大綱的「講員引導方針」整理，兩個圈的圖是分享者的整理。兩個圈有交集：教會的人也是公民，所以畫成重疊。</p>
+  </aside>
+</section>
+<!-- section 4 title -->
+<section class="slide chap" data-title="四 扉頁：防堵專制的護欄" data-skip="1" id="s4">
+  <div class="page">
+    <p class="chap-n">肆</p>
+    <div class="chap-b">
+      <p class="kick">《耶穌與權勢》第 7 章 ⦁ 第四段</p>
+      <h2 class="chap-t">防堵專制的護欄</h2>
+      <p class="chap-s">自由民主保護了我們什麼，以及它怎麼死掉</p>
+      <ul class="chap-k"><li class="h">這一段會看到</li><li>八道護欄</li><li>誠實的保留：西方視角的盲點</li><li>民主怎麼死：七個警訊，和我們能做的事</li></ul>
+    </div>
+  </div>
+  <aside class="notes">
+    <p class="ntm"><span class="skip">時間不夠可略過</span>約 30 秒｜這頁要做到：預告第四段。</p>
+    <p><span class="nk nk-say">說</span>「第四段比較具體：自由民主到底保護了我們什麼？它又會怎麼死掉？」</p>
+  </aside>
+</section>
+
+<!-- eight guardrails -->
+<section class="slide" data-title="四 八道護欄">
+  <div class="page">
+    <header class="rh"><span>《耶穌與權勢》第 7 章</span><span class="sec">四｜防堵專制的護欄</span><span class="src">作者列舉</span></header>
+    <h2 class="ttl">自由民主的八道護欄</h2>
+    <div class="rvbox grow">
+      <div class="g4" style="flex:1;grid-auto-rows:1fr">
+        <div class="nc rv" data-h="1"><div class="rv-c"><span class="no">1</span><h3>個人基本權利</h3><p>思想、言論、新聞、宗教、集會、投票、抗議，不必怕被報復。</p></div></div>
+        <div class="nc rv" data-h="2"><div class="rv-c"><span class="no">2</span><h3>普選與參與</h3><p>不論性別、族群、宗教、貧富，人人可以投票參政。</p></div></div>
+        <div class="nc rv" data-h="3"><div class="rv-c"><span class="no">3</span><h3>權力分立</h3><p>行政、立法、司法互相制衡，沒有一個機關大權獨攬。</p></div></div>
+        <div class="nc rv" data-h="4"><div class="rv-c"><span class="no">4</span><h3>和平解決衝突</h3><p>用媒體、辯論、選舉、調解解決分歧，不靠政變和流血。</p></div></div>
+        <div class="nc rv" data-h="5"><div class="rv-c"><span class="no">5</span><h3>經濟機會與公平</h3><p>保障勞動成果；用稅制和社福，避免富者越富、貧者越貧。</p></div></div>
+        <div class="nc rv" data-h="6"><div class="rv-c"><span class="no">6</span><h3>透明與問責</h3><p>官員要向人民負責，遏止貪腐和濫權。</p></div></div>
+        <div class="nc rv" data-h="7"><div class="rv-c"><span class="no">7</span><h3>法治與司法獨立</h3><p>沒有人在法律之上；法院是小市民對抗濫權的最後防線。</p></div></div>
+        <div class="nc rv hot" data-h="8"><div class="rv-c"><span class="no">8</span><h3>自我批判與修正</h3><p>能公開檢討自己的錯，才能改過來。</p></div></div>
+      </div>
+      <div class="rv-ctl"><button class="btn pri rv-next">下一道</button><button class="btn rv-all">全部打開</button><span class="mg" style="font-size:17px">第 8 道最特別。</span></div>
+    </div>
+  </div>
+  <aside class="notes">
+    <p class="ntm">約 3 分鐘｜這頁要做到：具體看見自由民主每天在保護我們什麼。</p>
+    <p><span class="nk nk-say">說</span>按「下一道」一張一張打開，每張講一句。「第三道，權力分立：所以司法變成政治工具、文官變成黨派打手，都是民主的大敵。」「第四道，和平解決衝突：民主逼我們容忍、甚至讓反對我們的人也有權力，但它也給了不流血的方法。」</p>
+    <p><span class="nk nk-ask">問</span>「這八道裡，哪一道你最習以為常、從來沒想過它會消失？」可以請一兩位說說看。</p>
+    <p><span class="nk nk-go">轉場</span>「第八道最特別，我們多看一眼。」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>八項依講稿大綱整理，名稱與順序請對照原書。卡片可以直接點開，也可以按「全部打開」。</p>
+  </aside>
+</section>
+
+<!-- self-critique -->
+<section class="slide" data-title="四 第八道：自我批判" data-skip="1">
+  <div class="page">
+    <header class="rh"><span>《耶穌與權勢》第 7 章</span><span class="sec">四｜防堵專制的護欄</span><span class="src">第 8 道</span></header>
+    <h2 class="ttl">敢揭自己瘡疤的社會，才改得過來</h2>
+    <div class="cols grow" style="--c:1fr 1fr;--g:26px">
+      <div class="stack" style="--g:16px">
+        <div class="box"><p class="kick">古希臘 ⦁ 公元前 415 年</p><h3>歐里庇得斯《特洛伊婦女》</h3><p class="small">在雅典的劇場，演出戰敗一方的婦女有多苦。常被解讀為在暗批雅典自己的暴行（學界有爭議）。</p></div>
+        <div class="box"><p class="kick">英國 ⦁ 18 世紀末</p><h3>國會裡的自我審判</h3><p class="small">英國有牧師、議員在講壇和國會裡，公開痛斥大英帝國在印度的掠奪。例如柏克在國會彈劾印度總督哈斯汀斯。</p></div>
+      </div>
+      <div class="stack ctr" style="--g:20px">
+        <p class="aq">唯有自由民主社會，容許「自我揭瘡疤」，進而自我修正。<span class="by">賴特、伯德｜大意</span></p>
+        <p class="tiny">在專制國家，這樣公開的自我批判很難發生。</p>
+        <p class="mg">教會也一樣：<b>悔改</b>，就是屬靈的自我修正。</p>
+      </div>
+    </div>
+  </div>
+  <aside class="notes">
+    <p class="ntm"><span class="skip">時間不夠可略過</span>約 2 分鐘｜這頁要做到：看見「能自我批判」是民主最珍貴的地方。</p>
+    <p><span class="nk nk-say">說</span>「作者舉了兩個例子。古希臘的歐里庇得斯，在雅典的劇場演出戰敗一方的婦女有多苦，常被解讀成在暗批雅典自己。英國也有牧師和國會議員，公開痛斥大英帝國在印度的掠奪，例如柏克在國會彈劾印度總督哈斯汀斯。」</p>
+    <p><span class="nk nk-say">說</span>「能公開說『我們錯了』的社會，才改得過來。這在專制國家很難發生。」</p>
+    <p><span class="nk nk-say">說</span>「這對教會也是提醒：悔改，就是屬靈的自我修正。一個不能認錯的教會，也會出問題。」</p>
+    <p><span class="nk nk-go">轉場</span>「不過，作者也很誠實地承認了自己的限制。」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>大綱說這在極權專制國家是「完全不可能發生的」，投影片改成「很難發生」，避免說得太絕對。《特洛伊婦女》和雅典屠殺米洛斯的關聯：過去是通說，1980 年代以後不少學者質疑（理由是劇本應在米洛斯陷落前就已備妥），所以寫「常被解讀為」。柏克彈劾哈斯汀斯：審判從 1788 年 2 月到 1795 年 4 月，哈斯汀斯最後被判無罪；彈劾的對象是他個人，不是整個帝國。如果有人問結果，要照實說。柏克的例子是補充，大綱沒有點名。悔改的眉批是分享者的連結。</p>
+  </aside>
+</section>
+
+<!-- honest caveats -->
+<section class="slide" data-title="四 誠實的保留、看得見的果子" data-skip="1">
+  <div class="page">
+    <header class="rh"><span>《耶穌與權勢》第 7 章</span><span class="sec">四｜防堵專制的護欄</span></header>
+    <h2 class="ttl">作者也承認：這是英美歐洲的眼光</h2>
+    <div class="g2 grow">
+      <div class="box dash">
+        <h3>誠實的保留</h3>
+        <ul class="dot small">
+          <li>在缺乏共享人性觀、個人權利傳統的地方，硬「空投」西式民主，常常失敗。</li>
+          <li>歷史上，有些基督徒寧可活在穆斯林的鄂圖曼帝國底下，也不願受另一派基督徒君王的迫害。</li>
+          <li>本書寫作時，敘利亞的基督徒面對極端組織，有時只能在阿薩德政權底下兩害相權取其輕。</li>
+        </ul>
+      </div>
+      <div class="box" style="border:2px solid var(--ink)">
+        <h3>看得見的果子</h3>
+        <ul class="dot small">
+          <li>女性和性少數群體，得到比較好的保障。</li>
+          <li><b>難民不會逃離自由民主國家，反而會逃向它們。</b>（作者的話）</li>
+          <li>每一次不流血的政權交接、每一個揭發弊案的獨立調查、每一個告贏政府的小市民。</li>
+        </ul>
+      </div>
+    </div>
+    <p class="mg">不完美，但值得守護。</p>
+  </div>
+  <aside class="notes">
+    <p class="ntm"><span class="skip">時間不夠可略過</span>約 2.5 分鐘｜這頁要做到：用誠實的態度看自由民主：有限制，也有真實的果子。</p>
+    <p><span class="nk nk-say">說</span>「作者承認，他講的是英美歐洲的眼光。在很多非西方的地方，硬把西式民主空投過去，常常失敗。歷史上甚至有基督徒寧可活在鄂圖曼帝國底下，也不想被另一派的基督徒國王迫害。」</p>
+    <p><span class="nk nk-say">說</span>「可是作者也說：看看難民往哪裡逃。難民不會逃離自由民主國家，反而會逃向它們。」</p>
+    <p><span class="nk nk-ask">問</span>「從臺灣的經驗看，你覺得民主是『西方的東西』嗎？」可以請一兩位說說看。</p>
+    <p><span class="nk nk-go">轉場</span>「那民主會怎麼死？作者列了七個警訊。」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>敘利亞：阿薩德政權已在 2024 年 12 月垮台，所以投影片寫「本書寫作時」。鄂圖曼的例子：大綱寫「希臘東正教徒與法國胡格諾派」。胡格諾派這一點查不到根據，投影片寫成「有些基督徒」。有根據的例子：16 世紀末荷蘭新教徒的口號「寧作土耳其人，不作天主教徒」（Liever Turks dan Paaps，學者認為主要是修辭）；拜占庭末年有一句「寧見土耳其頭巾，不見拉丁主教冠」，但說這句話的人是誰有疑問。「難民」那句是作者自己的話。</p>
+  </aside>
+</section>
+
+<!-- Hong Kong -->
+<section class="slide" data-title="四 民主怎麼死：七個警訊">
+  <div class="page">
+    <header class="rh"><span>《耶穌與權勢》第 7 章</span><span class="sec">四｜防堵專制的護欄</span><span class="src">七個警訊</span></header>
+    <h2 class="ttl">民主很少一夕暴斃<small>它通常死於冷漠，和溫水煮青蛙式的制度侵蝕</small></h2>
+    <div class="cols grow" style="--c:1.3fr 1fr;--g:28px">
+      <div class="rvbox">
+        <ol class="stack" style="--g:8px">
+          <li class="box rv" data-h="警訊 1" style="padding:8px 16px"><span class="rv-c small"><b class="red">1</b>　破壞憲法的精神</span></li>
+          <li class="box rv" data-h="警訊 2" style="padding:8px 16px"><span class="rv-c small"><b class="red">2</b>　以「代表人民」為名，架空立法機構</span></li>
+          <li class="box rv" data-h="警訊 3" style="padding:8px 16px"><span class="rv-c small"><b class="red">3</b>　在法院安插效忠自己的人</span></li>
+          <li class="box rv" data-h="警訊 4" style="padding:8px 16px"><span class="rv-c small"><b class="red">4</b>　抹黑反對派與選舉制度的正當性</span></li>
+          <li class="box rv" data-h="警訊 5" style="padding:8px 16px"><span class="rv-c small"><b class="red">5</b>　攻擊新聞自由</span></li>
+          <li class="box rv" data-h="警訊 6" style="padding:8px 16px"><span class="rv-c small"><b class="red">6</b>　縱容，甚至鼓勵暴力</span></li>
+          <li class="box rv" data-h="警訊 7" style="padding:8px 16px"><span class="rv-c small"><b class="red">7</b>　威脅用法律清算政治對手</span></li>
+        </ol>
+        <div class="rv-ctl"><button class="btn pri rv-next">下一個</button><button class="btn rv-all">全部打開</button></div>
+      </div>
+      <div class="stack" style="--g:16px">
+        <p class="tiny">作者列出的警訊。講稿大綱說出自香港出身的神學家郭佩蘭，整理自香港的經驗；這一點待對照原書。</p>
+        <div class="oq">如果我們當中沒有人準備好為自由而死，那麼我們所有人最終都將在暴政下死去。<span class="by">史奈德（Timothy Snyder），歷史學家</span></div>
+        <p class="mg">這七點拿來檢查<b>每一個</b>政黨——包括我們喜歡的那一個。</p>
+      </div>
+    </div>
+  </div>
+  <aside class="notes">
+    <p class="ntm">約 3 分鐘｜這頁要做到：認識民主死掉的警訊，並且學會拿它檢查每一方。</p>
+    <p><span class="nk nk-say">說</span>「作者說，民主很少一夕暴斃，它通常死於冷漠，死於一點一點的制度侵蝕。他列了七個警訊。」按「下一個」逐一打開，每個唸一次就好，不舉臺灣的例子。</p>
+    <p><span class="nk nk-say">說</span>「這七點最好的用法，是拿來檢查每一個政黨，包括我們自己喜歡的那一個。只拿來檢查對手，就又掉回部落裡了。」</p>
+    <p><span class="nk nk-say">說</span>「歷史學家史奈德說：如果我們當中沒有人準備好為自由而死，那我們所有人最後都會死在暴政之下。」</p>
+    <p><span class="nk nk-go">轉場</span>「那我們平常人能做什麼？」</p>
+    <p><span class="nk nk-warn">注意</span>這一頁很容易被拿來影射特定的政黨或人物。不要在這頁點名臺灣或其他地方的政黨、人物；如果有人想討論，請他會後再聊。如果提到香港，對在場的人可能很切身（家人、朋友），說法要保留。</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>讀者在原書的劃線證實書中有這份警訊清單（The worrying signs that democracy was being undermined included sabotaging constitutions, sidelining legislative bodies…），但查不到郭佩蘭寫過這份清單，也無法確認書中是不是把它歸給她，所以投影片不寫她的名字。內容和 Levitsky、Ziblatt《民主國家如何死亡》（2018）的指標相近，沒有逐條比對。史奈德的話出自《暴政》（On Tyranny, 2017）第 20 課「盡你所能地勇敢」。</p>
+  </aside>
+</section>
+
+<!-- what we can do -->
+<section class="slide" data-title="四 守護民主：我們能做的事">
+  <div class="page">
+    <header class="rh"><span>《耶穌與權勢》第 7 章</span><span class="sec">四｜防堵專制的護欄</span></header>
+    <h2 class="ttl">守護民主，從很小的事開始</h2>
+    <div class="g4">
+      <div class="nc"><span class="no">✓</span><h3>出來投票</h3></div>
+      <div class="nc"><span class="no">✓</span><h3>挺身發聲</h3></div>
+      <div class="nc"><span class="no">✓</span><h3>監督開票</h3></div>
+      <div class="nc"><span class="no">✓</span><h3>捍衛正當程序</h3></div>
+    </div>
+    <div class="cols grow" style="--c:1.6fr 1fr;--g:30px;align-items:center">
+      <p class="aq">民主意味著：接受我們支持的候選人有時會落選。政治上的失望，永遠好過讓一個屬於我們自己陣營的獨裁者掌權。<span class="by">賴特、伯德</span></p>
+      <div class="stack ctr" style="--g:12px;text-align:center">
+        <p class="big-q" style="font-size:36px">真理過於部落</p>
+        <p class="en" style="font-size:22px;color:var(--mute)">Choose truth over tribe.</p>
+        <p class="mg r">這是一場耐力賽，<br>不是速成的解藥。</p>
+      </div>
+    </div>
+  </div>
+  <aside class="notes">
+    <p class="ntm">約 2.5 分鐘｜這頁要做到：把守護民主落到很具體的行動，並記住「真理過於部落」。</p>
+    <p><span class="nk nk-say">說</span>「作者列了幾件很具體的事：出來投票、挺身發聲、監督開票、捍衛正當程序。」</p>
+    <p><span class="nk nk-say">說</span>「然後是最難的一句：民主意味著接受我們支持的候選人有時會落選。政治上的失望，永遠好過讓一個屬於我們自己陣營的獨裁者掌權。」</p>
+    <p><span class="nk nk-say">說</span>「作者說：選擇真理過於部落。這是一場耐力賽，不要相信政治人物承諾的速成解藥。」</p>
+    <p><span class="nk nk-ask">問</span>「『自己陣營的獨裁者』，為什麼比對方陣營的還危險？」引導到：因為我們最不容易看見、也最容易替他找理由。</p>
+    <p><span class="nk nk-go">轉場</span>「最後一段：在這麼分歧的社會裡，基督徒怎麼和不一樣的人一起生活？」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>「監督開票」在臺灣的意思：投開票所當場公開唱票，民眾可以在場觀看。這是一般性的理解，屬於補充。</p>
+  </aside>
+</section>
+
+<!-- section 5 title -->
+<section class="slide chap" data-title="五 扉頁：自信的多元主義" data-skip="1" id="s5">
+  <div class="page">
+    <p class="chap-n">伍</p>
+    <div class="chap-b">
+      <p class="kick">《耶穌與權勢》第 7 章 ⦁ 第五段</p>
+      <h2 class="chap-t">自信的多元主義</h2>
+      <p class="chap-s">在「多樣」之中一起生活</p>
+      <ul class="chap-k"><li class="h">這一段會看到</li><li>多元的悖論</li><li>伊納祖：自信的多元主義</li><li>凱勒：信念＋同理心</li></ul>
+    </div>
+  </div>
+  <aside class="notes">
+    <p class="ntm"><span class="skip">時間不夠可略過</span>約 30 秒｜這頁要做到：預告第五段。</p>
+    <p><span class="nk nk-say">說</span>「最後一段，回到開場那兩位鄰居：他們能不能一起生活？」</p>
+  </aside>
+</section>
+
+<!-- paradox of pluralism -->
+<section class="slide" data-title="五 多元的悖論">
+  <div class="page">
+    <header class="rh"><span>《耶穌與權勢》第 7 章</span><span class="sec">五｜自信的多元主義</span></header>
+    <h2 class="ttl">多元，是民主的強項，也是軟肋</h2>
+    <p class="aq">自由的國家必然吸引多元的人群和思想，而多元就意味著衝突。<span class="by">賴特、伯德｜大意</span></p>
+    <div class="box" style="text-align:center"><span class="chip">浸信會信徒</span><span class="chip">不可知論者</span><span class="chip">穆斯林</span><span class="chip">無神論者</span><span class="chip">保守派</span><span class="chip">進步派</span><span class="chip">LGBTQ+</span><span class="chip">新住民</span><span class="chip">富人</span><span class="chip">窮人</span><p class="tiny" style="margin-top:6px">全都住在同一條街上</p></div>
+    <div class="cols grow" style="--c:1.3fr 1fr;--g:28px;align-items:center">
+      <div class="oq">現代政治，是以其他手段進行的內戰。<span class="en">civil war carried on by other means</span><span class="by">麥金泰爾（Alasdair MacIntyre），哲學家</span></div>
+      <p class="mg r">回到開場那兩位鄰居：<br>內戰，還是一起生活？</p>
+    </div>
+  </div>
+  <aside class="notes">
+    <p class="ntm">約 2 分鐘｜這頁要做到：看見多元必然帶來衝突，問題是怎麼面對衝突。</p>
+    <p><span class="nk nk-say">說</span>「自由的國家一定吸引各式各樣的人。浸信會信徒、無神論者、穆斯林、保守派、進步派、新住民，全都住在同一條街上。作者說，多元就意味著衝突。」</p>
+    <p><span class="nk nk-say">說</span>「哲學家麥金泰爾說得更直接：現代政治，就是用其他手段進行的內戰。」</p>
+    <p><span class="nk nk-ask">問</span>「你覺得臺灣現在比較像『內戰』，還是『一起生活』？」在心裡想就好。</p>
+    <p><span class="nk nk-go">轉場</span>「作者推薦了一個解方，來自一位基督徒法學家。」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>麥金泰爾這句話出自《德行之後》（After Virtue, 1981）第 17 章，前一句是「現代政治不可能是真正的道德共識」。</p>
+  </aside>
+</section>
+
+<!-- confident pluralism -->
+<section class="slide" data-title="五 自信的多元主義">
+  <div class="page">
+    <header class="rh"><span>《耶穌與權勢》第 7 章</span><span class="sec">五｜自信的多元主義</span><span class="src">伊納祖</span></header>
+    <div class="cols grow" style="--c:1fr 1.15fr;--g:32px">
+      <div class="stack" style="--g:16px">
+        <div class="who"><span class="mono">伊</span><p class="nm2">約翰·伊納祖<span class="en">John Inazu</span></p><p class="id">美國基督徒法學家｜《自信的多元主義》（Confident Pluralism, 2016）</p></div>
+        <div class="oq">它不追求遙不可及的「合眾為一」，而是一個更謙遜的可能：我們可以在我們的「多樣」之中一起生活。我們能擁抱多元，正是因為我們對自己的信仰有信心。<span class="by">伊納祖｜節譯</span></div>
+      </div>
+      <div class="stack" style="--g:14px">
+        <p class="kick">三個前提</p>
+        <ol class="lst small" style="--g:10px">
+          <li><b>1</b><span><b>政治只有工具價值，沒有終極價值。</b>它是手段，不是目的；沒有任何政黨或領袖是神。</span></li>
+          <li><b>2</b><span><b>真正的寬容：</b>不是要大家想法一樣，而是不動用國家的強制力把觀點強加於人，只靠說服來競爭。</span></li>
+          <li><b>3</b><span><b>民主的勝利</b>不是消滅對手，而是贏得他們的尊重、和平共處，並捍衛他們持不同意見的權利。</span></li>
+        </ol>
+        <p class="vs sm">所以，我們務要追求和睦的事與彼此建立德行的事。<cite>羅馬書 14:19</cite></p>
+      </div>
+    </div>
+  </div>
+  <aside class="notes">
+    <p class="ntm">約 3 分鐘｜這頁要做到：理解「自信的多元主義」：因為有信心，所以不怕差異。</p>
+    <p><span class="nk nk-say">說</span>「基督徒法學家伊納祖提出『自信的多元主義』。他說，我們不必追求大家變得一模一樣，而是可以在差異之中一起生活。最關鍵的一句：我們能擁抱多元，正是因為我們對自己的信仰有信心。」</p>
+    <p><span class="nk nk-say">說</span>「三個前提。第一，政治只是工具，不是終極目標。第二，真正的寬容，不是大家想法一樣，而是不拿國家的強制力逼別人，只用說服。第三，民主的勝利不是把對手消滅，而是贏得他們的尊重，還捍衛他們說不同意見的權利。」</p>
+    <p><span class="nk nk-say">說</span>「作者用羅馬書 14:19 總結：務要追求和睦的事，與彼此建立德行的事。」</p>
+    <p><span class="nk nk-go">轉場</span>「但這需要一種很特別的人。」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>羅馬書 14 章原本處理的是教會裡面的分歧（吃不吃肉、守不守日子），作者把原則延伸到公共生活。分享時可以說「保羅在教會內部的分歧上給的原則」，不要說成保羅在談政治。</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>伊納祖這段大綱是整段長引，投影片只節錄兩句，現場可以讀原書（版權考量，不整段放）。</p>
+  </aside>
+</section>
+
+<!-- conviction × empathy -->
+<section class="slide" data-title="五 信念 × 同理心">
+  <div class="page">
+    <header class="rh"><span>《耶穌與權勢》第 7 章</span><span class="sec">五｜自信的多元主義</span><span class="src">凱勒與伊納祖</span></header>
+    <div class="cols grow" style="--c:1fr 1.05fr;--g:30px">
+      <div class="q4">
+        <span class="ax-y">信念 ↑</span>
+        <div class="qd"><h3>霸道定罪</h3><p>信念很強，聽不見別人</p></div>
+        <div class="qd best"><h3>溫柔的自信</h3><p>堅定的信念＋深切的同理心</p></div>
+        <div class="qd"><h3>冷漠旁觀</h3><p>沒立場，也不在乎</p></div>
+        <div class="qd"><h3>隨波逐流</h3><p>很能體諒，卻沒有立場</p></div>
+        <span class="ax-x">同理心 →</span>
+      </div>
+      <div class="stack" style="--g:16px">
+        <div class="oq" style="font-size:var(--fs-small)">如果我們的文化培育不出既有堅定信念、又有深切同理心，能跨越深層差異和人對話的人，那麼教會用它的神學與屬靈資源來培育這樣的人，就比以往任何時候都更重要。<span class="by">凱勒（Timothy Keller）、伊納祖</span></div>
+        <div class="box dash"><p class="tiny"><b style="color:var(--ink)">本書寫作時（2023 年）的英國：</b>基督徒國王、印度教徒首相、以佛經宣誓就職的內政大臣、穆斯林蘇格蘭首席大臣，和自述不信神的反對黨領袖，在同一個體制下共事。2024 年英國大選後，人事已經不同。</p></div>
+      </div>
+    </div>
+  </div>
+  <aside class="notes">
+    <p class="ntm">約 2.5 分鐘｜這頁要做到：看見信念和同理心要一起，並找到自己現在在哪一格。</p>
+    <p><span class="nk nk-say">說</span>「凱勒和伊納祖說：如果這個文化培育不出既有堅定信念、又有深切同理心的人，教會就更該培育這樣的人。」</p>
+    <p><span class="nk nk-say">說</span>「他們還說：在這個左右兩邊都想讓對手閉嘴、甚至消失的時代，沒有人擁有『不被冒犯的權利』，也沒有人擁有『讓批評者消音的特權』。」</p>
+    <p><span class="nk nk-say">說</span>「看左邊這張圖：信念高、同理心低，容易霸道定罪；同理心高、信念低，容易隨波逐流；兩個都低是冷漠。右上角才是溫柔的自信。」</p>
+    <p><span class="nk nk-ask">問</span>「你在網路上的時候，比較常在哪一格？在家裡呢？」在心裡想就好。</p>
+    <p><span class="nk nk-say">說</span>「作者舉了英國的例子：在他寫書的時候，同一個體制裡有基督徒國王、印度教徒首相、以佛經宣誓就職的內政大臣、穆斯林的蘇格蘭首席大臣，和自述不信神的反對黨領袖。多元主義不是天國，但它是傳福音、實踐和平的好管道。」</p>
+    <p><span class="nk nk-go">轉場</span>「好，最後一個討論站。」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>四格圖是分享者的整理，大綱只有「信念」和「同理心」兩個詞。英國的例子：五人同時在任是 2023 年 3 月 29 日到 11 月 13 日（優素福就任到布雷弗曼去職）；2024 年 7 月大選後，施凱爾成為首相。大綱說布雷弗曼是「佛教徒」，她曾參與佛教團體、以《法句經》宣誓就任議員，但不是受戒成員，投影片寫「以佛經宣誓就職」。施凱爾 2021 年受訪說自己不信神，但看得見信仰的力量。凱勒、伊納祖的話出自兩人合編的 Uncommon Ground（2020），英文原句已由二手資料確認，頁碼待補。</p>
+  </aside>
+</section>
+
+<!-- station 3 -->
+<section class="slide" data-title="討論站 3：溫柔的自信" id="d3">
+  <div class="page">
+    <header class="rh"><span>《耶穌與權勢》第 7 章</span><span class="sec">討論站 3</span><span class="src">大家一起</span></header>
+    <div class="stn grow">
+      <div class="stack" style="--g:18px">
+        <p class="kick">在同溫層與獵巫文化裡，操練自信的多元主義</p>
+        <p class="qq">信念越堅定，越容易定罪人；越有同理心，越容易隨波逐流。我們怎麼在團契、家裡、社群媒體上，活出「因為對福音有信心，所以不怕與不同的人和平共處」？</p>
+        <div class="fu rvbox">
+          <div class="rv" data-h="追問 1（點開）"><span class="rv-c"><b>追問 1</b>回想一次家族聚餐或分組報告，遇到觀點和你完全相反、甚至讓你覺得被冒犯的時候。你當時是立刻反擊、心裡鄙視表面敷衍，還是能安靜聆聽、試著理解？</span></div>
+          <div class="rv" data-h="追問 2（點開）"><span class="rv-c"><b>追問 2</b>如果有一個群體在網路上遭到不公義的獵巫或封殺，而他們的價值觀剛好和基督教相反，你願意為他們的言論自由發聲嗎？為什麼？</span></div>
+        </div>
+      </div>
+      <div class="stack" style="--g:18px">
+        <div class="timer" data-min="10"><span class="tm-h">討論時間</span><span class="tm-d">10:00</span><div class="row"><button class="btn pri tm-go">開始</button><button class="btn" data-add="-1">−1 分</button><button class="btn" data-add="1">＋1 分</button><button class="btn tm-reset">重來</button></div></div>
+        <div class="sticky"><span class="h">怎麼參與</span>說一個真實的小故事就好，<br>不用給標準答案。</div>
+      </div>
+    </div>
+  </div>
+  <aside class="notes">
+    <p class="ntm">約 10 分鐘｜這頁要做到：把「信念＋同理心」落到自己真實的經驗。</p>
+    <p><span class="nk nk-say">說</span>「最後一站。這一題比較適合用故事回答：先想一個你真的遇過的場面。」按「開始」計時，安靜 30 秒。</p>
+    <p><span class="nk nk-ask">問</span>先點開追問 1，請自願的人說一個小故事。有人說完，問：「後來呢？如果再來一次，你會怎麼做？」再點開追問 2，請大家說說看「願意」或「不願意」的理由，兩種答案都接住。</p>
+    <p><span class="nk nk-warn">注意</span>追問 1 會談到家人（例如長輩談政治或傳統信仰）。提醒大家：說自己的反應就好，不需要評論家人。如果有人說到家裡因為信仰或政治有很深的衝突，會後找時間陪他聊。</p>
+    <p><span class="nk nk-stop">停</span>時間到或討論告一段落，就翻下一頁收尾。</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>青年常見的盲點（大綱的整理）：把「防衛心態」誤當成「護教熱心」，一聽到不同的觀點就覺得信仰受威脅，非要在言詞上壓倒對方；或者在同儕壓力下藏起基督徒的身分，不敢表達任何不同意見。下一頁收這兩個盲點。</p>
+  </aside>
+</section>
+
+<!-- after station 3 -->
+<section class="slide" data-title="討論站 3 之後：溫柔的自信">
+  <div class="page">
+    <header class="rh"><span>《耶穌與權勢》第 7 章</span><span class="sec">討論站 3</span></header>
+    <div class="cols grow" style="--c:1.3fr 1fr;--g:36px">
+      <div class="stack ctr" style="--g:22px">
+        <p class="big-q" style="font-size:36px">憤怒和霸凌，常常來自內心的<span class="r">恐懼</span>與不安全感；<br>認識基督復活大能的人，才有<span class="r">溫柔的自信</span>。</p>
+        <p class="vs">只要心裡尊主基督為聖。有人問你們心中盼望的緣由，就要常作準備，以溫柔、敬畏的心回答各人；<cite>彼得前書 3:15</cite></p>
+      </div>
+      <div class="stack ctr" style="--g:18px">
+        <div class="box"><h3>款待，是一種政治操練</h3><p class="small">我們不靠封殺對手來證明真理，而是活出一個更有說服力、更滿有恩典與和平的群體。</p></div>
+        <p class="mg r">「防衛心態」≠「護教熱心」</p>
+      </div>
+    </div>
+  </div>
+  <aside class="notes">
+    <p class="ntm">約 1.5 分鐘｜這頁要做到：收第三站：溫柔的自信從哪裡來。</p>
+    <p><span class="nk nk-say">說</span>「我們常常把防衛心態當成護教熱心。可是憤怒和霸凌，很多時候是因為害怕。真正認識基督復活大能的人，不需要靠壓倒別人來證明自己，所以可以溫柔。」</p>
+    <p><span class="nk nk-say">說</span>「彼得說：有人問你心中盼望的緣由，要以溫柔、敬畏的心回答。溫柔不是軟弱，是有把握。」</p>
+    <p><span class="nk nk-go">轉場</span>「最後，我們把今天讀的帶回生活。」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>大字那句依大綱「講員引導方針」改寫。彼前 3:15 是補充，大綱沒有；經文照新標點和合本，句尾的分號保留。</p>
+  </aside>
+</section>
+
+<!-- practices -->
+<section class="slide" data-title="回到生活：三個操練" id="act">
+  <div class="page">
+    <header class="rh"><span>《耶穌與權勢》第 7 章</span><span class="sec">回到生活</span></header>
+    <h2 class="ttl">這一週，三個操練</h2>
+    <div class="g3 grow">
+      <div class="nc lg"><span class="no">1</span><h3>真理過於部落</h3><ul class="dot" style="font-weight:500;font-size:20px"><li>認真研究政策，去投票</li><li>支持的人落選時，不散播陰謀論和仇恨</li><li>在系學會、公司、社區裡，看重程序正義和透明，不因為「自己人掌權」就放水</li></ul></div>
+      <div class="nc lg"><span class="no">2</span><h3>把款待當成政治操練</h3><ul class="dot" style="font-weight:500;font-size:20px"><li>刻意和立場、背景跟你很不一樣的同學或同事，吃一頓午餐</li><li>問他：「是什麼生命經驗，讓你這麼看重這件事？」</li><li>先當聆聽的人，不急著貼標籤</li></ul></div>
+      <div class="nc lg"><span class="no">3</span><h3>團契作為和平的實驗室</h3><ul class="dot" style="font-weight:500;font-size:20px"><li>允許弟兄姊妹在公共政策上有不同看法（能源、社福、政黨傾向）</li><li>用羅 14:19 的原則溫和對話</li><li>溫和地分享基督教對人權、平等、法治、照顧弱勢的貢獻</li></ul></div>
+    </div>
+    <p class="mg" style="align-self:center">基督的寶血，大過我們的政治分歧。</p>
+  </div>
+  <aside class="notes">
+    <p class="ntm">約 3 分鐘｜這頁要做到：每個人帶走一個這週可以做的操練。</p>
+    <p><span class="nk nk-say">說</span>「三個操練。第一，真理過於部落：認真研究、去投票；支持的人落選時，不散播陰謀論；在系學會、公司、社區裡，不因為自己人掌權就放水。」</p>
+    <p><span class="nk nk-say">說</span>「第二，把款待當成政治操練：這週約一個跟你很不一樣的人吃午餐，問他：『是什麼生命經驗，讓你這麼看重這件事？』」</p>
+    <p><span class="nk nk-say">說</span>「第三，讓我們這個團契成為實驗室：我們可以在能源、社福、政黨傾向上有不同看法，然後證明基督的寶血大過我們的分歧。」</p>
+    <p><span class="nk nk-ask">問</span>「三個裡面，你這週想試哪一個？」在心裡選一個。</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>依大綱「三、青年門徒生活與國度實踐」整理。大綱寫「大學美食街與辦公室」「校園學生會、系學會、工會」，投影片縮短。</p>
+  </aside>
+</section>
+
+<!-- double check before sharing -->
+<section class="slide" data-title="回到生活：轉發前的雙重檢視">
+  <div class="page">
+    <header class="rh"><span>《耶穌與權勢》第 7 章</span><span class="sec">回到生活</span><span class="src">點一下打勾</span></header>
+    <h2 class="ttl">按下「分享」之前，先打兩個勾</h2>
+    <div class="cols grow" style="--c:1.4fr 1fr;--g:34px;align-items:center">
+      <div class="stack" style="--g:16px">
+        <button class="chk" aria-pressed="false"><span class="bx"></span><span><b>① 忠於真理嗎？（堅定的信念）</b>我查證過了嗎？這符合聖經嗎？</span></button>
+        <button class="chk" aria-pressed="false"><span class="bx"></span><span><b>② 把對方當人看嗎？（深切的同理心）</b>我的語氣，是把對方當成照著神形像所造、基督為他捨命的鄰舍嗎？</span></button>
+      </div>
+      <div class="stack ctr" style="--g:14px">
+        <p class="mg">兩個都打勾，再按分享。</p>
+        <p class="mg r">只打一個勾的話……<br>先存在草稿匣吧。</p>
+      </div>
+    </div>
+  </div>
+  <aside class="notes">
+    <p class="ntm">約 1.5 分鐘｜這頁要做到：給大家一個在社群媒體上馬上用得到的小工具。</p>
+    <p><span class="nk nk-say">說</span>「在轉發一則有爭議的貼文之前，先打兩個勾。」點第一個：「我查證過了嗎？符合聖經嗎？」點第二個：「我的語氣，是把對方當成一個照著神形像造的人、基督為他捨命的鄰舍嗎？」</p>
+    <p><span class="nk nk-say">說</span>「兩個都打勾，再按分享。只打一個，就先存在草稿匣。」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>依大綱「兼具堅定信念與深切同理心的發聲」的雙重檢視。草稿匣是分享者的補充。</p>
+  </aside>
+</section>
+
+<!-- takeaway -->
+<section class="slide" data-title="結語：今天的一句話">
+  <div class="page">
+    <header class="rh"><span>《耶穌與權勢》第 7 章</span><span class="sec">結語</span></header>
+    <div class="stack grow ctr" style="--g:26px;padding:0 30px">
+      <p class="kick">今天的一句話</p>
+      <p class="big-q" style="font-size:38px">唯獨上帝「是」權柄，地上的政府只是「領受」權柄的僕役。</p>
+      <p class="lead" style="font-family:var(--f-serif);line-height:1.6">在恐懼與撕裂的時代，我們不靠消滅異己來建立國度；因為對復活的主充滿自信，我們敢在多元分歧的世界裡，活出<span class="red">捍衛鄰舍自由、追求和睦</span>的十字架之愛。</p>
+    </div>
+  </div>
+  <aside class="notes">
+    <p class="ntm">約 1 分鐘｜這頁要做到：用一句話收今天的內容。</p>
+    <p><span class="nk nk-say">說</span>慢慢唸一次，或請大家一起唸。</p>
+    <p><span class="nk nk-go">轉場</span>「我們一起禱告。」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>這是講稿大綱的「核心結語」，不是書中的話。</p>
+  </aside>
+</section>
+
+<!-- prayer -->
+<section class="slide" data-title="結語：同心禱告">
+  <div class="page">
+    <header class="rh"><span>《耶穌與權勢》第 7 章</span><span class="sec">結語</span><span class="src">一起禱告</span></header>
+    <div class="cols grow" style="--c:1fr 260px;--g:30px;align-items:center">
+      <div class="prayer">
+        <p>親愛的天父：地上的君王、總統與議會，都只是祢手中的僕役；唯有祢是歷史真正的主宰。</p>
+        <p>謝謝祢讓我們今天能自由敬拜、自由思想、和平生活。求祢赦免我們把這份自由當作理所當然，也赦免我們被政黨部落的仇恨綁架，把意見不同的鄰舍當作敵人。</p>
+        <p>聖靈啊，求祢除去我們裡面的防衛與膽怯，賜給我們從福音而來的溫柔自信；讓我們選擇真理過於部落，追求和睦與彼此建立的事。</p>
+        <p>奉主耶穌基督的名求，阿們。</p>
+      </div>
+      <p class="mg r">完整的禱告詞在講稿裡，帶領的人可以照唸。</p>
+    </div>
+  </div>
+  <aside class="notes">
+    <p class="ntm">約 3 分鐘｜這頁要做到：用禱告回應今天的內容。</p>
+    <p><span class="nk nk-say">說</span>「我們一起禱告。你可以跟著螢幕上的禱告一起唸，也可以在心裡跟著。」</p>
+    <p><span class="nk nk-fin">收尾</span>帶領的人可以唸下面的完整禱告詞（講稿大綱原文）：</p>
+    <p class="ntl">「親愛的天父、賜平安與自由的主耶穌基督：我們感謝讚美祢！因為萬有都是本於祢、倚靠祢、歸於祢。地上的君王、總統與議會都只是祢手中的僕役，唯有祢是歷史真正的主宰，是那位按著公義與慈愛統管萬國的君王。</p>
+    <p class="ntl">主啊，我們為著我們所處的自由民主社會向祢獻上感恩。謝謝祢透過歷代先賢的流血與基督信仰的傳承，使我們今天能夠免於極權暴政的恐懼，享有自由敬拜、自由思想與和平生活。但主啊，求祢赦免我們常常把這份自由當作理所當然，有時我們放任自己陷入『各人任意而行』的自私，有時我們又被政黨部落的仇恨綁架，在網路上與生活中把意見不同的鄰舍當作敵人。</p>
+    <p class="ntl">聖靈啊，求祢今天重新塑造我們的心！在這個充滿恐懼、焦慮與撕裂的時代，求祢除去我們裡面的防衛與膽怯，賜給我們從福音而來的『溫柔自信』。幫助我們看見每一個與我們不同的人，都是照著祢榮耀形象所造、是好撒馬利亞人比喻中我們當去愛的鄰舍。</p>
+    <p class="ntl">求主使用我們的團契與教會，成為培育『既有堅定真理信念、又有深切同理心』之和平使者的搖籃。讓我們在校園、職場、家庭與臺灣這片土地上，選擇真理過於部落，追求和睦與彼此建立的事，直到萬國萬民都在新天新地裡同聲頌讚羔羊的榮耀！</p>
+    <p class="ntl">聽我們的禱告，是奉靠那位愛我們、為世人捨己的主耶穌基督之名求。阿們！」</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>投影片上的版本，是從大綱的禱告詞節錄、縮短的，方便全體一起唸。</p>
+  </aside>
+</section>
+
+<!-- appendix -->
+<section class="slide" data-title="附錄：本章經文" data-skip="1">
+  <div class="page">
+    <header class="rh"><span>《耶穌與權勢》第 7 章</span><span class="sec">附錄</span><span class="src">回家再讀</span></header>
+    <h2 class="ttl">本章經文，回家再讀一次</h2>
+    <div class="g2 grow small" style="gap:6px 34px;align-content:start">
+      <p><b>創 1:27</b>　人人都有神的形像：平等與人權的根</p>
+      <p><b>申 1:13</b>　各支派推舉有智慧、有見識的人</p>
+      <p><b>士 21:25</b>　各人任意而行：自由沒有界線的結果</p>
+      <p><b>撒下 2:4、王上 1:39</b>　即使在君主制下，也需要百姓認可</p>
+      <p><b>太 5:44、22:39</b>　愛仇敵、愛人如己</p>
+      <p><b>路 10:25–37</b>　好撒馬利亞人：誰作了鄰舍</p>
+      <p><b>約 3:16</b>　神愛世人</p>
+      <p><b>羅 13:1–7</b>　政府是神的用人，要向神交帳</p>
+      <p><b>羅 14:19</b>　追求和睦、彼此建立</p>
+      <p><b>彼前 2:13–17</b>　尊敬眾人、敬畏神、尊敬君王</p>
+      <p class="tiny"><b>補充</b>　羅 3:23、太 5:45、彼前 3:15</p>
+    </div>
+  </div>
+  <aside class="notes">
+    <p class="ntm"><span class="skip">時間不夠可略過</span>不用講｜這頁要做到：給想回家再讀的人一份經文清單。</p>
+    <p class="ntp"><span class="nk nk-prep">備課</span>依講稿大綱的附錄「核心經文與神學脈絡對照表」精簡。補充的三處經文是分享者加的。</p>
+  </aside>
+</section>
+
+</div>
+</main>
+
+<nav class="bar" aria-label="簡報導覽">
+  <div class="prog"><span id="progFill"></span></div>
+  <button class="nb" id="prevBtn" aria-label="上一頁"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M11 2 L4 8 L11 14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+  <span class="count"><b id="curN">1</b> / <span id="totN">48</span></span>
+  <button class="nb" id="nextBtn" aria-label="下一頁"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5 2 L12 8 L5 14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+  <span class="bt" id="barTitle"></span>
+  <button class="nb" id="notesBtn" aria-pressed="false">講者備註 <kbd>N</kbd></button>
+  <button class="nb" id="pvBtn" aria-pressed="false">講者視窗 <kbd>P</kbd></button>
+  <button class="nb" id="fsBtn">全螢幕 <kbd>F</kbd></button>
+  <a class="nb" id="helpLink" href="https://hungshinlee.github.io/segullah/sunday-school/slides-guide.html" target="_blank" rel="noopener" title="投影片使用說明（另開分頁）">說明</a>
+</nav>
+<div class="notes-panel" id="notesPanel" hidden></div>
+
+<script>
+(function(){
+  /* ---------- deck ---------- */
+  var $=function(id){return document.getElementById(id);};
+  var deck=$('deck'), slides=[].slice.call(deck.querySelectorAll('.slide')), N=slides.length;
+  var mq=window.matchMedia('(max-width: 760px), (orientation: portrait) and (max-width: 1100px)');
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var cur=0, S=1;
+  slides.forEach(function(s,k){s.setAttribute('aria-label','第 '+(k+1)+' 頁：'+(s.dataset.title||''));var p=document.createElement('span');p.className='pg';p.setAttribute('aria-hidden','true');p.textContent='P.'+String(k+1).padStart(2,'0');s.appendChild(p);});
+  $('totN').textContent=N;
+
+  function fit(){
+    if(mq.matches){S=1;deck.style.removeProperty('--s');return;}
+    var r=deck.getBoundingClientRect();
+    S=Math.max(.1,Math.min(r.width/1280,r.height/720));
+    deck.style.setProperty('--s',S.toFixed(4));
+  }
+  function render(){
+    var stack=mq.matches;
+    slides.forEach(function(s,k){
+      s.classList.toggle('on',k===cur);s.classList.toggle('before',k<cur);s.classList.toggle('after',k>cur);
+      var hide=!stack&&k!==cur;s.inert=hide;
+      if(hide)s.setAttribute('aria-hidden','true');else s.removeAttribute('aria-hidden');
+    });
+    $('curN').textContent=cur+1;
+    $('barTitle').textContent=(slides[cur].dataset.title||'')+(slides[cur].dataset.skip?'　· 時間不夠可略過':'');
+    $('progFill').style.width=((cur+1)/N*100)+'%';
+    $('prevBtn').disabled=cur===0;$('nextBtn').disabled=cur===N-1;
+    var nt=slides[cur].querySelector('.notes');
+    $('notesPanel').innerHTML='<b>P.'+(cur+1)+'　'+(slides[cur].dataset.title||'')+'</b>'+(nt?nt.innerHTML:'');
+  }
+  function go(n){
+    cur=Math.max(0,Math.min(N-1,n));render();
+    try{history.replaceState(null,'','#p'+(cur+1));}catch(e){}
+  }
+  function jump(n){
+    if(mq.matches){slides[n].scrollIntoView({behavior:reduce?'auto':'smooth',block:'start'});}else go(n);
+  }
+  function toggleNotes(){var p=$('notesPanel');p.hidden=!p.hidden;$('notesBtn').setAttribute('aria-pressed',String(!p.hidden));}
+  function toggleFs(){
+    try{
+      if(document.fullscreenElement){var x=document.exitFullscreen();if(x&&x.catch)x.catch(function(){});}
+      else if(document.documentElement.requestFullscreen){var y=document.documentElement.requestFullscreen();if(y&&y.catch)y.catch(function(){});}
+    }catch(e){}
+  }
+  if(!document.fullscreenEnabled)$('fsBtn').hidden=true;
+
+  $('prevBtn').addEventListener('click',function(){go(cur-1);});
+  $('nextBtn').addEventListener('click',function(){go(cur+1);});
+  $('notesBtn').addEventListener('click',toggleNotes);
+  $('fsBtn').addEventListener('click',toggleFs);
+  document.querySelectorAll('[data-go]').forEach(function(b){b.addEventListener('click',function(){jump(+b.dataset.go-1);});});
+
+  document.addEventListener('keydown',function(e){
+    if(mq.matches||e.altKey||e.ctrlKey||e.metaKey)return;
+    var t=e.target;
+    if(t&&t.closest&&t.closest('input,textarea,select,[contenteditable="true"]'))return;
+    var onBtn=t&&t.closest&&t.closest('button');
+    switch(e.key){
+      case 'ArrowRight':case 'PageDown':go(cur+1);e.preventDefault();break;
+      case 'ArrowLeft':case 'PageUp':go(cur-1);e.preventDefault();break;
+      case ' ':if(onBtn)return;go(e.shiftKey?cur-1:cur+1);e.preventDefault();break;
+      case 'Home':go(0);e.preventDefault();break;
+      case 'End':go(N-1);e.preventDefault();break;
+      case 'n':case 'N':toggleNotes();break;
+      case 'p':case 'P':openPresenter();break;
+      case 'f':case 'F':toggleFs();break;
+    }
+  });
+  var tx=null,ty=null;
+  deck.addEventListener('touchstart',function(e){if(mq.matches)return;var t=e.touches[0];tx=t.clientX;ty=t.clientY;},{passive:true});
+  deck.addEventListener('touchend',function(e){
+    if(mq.matches||tx===null)return;var t=e.changedTouches[0],dx=t.clientX-tx,dy=t.clientY-ty;tx=null;
+    if(Math.abs(dx)>50&&Math.abs(dx)>Math.abs(dy)*1.3)go(cur+(dx<0?1:-1));
+  },{passive:true});
+  window.addEventListener('resize',fit);
+  var onMode=function(){fit();render();};
+  if(mq.addEventListener)mq.addEventListener('change',onMode);else if(mq.addListener)mq.addListener(onMode);
+
+  /* ---------- reveal：逐條點開（通用：.rvbox 裡的 .rv；.rv-next 下一個、.rv-all 全部打開／收起） ---------- */
+  document.querySelectorAll('.rvbox').forEach(function(box){
+    var items=[].slice.call(box.querySelectorAll('.rv')), nx=box.querySelector('.rv-next'), all=box.querySelector('.rv-all');
+    var lab=nx?nx.textContent:'';
+    function show(it,on){it.classList.toggle('shown',on);it.setAttribute('aria-expanded',String(on));}
+    function left(){return items.filter(function(i){return !i.classList.contains('shown');});}
+    function upd(){var l=left().length;if(nx)nx.textContent=l?lab:'都打開了';if(all)all.textContent=l?'全部打開':'全部收起';}
+    items.forEach(function(it){
+      it.setAttribute('role','button');it.tabIndex=0;show(it,false);
+      it.addEventListener('click',function(){show(it,!it.classList.contains('shown'));upd();});
+      it.addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();it.click();}});
+    });
+    if(nx)nx.addEventListener('click',function(){var l=left();if(l.length)show(l[0],true);upd();});
+    if(all)all.addEventListener('click',function(){var open=left().length>0;items.forEach(function(i){show(i,open);});upd();});
+    upd();
+  });
+
+  /* ---------- timer：討論站倒數（通用：.timer[data-min]；.tm-go 開始／暫停、.tm-reset 重來、[data-add] 加減分鐘） ---------- */
+  document.querySelectorAll('.timer').forEach(function(t){
+    var orig=(+t.dataset.min||10)*60, base=orig, rest=base, iv=0, last=0, d=t.querySelector('.tm-d'), goB=t.querySelector('.tm-go'), shown='';
+    function fmt(s){s=Math.max(0,Math.ceil(s));return String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0');}
+    function show(){
+      var txt=fmt(rest);if(txt!==shown){d.textContent=txt;shown=txt;}
+      var lab=iv?'暫停':(rest>0&&rest<base?'繼續':'開始');if(goB.textContent!==lab)goB.textContent=lab;
+      t.classList.toggle('done',rest<=0);t.classList.toggle('low',rest>0&&rest<=60);
+    }
+    function stop(){if(iv){clearInterval(iv);iv=0;}}
+    function tick(){var n=Date.now();rest-=(n-last)/1000;last=n;if(rest<=0){rest=0;stop();}show();}
+    goB.addEventListener('click',function(){if(iv){tick();stop();}else{if(rest<=0)rest=base;last=Date.now();iv=setInterval(tick,250);}show();});
+    t.querySelector('.tm-reset').addEventListener('click',function(){stop();base=orig;rest=base;show();});
+    t.querySelectorAll('[data-add]').forEach(function(b){b.addEventListener('click',function(){
+      if(iv)tick();
+      var add=(+b.dataset.add)*60;rest=Math.max(0,rest+add);
+      if(add>0&&rest>base)base=rest;
+      show();
+    });});
+    show();
+  });
+
+  /* ---------- checklist：點一下打勾（通用：.chk） ---------- */
+  document.querySelectorAll('.chk').forEach(function(c){c.addEventListener('click',function(){c.setAttribute('aria-pressed',String(c.getAttribute('aria-pressed')!=='true'));});});
+
+  /* ---------- presenter window ---------- */
+  /* 講者視窗（2026-10-25 加）：按 P 或導覽列的「講者視窗」，另開一個視窗放在筆電螢幕上（投影機設成延伸桌面）。
+     視窗裡有：投影中的這一頁（可以直接點按鈕、在格子裡打字，會傳到投影畫面）、下一頁預覽、講者備註、計時。
+     在任一個視窗翻頁，另一個會跟著翻。計時在第一次翻頁時自動開始。
+     這一段從 2026-10-18 主日學那一課的 deck.html 原樣複製，只改了 TALK_MIN。 */
+  var TALK_MIN=120; /* 聚會長度（分鐘）：剩 5 分鐘時計時變黃，超過變紅 */
+  var pv=null, pvCurDoc=null, pvNxDoc=null, pvShown=-1, pvMO=null, pvDue=0, pvIv=0;
+  var pvAcc=0, pvFrom=0, pvIdle=true, pvFs=20;
+  try{var pvFs0=+localStorage.getItem('deck-presenter-fs');if(pvFs0>=14&&pvFs0<=34)pvFs=pvFs0;}catch(e){}
+  var PV_CSS=[
+    '*,*::before,*::after{box-sizing:border-box}',
+    'html,body{height:100%;margin:0}',
+    'body{background:#17171F;color:#FFFDF6;font:16px/1.5 "PingFang TC","Noto Sans TC","Microsoft JhengHei",system-ui,sans-serif;overflow:hidden;-webkit-font-smoothing:antialiased}',
+    '[hidden]{display:none!important}',
+    'button{font:inherit;font-size:14px;font-weight:700;color:#FFFDF6;background:transparent;border:2px solid rgba(255,253,246,.35);height:34px;min-width:38px;padding:0 12px;cursor:pointer;flex:none}',
+    'button:hover:not(:disabled){border-color:#FFE047;color:#FFE047}',
+    'button:disabled{opacity:.3;cursor:default}',
+    'button:focus-visible{outline:3px solid #FFE047;outline-offset:2px}',
+    '#pvRoot{height:100%;display:flex;flex-direction:column}',
+    '.top{flex:none;display:flex;align-items:center;gap:10px;padding:10px 16px;border-bottom:2px solid rgba(255,253,246,.14);white-space:nowrap;min-width:0}',
+    '.pno{flex:none;font-size:22px;font-weight:900;font-variant-numeric:tabular-nums;min-width:4.4em;text-align:center}',
+    '.pno b{color:#FFE047}',
+    '.ttl{font-weight:700;font-size:17px;overflow:hidden;text-overflow:ellipsis;min-width:0;flex:0 1 auto;padding-left:4px}',
+    '.skip{flex:none;background:#E5383B;color:#fff;font-weight:900;font-size:13px;padding:1px 8px;letter-spacing:.06em}',
+    '.sp{flex:1 1 0;min-width:8px}',
+    '.tm{flex:none;font:700 26px/1 ui-monospace,"SF Mono",Menlo,Consolas,monospace;font-variant-numeric:tabular-nums}',
+    '.tm.warn{color:#FFE047}.tm.over{color:#FF6B6E}',
+    '.tmax{flex:none;color:rgba(255,253,246,.6);font-size:14px}',
+    '.clock{flex:none;color:rgba(255,253,246,.7);font-variant-numeric:tabular-nums;padding-left:12px;border-left:1px solid rgba(255,253,246,.25)}',
+    '.grid{flex:1;min-height:0;display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:16px;padding:12px 16px 16px}',
+    '.col{display:flex;flex-direction:column;gap:8px;min-height:0;min-width:0}',
+    '.lab{flex:none;display:flex;align-items:center;gap:8px;min-height:28px;font-size:13px;font-weight:700;letter-spacing:.06em;color:rgba(255,253,246,.65);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}',
+    '.lab button{height:28px;font-size:13px;padding:0 8px}',
+    '.box{position:relative;overflow:hidden;min-height:0}',
+    '.box iframe{position:absolute;left:0;top:0;width:1280px;height:720px;border:0;transform-origin:0 0;background:#FFFDF6}',
+    '.cur{flex:1}',
+    '.nxrow{flex:none;display:flex;gap:14px;align-items:stretch;margin-top:6px}',
+    '.nx{flex:none;width:48%;aspect-ratio:16/9;cursor:pointer;opacity:.9}',
+    '.nx:hover{opacity:1}',
+    '.nx iframe{pointer-events:none}',
+    '.end{position:absolute;inset:0;display:grid;place-items:center;border:2px dashed rgba(255,253,246,.3);background:#17171F;color:rgba(255,253,246,.6);font-weight:700}',
+    '.nxinfo{flex:1;min-width:0;display:flex;flex-direction:column;gap:6px}',
+    '.nxt{font-weight:700;font-size:16px;line-height:1.45;color:rgba(255,253,246,.9)}',
+    '.navbig{margin-top:auto;display:flex;gap:10px}',
+    '.navbig button{flex:1;height:48px;font-size:16px}',
+    '.pvn{flex:1;min-height:0;overflow:auto;background:#FFFDF6;color:#17171F;padding:14px 18px;line-height:1.75;border-left:6px solid #FFE047}',
+    '.pvn .skip{display:inline-block;margin-right:8px;font-size:.7em;vertical-align:.12em}',
+    '.pvn .none{color:#555463}',
+    '.pvn p{margin:0}.pvn p+p{margin-top:.5em}',
+    '.pvn .ntm{font-weight:700;color:#555463}',
+    '.pvn .ntl{padding-left:1.2em}',
+    '.pvn .ntp{color:#555463;font-size:.92em}',
+    '.nk{display:inline-block;margin-right:8px;padding:0 6px;border:2px solid #17171F;font-size:.7em;font-weight:900;line-height:1.5;letter-spacing:.06em;vertical-align:.14em;white-space:nowrap;color:#17171F}',
+    '.nk-say{background:#D3E9FF}.nk-ask{background:#FFDCD8}.nk-stop{background:#FFE047}.nk-go,.nk-fin{background:#D8F0E3}.nk-prep{background:#ECEBF0}.nk-warn{background:#E5383B;color:#fff}',
+    '@media (max-width:900px){.grid{display:flex;flex-direction:column}.grid>.col:first-child{flex:none}.cur{flex:none;height:34vh}.grid>.col:last-child{flex:1}.nx{display:none}.tmax,.clock{display:none}}'
+  ].join('\n');
+  function pvHTML(){
+    var t=document.title.replace(/[<>&]/g,'');
+    return '<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><title>講者視窗｜'+t+'</title><style>'+PV_CSS+'</style></head><body><div id="pvRoot">'+
+      '<header class="top">'+
+        '<span class="pno"><b id="pvN">1</b> / '+N+'</span>'+
+        '<span class="ttl" id="pvTitle"></span><span class="skip" id="pvSkip" hidden>時間不夠可略過</span>'+
+        '<span class="sp"></span>'+
+        '<span class="tm" id="pvTime">00:00</span><span class="tmax">/ '+TALK_MIN+':00</span>'+
+        '<button id="pvPause">開始</button><button id="pvReset">歸零</button>'+
+        '<span class="clock" id="pvClock"></span>'+
+      '</header>'+
+      '<main class="grid">'+
+        '<section class="col"><div class="lab">投影中 · 這一頁的按鈕可以直接點，格子可以直接打字</div>'+
+          '<div class="box cur"><iframe id="pvCur" title="投影中的這一頁"></iframe></div>'+
+          '<div class="nxrow">'+
+            '<div class="box nx" id="pvNxBox" title="點一下翻到下一頁"><iframe id="pvNx" title="下一頁預覽" tabindex="-1"></iframe><div class="end" id="pvEnd" hidden>已經是最後一頁</div></div>'+
+            '<div class="nxinfo"><div class="lab">下一頁</div><div class="nxt" id="pvNxLab"></div>'+
+              '<div class="navbig"><button id="pvPrev">◀ 上一頁</button><button id="pvNext">下一頁 ▶</button></div></div>'+
+          '</div></section>'+
+        '<section class="col">'+
+          '<div class="lab">講者備註<span class="sp"></span><button id="pvSm" aria-label="備註字縮小">A−</button><button id="pvLg" aria-label="備註字放大">A＋</button></div>'+
+          '<div class="pvn" id="pvNotes"></div></section>'+
+      '</main></div></body></html>';
+  }
+  function pvAlive(){try{return !!(pv&&!pv.closed&&pv.document.getElementById('pvRoot'));}catch(e){return false;}}
+  function pvFrame(ifr){
+    var d=ifr.contentDocument, h='', defs=document.querySelector('svg.defs');
+    document.querySelectorAll('head style, head link[rel="stylesheet"]').forEach(function(n){h+=n.outerHTML;});
+    h+='<style>html,body{background:transparent!important}.deck{position:fixed;inset:0;--s:1}.slide{transition:none!important;box-shadow:none!important}</style>';
+    d.open();d.write('<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">'+h+'</head><body>'+(defs?defs.outerHTML:'')+'<div class="deck"></div></body></html>');d.close();
+    return d;
+  }
+  function pvFix(c,live){c.classList.add('on');c.classList.remove('before','after');c.removeAttribute('aria-hidden');if(live)c.removeAttribute('inert');else c.setAttribute('inert','');}
+  function pvVals(a,b){
+    var x=a.querySelectorAll('input,textarea,select'), y=b.querySelectorAll('input,textarea,select');
+    for(var i=0;i<x.length&&i<y.length;i++){y[i].value=x[i].value;if(x[i].type==='checkbox'||x[i].type==='radio')y[i].checked=x[i].checked;}
+  }
+  function pvPut(d,k,live){
+    var host=d.querySelector('.deck');if(!host)return;
+    host.textContent='';
+    if(k<0||k>=N)return;
+    var c=d.importNode(slides[k],true);pvVals(slides[k],c);pvFix(c,live);host.appendChild(c);
+  }
+  /* 把投影畫面上這一頁的變化（點了選項、蓋章、打字）同步到講者視窗，只改有變的地方，正在打字的格子不動 */
+  function pvPatch(a,b,d){
+    if(a.nodeType!==1){if(b.nodeValue!==a.nodeValue)b.nodeValue=a.nodeValue;return;}
+    var i,n,at=b.attributes;
+    for(i=at.length-1;i>=0;i--){n=at[i].name;if(!a.hasAttribute(n))b.removeAttribute(n);}
+    at=a.attributes;
+    for(i=0;i<at.length;i++){if(b.getAttribute(at[i].name)!==at[i].value)b.setAttribute(at[i].name,at[i].value);}
+    if(/^(INPUT|TEXTAREA|SELECT)$/.test(a.tagName)){if(d.activeElement!==b&&b.value!==a.value)b.value=a.value;if(b.checked!==a.checked)b.checked=a.checked;}
+    var x=a.childNodes, y=b.childNodes, same=x.length===y.length;
+    for(i=0;same&&i<x.length;i++)if(x[i].nodeName!==y[i].nodeName)same=false;
+    if(same){for(i=0;i<x.length;i++)pvPatch(x[i],y[i],d);return;}
+    var ae=d.activeElement;if(ae&&ae!==d.body&&b.contains(ae))return;
+    var f=d.createDocumentFragment();for(i=0;i<x.length;i++)f.appendChild(d.importNode(x[i],true));
+    b.textContent='';b.appendChild(f);pvVals(a,b);
+  }
+  function pvSync(){
+    if(!pvAlive())return;
+    var d=pv.document, k=cur;
+    if(k!==pvShown){
+      if(pvShown>=0&&pvIdle){pvIdle=false;pvFrom=Date.now();}
+      pvShown=k;
+      pvPut(pvCurDoc,k,true);pvPut(pvNxDoc,k+1,false);
+      var s=slides[k], nt=s.querySelector('.notes'), el=d.getElementById('pvNotes');
+      d.getElementById('pvN').textContent=k+1;
+      d.getElementById('pvTitle').textContent=s.dataset.title||'';
+      d.getElementById('pvSkip').hidden=!s.dataset.skip;
+      d.getElementById('pvPrev').disabled=k===0;d.getElementById('pvNext').disabled=k===N-1;
+      d.getElementById('pvNxLab').textContent=k<N-1?'P.'+(k+2)+'　'+(slides[k+1].dataset.title||''):'（已經是最後一頁）';
+      d.getElementById('pvEnd').hidden=k<N-1;
+      el.innerHTML=nt&&nt.innerHTML.trim()?nt.innerHTML:'<span class="none">這一頁沒有備註。</span>';
+      el.scrollTop=0;
+      pvTick();
+    }else{
+      var root=pvCurDoc.querySelector('.deck > .slide');
+      if(root){pvPatch(slides[k],root,pvCurDoc);pvFix(root,true);}else pvPut(pvCurDoc,k,true);
+    }
+  }
+  function pvFit(){
+    if(!pvAlive())return;
+    var d=pv.document;
+    ['pvCur','pvNx'].forEach(function(id){
+      var f=d.getElementById(id), b=f.parentNode, w=b.clientWidth, h=b.clientHeight;
+      if(!w||!h)return;
+      var k=Math.min(w/1280,h/720);
+      f.style.transform='translate('+((w-1280*k)/2).toFixed(1)+'px,'+((h-720*k)/2).toFixed(1)+'px) scale('+k.toFixed(4)+')';
+    });
+  }
+  /* 在講者視窗裡點這一頁：找到投影畫面上同一個位置的元素，替它按一下 */
+  function pvTwin(t){
+    var root=pvCurDoc&&pvCurDoc.querySelector('.deck > .slide'), p=[], m=slides[cur], i;
+    if(!root||!t)return null;
+    while(t&&t!==root){var u=t.parentElement;if(!u)return null;p.unshift([].indexOf.call(u.children,t));t=u;}
+    if(t!==root)return null;
+    for(i=0;i<p.length&&m;i++)m=m.children[p[i]];
+    return m||null;
+  }
+  function pvClick(e){
+    var t=e.target;
+    if(t&&t.closest&&t.closest('input,textarea,select,label'))return;
+    e.preventDefault();
+    var m=pvTwin(t);if(!m)return;
+    if(typeof m.click==='function')m.click();else m.dispatchEvent(new MouseEvent('click',{bubbles:true,cancelable:true}));
+  }
+  function pvFwd(t){
+    var m=pvTwin(t);if(!m||!('value' in m)||m.value===t.value)return;
+    m.value=t.value;m.dispatchEvent(new Event('input',{bubbles:true}));
+  }
+  function pvKey(e){
+    if(e.altKey||e.ctrlKey||e.metaKey)return;
+    var t=e.target;
+    if(t&&t.closest&&t.closest('input,textarea,select,[contenteditable="true"]'))return;
+    var onBtn=t&&t.closest&&t.closest('button');
+    switch(e.key){
+      case 'ArrowRight':case 'PageDown':go(cur+1);e.preventDefault();break;
+      case 'ArrowLeft':case 'PageUp':go(cur-1);e.preventDefault();break;
+      case ' ':if(onBtn)return;go(e.shiftKey?cur-1:cur+1);e.preventDefault();break;
+      case 'Home':go(0);e.preventDefault();break;
+      case 'End':go(N-1);e.preventDefault();break;
+      case 'f':case 'F':pvFull();break;
+    }
+  }
+  function pvFull(){
+    try{
+      var d=pv.document;
+      if(d.fullscreenElement){var x=d.exitFullscreen();if(x&&x.catch)x.catch(function(){});}
+      else if(d.documentElement.requestFullscreen){var y=d.documentElement.requestFullscreen();if(y&&y.catch)y.catch(function(){});}
+    }catch(e){}
+  }
+  function pvMs(){return pvAcc+(pvFrom?Date.now()-pvFrom:0);}
+  function pvTick(){
+    if(!pvAlive()){if(pv)pvEnd();return;}
+    var d=pv.document, s=Math.floor(pvMs()/1000), m=Math.floor(s/60), el=d.getElementById('pvTime'), c=new Date();
+    el.textContent=String(m).padStart(2,'0')+':'+String(s%60).padStart(2,'0');
+    el.className='tm'+(m>=TALK_MIN?' over':m>=TALK_MIN-5?' warn':'');
+    d.getElementById('pvClock').textContent=String(c.getHours()).padStart(2,'0')+':'+String(c.getMinutes()).padStart(2,'0');
+    d.getElementById('pvPause').textContent=pvIdle?'開始':pvFrom?'暫停':'繼續';
+  }
+  function pvToggleTime(){
+    if(pvIdle){pvIdle=false;pvFrom=Date.now();}
+    else if(pvFrom){pvAcc+=Date.now()-pvFrom;pvFrom=0;}
+    else pvFrom=Date.now();
+    pvTick();
+  }
+  function pvResetTime(){pvAcc=0;pvFrom=0;pvIdle=true;pvTick();}
+  function pvSize(dl){
+    pvFs=Math.max(14,Math.min(34,pvFs+dl));
+    try{localStorage.setItem('deck-presenter-fs',String(pvFs));}catch(e){}
+    if(pvAlive())pv.document.getElementById('pvNotes').style.fontSize=pvFs+'px';
+  }
+  function pvSay(msg){
+    var bt=$('barTitle');bt.textContent=msg;
+    setTimeout(function(){if(bt.textContent===msg)render();},6000);
+  }
+  function pvEnd(){
+    if(pvMO){pvMO.disconnect();pvMO=null;}
+    if(pvIv){clearInterval(pvIv);pvIv=0;}
+    if(pvDue){clearTimeout(pvDue);pvDue=0;}
+    pv=null;pvCurDoc=pvNxDoc=null;pvShown=-1;
+    $('pvBtn').setAttribute('aria-pressed','false');
+  }
+  function pvBuild(w){
+    var d=w.document, g=function(id){return d.getElementById(id);};
+    d.open();d.write(pvHTML());d.close();
+    pv=w;pvShown=-1;
+    pvCurDoc=pvFrame(g('pvCur'));pvNxDoc=pvFrame(g('pvNx'));
+    g('pvPrev').addEventListener('click',function(){go(cur-1);});
+    g('pvNext').addEventListener('click',function(){go(cur+1);});
+    g('pvNxBox').addEventListener('click',function(){go(cur+1);});
+    g('pvPause').addEventListener('click',pvToggleTime);
+    g('pvReset').addEventListener('click',pvResetTime);
+    g('pvSm').addEventListener('click',function(){pvSize(-2);});
+    g('pvLg').addEventListener('click',function(){pvSize(2);});
+    d.addEventListener('keydown',pvKey);
+    pvCurDoc.addEventListener('keydown',pvKey);
+    pvCurDoc.addEventListener('click',pvClick,true);
+    pvCurDoc.addEventListener('input',function(e){if(!e.isComposing)pvFwd(e.target);});
+    pvCurDoc.addEventListener('compositionend',function(e){pvFwd(e.target);});
+    pvCurDoc.addEventListener('focusout',function(){setTimeout(pvSync,0);});
+    w.addEventListener('resize',pvFit);
+    pvSize(0);pvSync();pvFit();setTimeout(pvFit,150);
+    pvMO=new MutationObserver(function(){if(!pvDue)pvDue=setTimeout(function(){pvDue=0;pvSync();},40);});
+    pvMO.observe(deck,{subtree:true,childList:true,attributes:true,characterData:true});
+    pvIv=setInterval(pvTick,500);pvTick();
+    $('pvBtn').setAttribute('aria-pressed','true');
+    if(!$('notesPanel').hidden)toggleNotes();
+  }
+  function openPresenter(){
+    if(pvAlive()){try{pv.focus();}catch(e){}return;}
+    if(pv)pvEnd();
+    var w=null;
+    try{w=window.open('','','popup=yes,width=1200,height=760');}catch(e){}
+    if(!w){pvSay('講者視窗被瀏覽器擋住了：請允許這個網頁開彈出式視窗，再按一次 P');return;}
+    try{pvBuild(w);try{w.focus();}catch(e){}}
+    catch(e){try{w.close();}catch(x){}pvEnd();pvSay('這個瀏覽器開不了講者視窗，請改用 Chrome');}
+  }
+  $('pvBtn').addEventListener('click',openPresenter);
+  window.addEventListener('pagehide',function(){try{if(pv&&!pv.closed)pv.close();}catch(e){}});
+  /* ---------- end presenter window ---------- */
+
+  /* ---------- boot ---------- */
+  function fromHash(){var m=(location.hash||'').match(/^#p(\d+)$/);return m?Math.min(N,Math.max(1,+m[1]))-1:0;}
+  function start(d){
+    fit();
+    var n=(d&&typeof d.i==='number')?d.i:fromHash();
+    cur=Math.max(0,Math.min(N-1,n));render();
+    if(mq.matches&&cur>0)slides[cur].scrollIntoView({block:'start'});
+  }
+  try{if(window.claude&&window.claude.hot&&window.claude.hot.snapshot)window.claude.hot.snapshot(function(){return {i:cur};});}catch(e){}
+  var hot=window.claude&&window.claude.hot;
+  if(hot&&hot.ready)hot.ready(start);else start(hot&&hot.data?hot.data:{});
+})();
+</script>
+
+</body>
+</html>
